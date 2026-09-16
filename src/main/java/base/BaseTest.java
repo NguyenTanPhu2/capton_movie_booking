@@ -33,8 +33,9 @@ public class BaseTest {
     public void beforeMethod(Method method) {
         LOG.info("BeforeMethod executing...");
         String browser = ConfigManager.getProperty("browser");
-        //report
-        ExtentReportManager.createTest(method.getName());
+        String baseUrl = ConfigManager.getProperty("baseUrl");
+        //report: group by class and then by method
+        ExtentReportManager.createTest(getClass(), method.getName());
 
         //Khoi tao driver
         DriverManager driverManager = DriverManagerFactory.getDriverManager(browser);
@@ -45,7 +46,7 @@ public class BaseTest {
 
         //Get driver
         driver.manage().window().maximize();
-        driver.get("https://demo1.cybersoft.edu.vn/");
+        driver.get(baseUrl);
         LOG.info("BeforeMethod ended...");
     }
 
@@ -55,6 +56,8 @@ public class BaseTest {
         if(result.getStatus() == ITestResult.FAILURE){
             ExtentReportManager.captureScreenshot(driver, result.getMethod().getMethodName());
             ExtentReportManager.fail(result.getThrowable().toString());
+        } else {
+            ExtentReportManager.pass("Test case passed");
         }
         driver.quit();
         LOG.info("AfterMethod ended...");
