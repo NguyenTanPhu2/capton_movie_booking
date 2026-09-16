@@ -54,7 +54,7 @@ public class RegisterPage extends CommonPage {
         click(byBtnHide);
     }
 
-    ///lay type input
+    /// lay type input
     public String getPasswordInputType() {
         return getAttribute(byTxtPassword, "type");
     }

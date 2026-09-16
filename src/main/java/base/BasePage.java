@@ -2,12 +2,15 @@ package base;
 
 import constants.TimeOutConstants;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class BasePage {
     private WebDriver driver;
@@ -237,6 +240,26 @@ public class BasePage {
     public void openHalfScreen() {
         driver.manage().window().setSize(new org.openqa.selenium.Dimension(960, 1080));
         driver.manage().window().setPosition(new org.openqa.selenium.Point(0, 0));
+    }
 
+    /// Switch to phone
+    public void switchToPhone() {
+        Map<String, Object> mobile = new HashMap<>();
+
+        mobile.put("width", 390);
+        mobile.put("height", 844);
+        mobile.put("deviceScaleFactor", 1);
+        mobile.put("mobile", true);
+
+        ((ChromeDriver) driver).executeCdpCommand(
+                "Emulation.setDeviceMetricsOverride",
+                mobile
+        );
+    }
+
+    /// lấy giá trị CSS của element.
+    public String getCssValue(By locator, String propertyName) {
+        WebElement element = waitVisibilityOfElementLocated(locator);
+        return element.getCssValue(propertyName);
     }
 }

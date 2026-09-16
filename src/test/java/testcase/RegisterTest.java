@@ -29,7 +29,7 @@ public class RegisterTest extends BaseTest {
     }
 
 
-    @Test(priority = 1, dataProvider = "register-valid", dataProviderClass = TestDataProvider.class, groups = "Register")
+    @Test(priority = 1, dataProvider = "register-valid", dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Register_Successfully(String account, String password, String fullName, String email) {
 
         ///Step 1: Navigate to Register Page
@@ -84,9 +84,15 @@ public class RegisterTest extends BaseTest {
         LOG.info("Step 9: Login new account");
         ExtentReportManager.info("Step 9: Login new account");
         loginPage.login(account, password);
+
+        ///VP 2: Verify Login Successfully
+        LOG.info("VP 2: Verify Login Successfully");
+        ExtentReportManager.info("VP 2: Verify Login Successfully");
+        String recordingLogin = commonModal.getMessageText();
+        Assert.assertEquals(recordingLogin, "Đăng nhập thành công", "Login success message is incorrect");
     }
 
-    @Test(priority = 2,groups = "Register")
+    @Test(priority = 2, groups = "register")
     public void verify_Register_With_Empty_Required_Fields() {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -156,7 +162,7 @@ public class RegisterTest extends BaseTest {
     }
 
     @Test(priority = 3, dataProvider = "register-invalid-email",
-         dataProviderClass = TestDataProvider.class,groups = "Register")
+            dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Register_With_Invalid_Email_Format(String account, String password, String fullName, String email) {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -200,7 +206,7 @@ public class RegisterTest extends BaseTest {
         Assert.assertEquals(recordingErrorEmail, "email không hợp lệ", "Invalid email error message is incorrect");
     }
 
-    @Test(priority = 4, dataProvider = "register-hide-password", dataProviderClass = TestDataProvider.class, groups = "Register")
+    @Test(priority = 4, dataProvider = "register-hide-password", dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Hide_Password(String account, String password, String fullName, String email) {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -245,7 +251,7 @@ public class RegisterTest extends BaseTest {
     }
 
     @Test(priority = 5, dataProvider = "register-wrong-confirm-password",
-            dataProviderClass = TestDataProvider.class,groups = "Register")
+            dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Confirm_Password_Matching(String account, String fullName, String password, String wrongPassword) {
 
         ///Step 1: Navigate to Register Page
@@ -285,8 +291,7 @@ public class RegisterTest extends BaseTest {
         Assert.assertEquals(recordingNotMatchPassword, "Mật khẩu không khớp !", "Wrong Confirm Password");
     }
 
-
-    @Test(priority = 6,groups = "Register")
+    @Test(priority = 6, groups = "register")
     public void verify_Register_Button() {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -300,7 +305,7 @@ public class RegisterTest extends BaseTest {
         Assert.assertEquals(currentUrl, "https://demo1.cybersoft.edu.vn/sign-up", "Current URL is incorrect");
     }
 
-    @Test(priority = 7,groups = "Register")
+    @Test(priority = 7, groups = "register")
     public void verify_Navigate_To_Login() {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -320,8 +325,8 @@ public class RegisterTest extends BaseTest {
 
     }
 
-    @Test(priority = 8,dataProvider = "register-existing-email",
-            dataProviderClass = TestDataProvider.class,groups = "Register")
+    @Test(priority = 8, dataProvider = "register-existing-email",
+            dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Register_With_Existing_Email(String account, String password, String fullName, String existingEmail) {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -367,7 +372,7 @@ public class RegisterTest extends BaseTest {
     }
 
     @Test(priority = 9, dataProvider = "register-invalid-password",
-            dataProviderClass = TestDataProvider.class,groups = "Register")
+            dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Register_With_Invalid_Password(String account, String password) {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -397,7 +402,8 @@ public class RegisterTest extends BaseTest {
         Assert.assertEquals(recordingInvalidPassword, "Mật khẩu phải có ít nhất 6 kí tự !", "Invalid Password");
     }
 
-    @Test(priority = 10, dataProvider = "register-valid", dataProviderClass = TestDataProvider.class, groups = "Register")
+    @Test(priority = 10, dataProvider = "register-valid",
+            dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Register_Success_Message(String account, String password, String fullName, String email) {
 
         ///Step 1: Navigate to Register Page
@@ -442,8 +448,8 @@ public class RegisterTest extends BaseTest {
         Assert.assertEquals(recordingRegister, "Đăng ký thành công", "Registration success message is incorrect");
     }
 
-
-    @Test(priority = 11,dataProvider = "Whitespace-value", dataProviderClass = TestDataProvider.class, groups = "Register")
+    @Test(priority = 11, dataProvider = "Whitespace-value",
+            dataProviderClass = TestDataProvider.class, groups = "register")
     public void verify_Register_With_Whitespace(String account, String password, String fullName, String email) {
         ///Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");
@@ -485,6 +491,5 @@ public class RegisterTest extends BaseTest {
         ExtentReportManager.info("VP: Verify invalid format message");
         String recordingFormat = commonModal.getMuitAler();
         Assert.assertEquals(recordingFormat, "Vui lòng nhập đúng định dạng", "Invalid format message is incorrect");
-
     }
 }

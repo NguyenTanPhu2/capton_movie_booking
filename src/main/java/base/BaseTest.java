@@ -53,7 +53,7 @@ public class BaseTest {
     @AfterMethod
     public void afterMethod(ITestResult result) {
         LOG.info("AfterMethod executing...");
-        if(result.getStatus() == ITestResult.FAILURE){
+        if (result.getStatus() == ITestResult.FAILURE) {
             ExtentReportManager.captureScreenshot(driver, result.getMethod().getMethodName());
             ExtentReportManager.fail(result.getThrowable().toString());
         } else {
@@ -64,7 +64,7 @@ public class BaseTest {
     }
 
     @AfterSuite
-    public  void afterSuite(){
+    public void afterSuite() {
         LOG.info("AfterSuite executing...");
         ExtentReportManager.flushReports(); //tong ket report
         LOG.info("AfterSuite ended...");
