@@ -11,8 +11,9 @@ public class CommonPage extends BasePage {
         super(driver);
         this.topNavigation = new TopNavigation(driver);
     }
+
     //de goi
-    public TopNavigation getTopNavigation(){
+    public TopNavigation getTopNavigation() {
         return this.topNavigation;
     }
 

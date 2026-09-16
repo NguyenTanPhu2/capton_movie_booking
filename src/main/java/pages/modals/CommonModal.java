@@ -31,11 +31,11 @@ public class CommonModal extends BasePage {
         this.byMuiAlertMessage = By.xpath("//div[@class='MuiAlert-message']");
     }
 
-    public String getMessageText(){
+    public String getMessageText() {
         return getText(byLbMessage);
     }
 
-    public void waitModalDisappear(){
+    public void waitModalDisappear() {
         waitInVisibilityOfElementLocated(byLbMessage);
     }
 
@@ -50,7 +50,7 @@ public class CommonModal extends BasePage {
         };
     }
 
-    public String getMuitAler(){
+    public String getMuitAler() {
         return getText(byMuiAlertMessage);
     }
 }
