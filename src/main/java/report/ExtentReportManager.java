@@ -13,14 +13,17 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ExtentReportManager {
 
     private static ExtentReports extent;
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // mỗi thread 1 ExtentTest
+    private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // mỗi thread 1 ExtentTest
+    private static final Map<String, ExtentTest> classTests = new ConcurrentHashMap<>();
     ///Toan bo test case chay song song --> moi test case se tao 1 thread rieng biet --> moi thread se tao 1 ExtentTest rieng biet
-    private static final String REPORT_PATH = "extentReport_output/ExtentReport_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_hh_mm_ss")) + ".html";
-    private static final String SCREENSHOT_PATH = "extentReport_output/screenshots/";
+    private static final String REPORT_PATH = "testReport_output/ExtentReport_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_hh_mm_ss")) + ".html";
+    private static final String SCREENSHOT_PATH = "testReport_output/screenshots/";
 
     public static void initializeExtentReports() {
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(REPORT_PATH);
@@ -34,6 +37,17 @@ public class ExtentReportManager {
     public static void createTest(String testName) {
         ExtentTest extentTest = extent.createTest(testName);
         test.set(extentTest);
+    }
+
+    public static void createTest(Class<?> testClass, String testName) {
+        String className = testClass.getSimpleName();
+        ExtentTest classTest = classTests.computeIfAbsent(className, key -> {
+            ExtentTest parentTest = extent.createTest(className);
+            parentTest.assignCategory(className);
+            return parentTest;
+        });
+        ExtentTest methodTest = classTest.createNode(testName);
+        test.set(methodTest);
     }
 
     private static ExtentTest getTest() {

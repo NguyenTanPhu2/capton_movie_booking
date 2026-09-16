@@ -47,8 +47,8 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         account,
-                        "John",
                         "123456",
+                        "John",
                         account + "@gmail.com"
                 }
         };
@@ -61,8 +61,8 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         account,
-                        "John",
                         "123456",
+                        "John",
                         "C lara@.gmail.com"
                 }
         };
@@ -122,6 +122,19 @@ public class TestDataProvider {
         };
     }
 
+    @DataProvider(name = "Whitespace-value")
+    public static Object[][] withWhitespace() {
+        String account = UUID.randomUUID().toString();
+
+        return new Object[][]{
+                {
+                        account,
+                        "1 2 3 4 56 ",
+                        "Jo hn ",
+                        "Cla ra@2026"
+                }
+        };
+    }
 
     // =========================================================
     // MOVIE
