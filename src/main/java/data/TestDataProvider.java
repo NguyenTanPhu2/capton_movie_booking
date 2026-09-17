@@ -320,8 +320,8 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         "gái già lắm chiêu",
-                        "21-12-2021 -04:12",
-                        24,
+                        "21/12/2021 -04:12",
+                        22,
                         "CGV - Vincom Gò Vấp"
                 }
         };
@@ -344,8 +344,8 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        24,
-                        "Ghế 24,",
+                        22,
+                        "Ghế 22,",
                         "75000VND"
                 }
         };
@@ -357,8 +357,8 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        52,
-                        "Ghế 52,",
+                        121,
+                        "Ghế 121,",
                         "90000VND"
                 }
         };
@@ -383,7 +383,10 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        "X"
+                        "X",
+                        02,
+                        "Clara",
+                        "Clara@2026",
                 }
         };
     }
@@ -408,7 +411,7 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        24
+                        112
                 }
         };
     }
@@ -429,8 +432,7 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         "Clara",
-                        "Clara@2026",
-                        "10-09-2026"
+                        "Clara@2026"
                 }
         };
     }
@@ -450,7 +452,7 @@ public class TestDataProvider {
     @DataProvider(name = "search-by-character")
     public static Object[][] searchByCharacter() {
         return new Object[][]{
-                {"T", "Man of Steel", "AVATAR 2", "C18"}
+                {new String[]{"Man of Steel", "AVATAR 2"}, "T", "C18"}
         };
     }
 
@@ -464,7 +466,7 @@ public class TestDataProvider {
     @DataProvider(name = "search-select-result")
     public static Object[][] searchSelectResult() {
         return new Object[][]{
-                {"Địa đạo"}
+                {"Man of Steel"}
         };
     }
 
@@ -543,7 +545,8 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         "gái già lắm chiêu",
-                        24
+                        22,
+                        "21-12-2021"
                 }
         };
     }
