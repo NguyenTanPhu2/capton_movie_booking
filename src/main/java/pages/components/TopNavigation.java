@@ -13,6 +13,7 @@ public class TopNavigation extends BasePage {
     private By byLnkCinema;
     private By byLnkNews;
     private By byLnkApplication;
+    private By byLnkProfile;
 
     private By byIsSchedule;
     private By byIsCinema;
@@ -27,13 +28,15 @@ public class TopNavigation extends BasePage {
         this.byLnkLogo = By.xpath("//img[@alt='Logo']");
         this.byLnkSchedule = By.xpath("//a[h4[text()='Lịch Chiếu']]");
         this.byLnkCinema = By.xpath("//a[h4[text()='Cụm Rạp']]");
-        this.byLnkNews =By.xpath("//a[h4[text()='Tin Tức']]");
+        this.byLnkNews = By.xpath("//a[h4[text()='Tin Tức']]");
         this.byLnkApplication = By.xpath("//a[h4[text()='Ứng Dụng']]");
+        this.byLnkProfile = By.xpath("//a[h3[text()='Clara']]");
 
         this.byIsSchedule = By.xpath("//div[@id='lichChieu']");
         this.byIsCinema = By.xpath("//div[@id='cumRap']");
         this.byIsNews = By.xpath("//div[@id='tinTuc']");
         this.byIsApplication = By.xpath("//div[@id='ungDung']");
+
 
     }
 
@@ -89,12 +92,27 @@ public class TopNavigation extends BasePage {
         return getCssValue(byLnkSchedule, "color");
     }
 
-    public void hoverSchedule(){
+    public void hoverSchedule() {
         hoverMouse(byLnkSchedule);
     }
 
-    public boolean isLogo(){
+    public boolean isLogo() {
         return isElementDisplayed(byLnkLogo);
     }
 
+    public boolean isLogOutDisplays() {
+        return isElementDisplayed(byLnkLogOut);
+    }
+
+    public boolean isLoginDisplays() {
+        return isElementDisplayed(byLnkLogin);
+    }
+
+    public boolean isProfileDisplays() {
+        return isElementDisplayed(byLnkProfile);
+    }
+
+    public void navigateToProfilePage() {
+        click(byLnkProfile);
+    }
 }
