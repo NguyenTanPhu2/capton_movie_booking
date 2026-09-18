@@ -11,10 +11,10 @@ public class MovieDetailPage extends CommonPage {
     public MovieDetailPage(WebDriver driver) {
         super(driver);
         this.byGetNameMovie = By.xpath("//div[h1]");
-        this.bySchedule = By.xpath("//div[@class='jss955']");
     }
 
-    public void clickOnSchedule() {
+    public void clickOnSchedule(String schedule) {
+        bySchedule = By.xpath("//a[p[text()='" + schedule + "']]");
         click(bySchedule);
     }
 
