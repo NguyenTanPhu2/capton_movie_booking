@@ -319,8 +319,8 @@ public class TestDataProvider {
     public static Object[][] bookingSeatLegend() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                 }
         };
     }
@@ -329,10 +329,10 @@ public class TestDataProvider {
     public static Object[][] bookingInformation() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         22,
-                        "CGV - Vincom Gò Vấp"
+                        "CGV - Golden Plaza"
                 }
         };
     }
@@ -341,8 +341,8 @@ public class TestDataProvider {
     public static Object[][] bookingTotalPrice() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         "0VND"
                 }
         };
@@ -352,11 +352,11 @@ public class TestDataProvider {
     public static Object[][] bookingRegularSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         22,
                         "Ghế 22,",
-                        "75000VND"
+                        "95000VND"
                 }
         };
     }
@@ -365,11 +365,11 @@ public class TestDataProvider {
     public static Object[][] bookingVipSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         52,
                         "Ghế 52,",
-                        "90000VND"
+                        "114000VND"
                 }
         };
     }
@@ -378,8 +378,8 @@ public class TestDataProvider {
     public static Object[][] bookingDeleteSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         81,
                         "",
                         "0VND"
@@ -391,8 +391,8 @@ public class TestDataProvider {
     public static Object[][] bookingSoldSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         "X"
                 }
         };
@@ -403,8 +403,8 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         "X",
                         "04"
                 }
@@ -427,8 +427,8 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
-                        "21-12-2021"
+                        "The Gentlemen Dangbk",
+                        "07-07-2026"
                 }
         };
     }
@@ -439,8 +439,8 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         147
                 }
         };
@@ -450,8 +450,8 @@ public class TestDataProvider {
     public static Object[][] bookingWithoutLogin() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
-                        "21-12-2021",
+                        "The Gentlemen Dangbk",
+                        "07-07-2026",
                         10
                 }
         };
