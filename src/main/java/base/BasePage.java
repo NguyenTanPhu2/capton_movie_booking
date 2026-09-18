@@ -19,6 +19,10 @@ public class BasePage {
         this.driver = driver;
     }
 
+    protected WebDriver getDriver() {
+        return driver;
+    }
+
     /// High-light element
     public void highlightElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;

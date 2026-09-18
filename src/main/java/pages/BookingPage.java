@@ -1,7 +1,11 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class BookingPage extends CommonPage {
 
@@ -32,6 +36,11 @@ public class BookingPage extends CommonPage {
     }
 
     public void clickOnSeat(int numSeat) {
+        bySeat = By.xpath("//button[span[text()='" + numSeat + "']]");
+        click(bySeat);
+    }
+
+    public void clickOnSeat(String numSeat) {
         bySeat = By.xpath("//button[span[text()='" + numSeat + "']]");
         click(bySeat);
     }

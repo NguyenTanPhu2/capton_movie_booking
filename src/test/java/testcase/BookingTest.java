@@ -66,7 +66,7 @@ public class BookingTest extends BaseTest {
         LOG.info("VP 3: Verify information Schedule");
         ExtentReportManager.info("VP 3: Verify information Schedule");
         String recordingSchedule = bookingPage.getSchedule();
-        Assert.assertEquals(recordingSchedule, "07-07-2026 -08:07", "Show time is incorrect");
+        Assert.assertEquals(recordingSchedule, "21/12/2021 -04:12", "Show time is incorrect");
     }
 
     @Test(priority = 2, dataProvider = "booking-seat-legend",
@@ -403,10 +403,6 @@ public class BookingTest extends BaseTest {
         LOG.info("Step 2: Login Account");
         ExtentReportManager.info("Step 2: Login Account");
         loginPage.login(account, password);
-
-        if (commonModal.isLbMessage()) {
-            commonModal.waitModalDisappear();
-        }
 
         ///Step 3: Navigate to Profile page
         LOG.info("Step 3: Navigates to profile page");

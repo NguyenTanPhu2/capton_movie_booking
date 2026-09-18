@@ -315,12 +315,22 @@ public class TestDataProvider {
 // BOOKING
 // =========================================================
 
+    @DataProvider(name = "booking-seat-legend")
+    public static Object[][] bookingSeatLegend() {
+        return new Object[][]{
+                {
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                }
+        };
+    }
+
     @DataProvider(name = "booking-information")
     public static Object[][] bookingInformation() {
         return new Object[][]{
                 {
                         "gái già lắm chiêu",
-                        "21/12/2021 -04:12",
+                        "21-12-2021",
                         22,
                         "CGV - Vincom Gò Vấp"
                 }
@@ -357,8 +367,8 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        121,
-                        "Ghế 121,",
+                        52,
+                        "Ghế 52,",
                         "90000VND"
                 }
         };
@@ -383,10 +393,30 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        "X",
-                        02,
+                        "X"
+                }
+        };
+    }
+    @DataProvider(name = "booking-seat-status-after-booking")
+    public static Object[][] bookingStatusSeat() {
+        return new Object[][]{
+                {
                         "Clara",
                         "Clara@2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        "X",
+                        "04"
+                }
+        };
+    }
+
+    @DataProvider(name = "booking-history")
+    public static Object[][] bookingHistory() {
+        return new Object[][]{
+                {
+                        "Clara",
+                        "Clara@2026"
                 }
         };
     }
@@ -411,7 +441,7 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        112
+                        147
                 }
         };
     }
@@ -422,17 +452,7 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        02
-                }
-        };
-    }
-
-    @DataProvider(name = "booking-history")
-    public static Object[][] bookingHistory() {
-        return new Object[][]{
-                {
-                        "Clara",
-                        "Clara@2026"
+                        10
                 }
         };
     }
