@@ -594,4 +594,18 @@ public class TestDataProvider {
                 {"Clara", "Clara@2026"}
         };
     }
+
+    @DataProvider(name = "profile-update-successfully")
+    public static Object[][] profileUpdateSuccessfully() {
+        return new Object[][]{
+                {"Clara", "Clara@2026", "Clara JohnShon", "0379211821", "Clara@gmail.com"}
+        };
+    }
+
+    @DataProvider(name = "profile-without-update")
+    public static Object[][] profileWithoutUpdate() {
+        return new Object[][]{
+                {"Clara", "Clara@2026", "Clara JohnShon", "0379211821"}
+        };
+    }
 }
