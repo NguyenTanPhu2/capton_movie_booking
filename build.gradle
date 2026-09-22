@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.seleniumhq.selenium:selenium-java:4.47.0")
+
+    ///TestNG
+    // Source: https://mvnrepository.com/artifact/org.testng/testng
+    implementation("org.testng:testng:7.12.0")
+
+//    //Test song song
+//    testImplementation("org.testng:testng:7.12.0")
+
+    //tat thong bao loi cua log4j khi chay testNG
+    implementation("org.apache.logging.log4j:log4j-core:2.26.1")
+    implementation("org.apache.logging.log4j:log4j-api:2.26.1")
+    implementation("org.apache.logging.log4j:log4j-slf4j2-impl:2.26.1")
+
+    //Extent report
+    implementation("com.aventstack:extentreports:5.1.2")
+}
+
+test {
+    useTestNG() {
+        useDefaultListeners = true //dung de tao report testNG
+        outputDirectory = file("$projectDir/test-output") //dung de chua report testNG
+
+//        suites("testng.xml")
+    }
+}
