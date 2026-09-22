@@ -35,7 +35,7 @@ public class BaseTest {
         String browser = ConfigManager.getProperty("browser");
         String baseUrl = ConfigManager.getProperty("baseUrl");
         //report: group by class and then by method
-        ExtentReportManager.createTest(getClass(), method.getName());
+        ExtentReportManager.createTest(method.getName());
 
         //Khoi tao driver
         DriverManager driverManager = DriverManagerFactory.getDriverManager(browser);
