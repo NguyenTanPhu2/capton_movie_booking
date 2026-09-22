@@ -10,17 +10,29 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:6.0.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-        implementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
-        testImplementation 'org.testng:testng:7.9.0'
-        implementation 'io.github.bonigarcia:webdrivermanager:5.7.0'
-        testImplementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
-    }
+    implementation("org.seleniumhq.selenium:selenium-java:4.47.0")
+
+    ///TestNG
+    // Source: https://mvnrepository.com/artifact/org.testng/testng
+    implementation("org.testng:testng:7.12.0")
+
+//    //Test song song
+//    testImplementation("org.testng:testng:7.12.0")
+
+    //tat thong bao loi cua log4j khi chay testNG
+    implementation("org.apache.logging.log4j:log4j-core:2.26.1")
+    implementation("org.apache.logging.log4j:log4j-api:2.26.1")
+    implementation("org.apache.logging.log4j:log4j-slf4j2-impl:2.26.1")
+
+    //Extent report
+    implementation("com.aventstack:extentreports:5.1.2")
+}
 
 test {
-    useJUnitPlatform()
-        useTestNG()
+    useTestNG() {
+        useDefaultListeners = true //dung de tao report testNG
+        outputDirectory = file("$projectDir/test-output") //dung de chua report testNG
+
+//        suites("testng.xml")
     }
-[cite: 13]
+}

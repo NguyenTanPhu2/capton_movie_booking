@@ -1,0 +1,96 @@
+package report;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.google.common.io.Files;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ExtentReportManager {
+
+    private static ExtentReports extent;
+    private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // mỗi thread 1 ExtentTest
+    private static final Map<String, ExtentTest> classTests = new ConcurrentHashMap<>();
+    /// Toan bo test case chay song song --> moi test case se tao 1 thread rieng biet --> moi thread se tao 1 ExtentTest rieng biet
+    private static final String REPORT_PATH = "testReport_output/ExtentReport_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_hh_mm_ss")) + ".html";
+    private static final String SCREENSHOT_PATH = "testReport_output/screenshots/";
+
+    public static void initializeExtentReports() {
+        ExtentSparkReporter sparkReporter = new ExtentSparkReporter(REPORT_PATH);
+        extent = new ExtentReports();
+        extent.attachReporter(sparkReporter);
+
+        extent.setSystemInfo("OS", System.getProperty("os.name"));
+        extent.setSystemInfo("User", System.getProperty("user.name"));
+    }
+
+    public static void createTest(String testName) {
+        ExtentTest extentTest = extent.createTest(testName);
+        test.set(extentTest);
+    }
+
+    public static void createTest(Class<?> testClass, String testName) {
+        String className = testClass.getSimpleName();
+        ExtentTest classTest = classTests.computeIfAbsent(className, key -> {
+            ExtentTest parentTest = extent.createTest(className);
+            parentTest.assignCategory(className);
+            return parentTest;
+        });
+        ExtentTest methodTest = classTest.createNode(testName);
+        test.set(methodTest);
+    }
+
+    private static ExtentTest getTest() {
+        return test.get();
+    }
+
+    public static void info(String msg) {
+        getTest().info(msg);
+    }
+
+    public static void pass(String msg) {
+        getTest().pass(msg);
+    }
+
+    public static void fail(String msg) {
+        getTest().fail(msg);
+    }
+
+    public static void captureScreenshot(WebDriver driver, String testName) {
+        //kiem tra folder screenshots co ton tai ko, neu ko co thi se tao truoc folder
+        File destFolder = new File(SCREENSHOT_PATH);
+        if (!destFolder.exists())
+            destFolder.mkdirs();
+
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
+
+        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+        String fileName = testName + "_" + timestamp + ".png";
+        File destFile = new File(SCREENSHOT_PATH + fileName);
+
+        try {
+            Files.copy(sourceFile, destFile);
+            String relativePath = "screenshots/" + fileName;
+            getTest().fail("Screenshot captured", MediaEntityBuilder.createScreenCaptureFromPath(relativePath).build());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void flushReports() {
+        if (extent != null) {
+            extent.flush();
+        }
+    }
+}
