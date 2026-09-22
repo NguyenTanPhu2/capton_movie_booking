@@ -13,15 +13,12 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class ExtentReportManager {
 
     private static ExtentReports extent;
-    private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // mỗi thread 1 ExtentTest
-    private static final Map<String, ExtentTest> classTests = new ConcurrentHashMap<>();
-    /// Toan bo test case chay song song --> moi test case se tao 1 thread rieng biet --> moi thread se tao 1 ExtentTest rieng biet
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // mỗi thread 1 ExtentTest
+    ///Toan bo test case chay song song --> moi test case se tao 1 thread rieng biet --> moi thread se tao 1 ExtentTest rieng biet
     private static final String REPORT_PATH = "testReport_output/ExtentReport_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_hh_mm_ss")) + ".html";
     private static final String SCREENSHOT_PATH = "testReport_output/screenshots/";
 
@@ -37,17 +34,6 @@ public class ExtentReportManager {
     public static void createTest(String testName) {
         ExtentTest extentTest = extent.createTest(testName);
         test.set(extentTest);
-    }
-
-    public static void createTest(Class<?> testClass, String testName) {
-        String className = testClass.getSimpleName();
-        ExtentTest classTest = classTests.computeIfAbsent(className, key -> {
-            ExtentTest parentTest = extent.createTest(className);
-            parentTest.assignCategory(className);
-            return parentTest;
-        });
-        ExtentTest methodTest = classTest.createNode(testName);
-        test.set(methodTest);
     }
 
     private static ExtentTest getTest() {
@@ -69,7 +55,7 @@ public class ExtentReportManager {
     public static void captureScreenshot(WebDriver driver, String testName) {
         //kiem tra folder screenshots co ton tai ko, neu ko co thi se tao truoc folder
         File destFolder = new File(SCREENSHOT_PATH);
-        if (!destFolder.exists())
+        if(!destFolder.exists())
             destFolder.mkdirs();
 
         TakesScreenshot screenshot = (TakesScreenshot) driver;
@@ -89,7 +75,7 @@ public class ExtentReportManager {
     }
 
     public static void flushReports() {
-        if (extent != null) {
+        if(extent != null) {
             extent.flush();
         }
     }
