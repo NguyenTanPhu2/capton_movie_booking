@@ -173,7 +173,7 @@ public class TestDataProvider {
     @DataProvider(name = "movie-pagination")
     public static Object[][] moviePagination() {
         return new Object[][]{
-                {2}
+                {new int[]{1, 2, 3}}
         };
     }
 
@@ -181,11 +181,8 @@ public class TestDataProvider {
     public static Object[][] movieDetail() {
         return new Object[][]{
                 {
-                        new String[]{
-                                "Địa đạo",
-                                "Man of Steel"
-                        },
-                        "120phút"
+                        "Địa đạo",
+                        2
                 }
         };
     }
@@ -193,7 +190,7 @@ public class TestDataProvider {
     @DataProvider(name = "movie-duration-rating")
     public static Object[][] movieDurationRating() {
         return new Object[][]{
-                {"Man of Steel", "120phút", "C18"}
+                {"Man of Steel", "120phút"}
         };
     }
 
@@ -201,9 +198,9 @@ public class TestDataProvider {
     public static Object[][] movieTrailer() {
         return new Object[][]{
                 {
-                        new String[]{
-                                "Man of Steel",
-                                "John Cena WWE"
+                        new String[][]{
+                                {"Man of Steel", "Man of Steel - Official Trailer #2 [HD]"},
+                                {"John Cena WWE", "John Cena WWE - Official Trailer #2 [HD]"}
                         }
                 }
         };
@@ -213,8 +210,7 @@ public class TestDataProvider {
     @DataProvider(name = "movie-search-result")
     public static Object[][] movieSearchResult() {
         return new Object[][]{
-                {"Man of Steel",
-                        "C18"}
+                {"Man of Steel"}
         };
     }
 
@@ -242,8 +238,8 @@ public class TestDataProvider {
         };
     }
 
-    @DataProvider(name = "cinema-system-switching")
-    public static Object[][] cinemaSystemSwitching() {
+    @DataProvider(name = "cinema-complex-system-switching")
+    public static Object[][] cinemaComplexSystemSwitching() {
 
         return new Object[][]{
                 {
@@ -267,6 +263,47 @@ public class TestDataProvider {
     public static Object[][] cinemaMovie() {
         return new Object[][]{
                 {"cgv", "CGV - Aeon Tân Phú", "John Wick"}
+        };
+    }
+
+    @DataProvider(name = "cinema-poster-schedule")
+    public static Object[][] cinemaPosterSchedule() {
+        return new Object[][]{
+                {"galaxy-cinema", "GLX - Nguyễn Văn Quá", "John Cena WWE", "12-10-2023"}
+        };
+    }
+
+    @DataProvider(name = "cinema-available_schedule")
+    public static Object[][] cinemaAvailableSchedule() {
+        return new Object[][]{
+                {"01-01-2019", "10:10"}
+        };
+    }
+
+    @DataProvider(name = "cinema-schedule-buttons-displayed")
+    public static Object[][] cinemaScheduleButtonsDisplayed() {
+        return new Object[][]{
+                {"01-01-2019"}
+        };
+    }
+
+    @DataProvider(name = "cinema-sold_out_schedule")
+    public static Object[][] cinemaSoldOutSchedule() {
+        return new Object[][]{
+                {"cgv", "CGV - Golden Plaza", "The Gentlemen Dangbk", "07-12-2025", "06:00"}
+        };
+    }
+
+    @DataProvider(name = "cinema-system-switching")
+    public static Object[][] cinemaSystemSwitching() {
+
+        return new Object[][]{
+                {
+                        new String[][]{
+                                {"BHD Star Cineplex - 3/2", "10-12-2021"},
+                                {"BHD Star Cineplex - Bitexco", "22-11-2021"},
+                        }
+                }
         };
     }
 
@@ -319,8 +356,8 @@ public class TestDataProvider {
     public static Object[][] bookingSeatLegend() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
                 }
         };
     }
@@ -329,10 +366,10 @@ public class TestDataProvider {
     public static Object[][] bookingInformation() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        22,
-                        "CGV - Golden Plaza"
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        146,
+                        "CGV - Vincom Gò Vấp"
                 }
         };
     }
@@ -341,8 +378,8 @@ public class TestDataProvider {
     public static Object[][] bookingTotalPrice() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
                         "0VND"
                 }
         };
@@ -352,11 +389,11 @@ public class TestDataProvider {
     public static Object[][] bookingRegularSeat() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        22,
-                        "Ghế 22,",
-                        "95000VND"
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        146,
+                        "Ghế 146,",
+                        "75000VND"
                 }
         };
     }
@@ -365,11 +402,11 @@ public class TestDataProvider {
     public static Object[][] bookingVipSeat() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
                         52,
                         "Ghế 52,",
-                        "114000VND"
+                        "90000VND"
                 }
         };
     }
@@ -378,8 +415,8 @@ public class TestDataProvider {
     public static Object[][] bookingDeleteSeat() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
                         81,
                         "",
                         "0VND"
@@ -391,22 +428,23 @@ public class TestDataProvider {
     public static Object[][] bookingSoldSeat() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
                         "X"
                 }
         };
     }
+
     @DataProvider(name = "booking-seat-status-after-booking")
     public static Object[][] bookingStatusSeat() {
         return new Object[][]{
                 {
                         "Clara",
                         "Clara@2026",
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
                         "X",
-                        "04"
+                        "14"
                 }
         };
     }
@@ -427,8 +465,8 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "The Gentlemen Dangbk",
-                        "07-07-2026"
+                        "gái già lắm chiêu",
+                        "21-12-2021"
                 }
         };
     }
@@ -439,9 +477,9 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        147
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        "15"
                 }
         };
     }
@@ -450,9 +488,9 @@ public class TestDataProvider {
     public static Object[][] bookingWithoutLogin() {
         return new Object[][]{
                 {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        10
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        146
                 }
         };
     }
@@ -511,21 +549,32 @@ public class TestDataProvider {
     @DataProvider(name = "news-big-article")
     public static Object[][] newsBigArticle() {
         return new Object[][]{
-                {"TENET công bố ngày khởi chiếu chính thức tại Việt Nam"}
+                new String[][]{
+                        {"TENET công bố ngày khởi chiếu chính thức tại Việt Nam", "https://tix.vn/goc-dien-anh/7943-tenet-cong-bo-ngay-khoi-chieu-chinh-thuc-tai-viet-nam"},
+                        {"Khi phụ nữ không còn ở thế trốn chạy của nạn nhân", "https://tix.vn/goc-dien-anh/7941-khi-phu-nu-khong-con-o-the-tron-chay-cua-nan-nhan"}
+                }
         };
     }
 
     @DataProvider(name = "news-small-article")
     public static Object[][] newsSmallArticle() {
         return new Object[][]{
-                {"Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!"}
+                new String[][]{
+                        {"Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!", "https://tix.vn/goc-dien-anh/7938-pee-nak-2-van-kiep-thien-thu-di-tu-khong-het-nghiep"},
+                        {"Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!", "https://tix.vn/goc-dien-anh/7937-loat-phim-kinh-di-khong-the-bo-lo-trong-thang-7"},
+                        {"RÒM tung trailer hé lộ cuộc sống của dân chơi số đề", "https://tix.vn/goc-dien-anh/7936-rom-tung-trailer-he-lo-cuoc-song-cua-dan-choi-so-de"},
+                        {"Antebellum - Trailer cuối cùng không hé lộ bất cứ thông tin gì thêm", "https://tix.vn/goc-dien-anh/7935-antebellum-trailer-cuoi-cung-khong-he-lo-bat-cu-thong-tin-gi-them"}
+                }
         };
     }
 
     @DataProvider(name = "news-medium-article")
     public static Object[][] newsMediumArticle() {
         return new Object[][]{
-                {"Gerard Butler cùng bồ cũ Deadpool tham gia Greenland"}
+                new String[][]{
+                        {"Gerard Butler cùng bồ cũ Deadpool tham gia Greenland", "https://tix.vn/goc-dien-anh/7940-gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland"},
+                        {"Diễn viên đặc biệt của Bằng Chứng Vô Hình", "https://tix.vn/goc-dien-anh/7939-dien-vien-dac-biet-cua-bang-chung-vo-hinh"}
+                }
         };
     }
 
@@ -538,11 +587,38 @@ public class TestDataProvider {
     public static Object[][] footerLink() {
         return new Object[][]{
                 {
+                        new String[][]{
+                                {"FAQ", "https://demo1.cybersoft.edu.vn/FAQ"},
+                                {"Brand Guidelines", "https://demo1.cybersoft.edu.vn/Brand_Guidelines"},
+                                {"Thỏa thuận sử dụng", "https://demo1.cybersoft.edu.vn/thoa_thuan_su_dung"},
+                                {"Chính sách bảo mật", "https://demo1.cybersoft.edu.vn/chinh_sach_bao_mat"}
+                        }
+                }
+        };
+    }
+
+    @DataProvider(name = "footer-partner")
+    public static Object[][] footerPartner() {
+        return new Object[][]{
+                {
+                        new String[][]{
+                                {"cgvlogo", "https://www.cgv.vn/"},
+                                {"bhdlogo", "https://www.bhdstar.vn/"},
+                                {"galaxylogo", "https://www.galaxycine.vn/"}
+                        }
+                }
+        };
+    }
+
+    @DataProvider(name = "footer-mobile-social")
+    public static Object[][] footerMobileSocial() {
+        return new Object[][]{
+                {
                         new String[]{
-                                "FAQ",
-                                "Brand Guidelines",
-                                "Thỏa thuận sử dụng",
-                                "Chính sách bảo mật"
+                                "https://apps.apple.com/vn/app/tix-%C4%91%E1%BA%B7t-v%C3%A9-nhanh-nh%E1%BA%A5t/id615186197",
+                                "https://play.google.com/store/apps/details?id=vn.com.vng.phim123",
+                                "https://www.facebook.com/",
+                                "https://zalo.me/vi/"
                         }
                 }
         };
@@ -565,7 +641,7 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         "gái già lắm chiêu",
-                        22,
+                        113,
                         "21-12-2021"
                 }
         };
@@ -592,6 +668,13 @@ public class TestDataProvider {
     public static Object[][] profileLogin() {
         return new Object[][]{
                 {"Clara", "Clara@2026"}
+        };
+    }
+
+    @DataProvider(name = "profile-update-phone-number")
+    public static Object[][] profileUpdtaPhoneNumber() {
+        return new Object[][]{
+                {"Clara", "Clara@2026","037921182178"}
         };
     }
 
