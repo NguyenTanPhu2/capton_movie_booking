@@ -47,8 +47,8 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         account,
-                        "123456",
                         "John",
+                        "123456",
                         account + "@gmail.com"
                 }
         };
@@ -61,8 +61,8 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         account,
-                        "123456",
                         "John",
+                        "123456",
                         "C lara@.gmail.com"
                 }
         };
@@ -122,19 +122,6 @@ public class TestDataProvider {
         };
     }
 
-    @DataProvider(name = "Whitespace-value")
-    public static Object[][] withWhitespace() {
-        String account = UUID.randomUUID().toString();
-
-        return new Object[][]{
-                {
-                        account,
-                        "1 2 3 4 56 ",
-                        "Jo hn ",
-                        "Cla ra@2026"
-                }
-        };
-    }
 
     // =========================================================
     // MOVIE
@@ -235,12 +222,12 @@ public class TestDataProvider {
         };
     }
 
-    @DataProvider(name = "cinema-system-list")
-    public static Object[][] cinemaSystemList() {
-        return new Object[][]{
-                {"cgv", "CGV - Pandora City"}
-        };
-    }
+@DataProvider(name = "cinema-system-list")
+public static Object[][] cinemaSystemList() {
+    return new Object[][]{
+            {"cgv", "CGV - Pandora City"}
+    };
+}
 
     @DataProvider(name = "cinema-system-switching")
     public static Object[][] cinemaSystemSwitching() {
@@ -256,42 +243,42 @@ public class TestDataProvider {
         };
     }
 
-    @DataProvider(name = "cinema-name-address")
-    public static Object[][] cinemaNameAddress() {
-        return new Object[][]{
-                {"lotte-cinema", "Lotte - Phú Thọ", "L4-Lotte Mart Phú Thọ, Q.11"}
-        };
-    }
+@DataProvider(name = "cinema-name-address")
+public static Object[][] cinemaNameAddress() {
+    return new Object[][]{
+            {"lotte-cinema", "Lotte - Phú Thọ", "L4-Lotte Mart Phú Thọ, Q.11"}
+    };
+}
 
-    @DataProvider(name = "cinema-movie")
-    public static Object[][] cinemaMovie() {
-        return new Object[][]{
-                {"cgv", "CGV - Aeon Tân Phú", "John Wick"}
-        };
-    }
+@DataProvider(name = "cinema-movie")
+public static Object[][] cinemaMovie() {
+    return new Object[][]{
+            {"cgv", "CGV - Aeon Tân Phú", "John Wick"}
+    };
+}
 
-    @DataProvider(name = "cinema-show-time")
-    public static Object[][] cinemaShowTime() {
-        return new Object[][]{
-                {/*"cgv", "CGV - Aeon Tân Phú", "John Wick", */"10:10"}
-        };
-    }
+@DataProvider(name = "cinema-show-time")
+public static Object[][] cinemaShowTime() {
+    return new Object[][]{
+            {/*"cgv", "CGV - Aeon Tân Phú", "John Wick", */"10:10"}
+    };
+}
 
 
 // =========================================================
 // FILTER
 // =========================================================
 
-    @DataProvider(name = "filter-data")
-    public static Object[][] filterData() {
-        return new Object[][]{
-                {
-                        "AVATAR 2",
-                        "BHD Star Cineplex - Vincom Lê Văn Việt",
-                        "18/10/2021 ~ 10:25"
-                }
-        };
-    }
+@DataProvider(name = "filter-data")
+public static Object[][] filterData() {
+    return new Object[][]{
+            {
+                    "AVATAR 2",
+                    "BHD Star Cineplex - Vincom Lê Văn Việt",
+                    "18/10/2021 ~ 10:25"
+            }
+    };
+}
 
     @DataProvider(name = "filter-movie")
     public static Object[][] filterMovie() {
@@ -315,180 +302,158 @@ public class TestDataProvider {
 // BOOKING
 // =========================================================
 
-    @DataProvider(name = "booking-seat-legend")
-    public static Object[][] bookingSeatLegend() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                }
-        };
-    }
+@DataProvider(name = "booking-information")
+public static Object[][] bookingInformation() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    "21-12-2021 -04:12",
+                    24,
+                    "CGV - Vincom Gò Vấp"
+            }
+    };
+}
 
-    @DataProvider(name = "booking-information")
-    public static Object[][] bookingInformation() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        22,
-                        "CGV - Golden Plaza"
-                }
-        };
-    }
+@DataProvider(name = "booking-total-price")
+public static Object[][] bookingTotalPrice() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    "21-12-2021",
+                    "0VND"
+            }
+    };
+}
 
-    @DataProvider(name = "booking-total-price")
-    public static Object[][] bookingTotalPrice() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        "0VND"
-                }
-        };
-    }
+@DataProvider(name = "booking-regular-seat")
+public static Object[][] bookingRegularSeat() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    "21-12-2021",
+                    24,
+                    "Ghế 24,",
+                    "75000VND"
+            }
+    };
+}
 
-    @DataProvider(name = "booking-regular-seat")
-    public static Object[][] bookingRegularSeat() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        22,
-                        "Ghế 22,",
-                        "95000VND"
-                }
-        };
-    }
+@DataProvider(name = "booking-vip-seat")
+public static Object[][] bookingVipSeat() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    "21-12-2021",
+                    52,
+                    "Ghế 52,",
+                    "90000VND"
+            }
+    };
+}
 
-    @DataProvider(name = "booking-vip-seat")
-    public static Object[][] bookingVipSeat() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        52,
-                        "Ghế 52,",
-                        "114000VND"
-                }
-        };
-    }
+@DataProvider(name = "booking-delete-seat")
+public static Object[][] bookingDeleteSeat() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    "21-12-2021",
+                    81,
+                    "",
+                    "0VND"
+            }
+    };
+}
 
-    @DataProvider(name = "booking-delete-seat")
-    public static Object[][] bookingDeleteSeat() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        81,
-                        "",
-                        "0VND"
-                }
-        };
-    }
+@DataProvider(name = "booking-sold-seat")
+public static Object[][] bookingSoldSeat() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    "21-12-2021",
+                    "X"
+            }
+    };
+}
 
-    @DataProvider(name = "booking-sold-seat")
-    public static Object[][] bookingSoldSeat() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        "X"
-                }
-        };
-    }
-    @DataProvider(name = "booking-seat-status-after-booking")
-    public static Object[][] bookingStatusSeat() {
-        return new Object[][]{
-                {
-                        "Clara",
-                        "Clara@2026",
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        "X",
-                        "04"
-                }
-        };
-    }
+@DataProvider(name = "booking-without-seat")
+public static Object[][] bookingWithoutSeat() {
+    return new Object[][]{
+            {
+                    "Clara",
+                    "Clara@2026",
+                    "gái già lắm chiêu",
+                    "21-12-2021"
+            }
+    };
+}
 
-    @DataProvider(name = "booking-history")
-    public static Object[][] bookingHistory() {
-        return new Object[][]{
-                {
-                        "Clara",
-                        "Clara@2026"
-                }
-        };
-    }
+@DataProvider(name = "booking-valid-seat")
+public static Object[][] bookingValidSeat() {
+    return new Object[][]{
+            {
+                    "Clara",
+                    "Clara@2026",
+                    "gái già lắm chiêu",
+                    "21-12-2021",
+                    24
+            }
+    };
+}
 
-    @DataProvider(name = "booking-without-seat")
-    public static Object[][] bookingWithoutSeat() {
-        return new Object[][]{
-                {
-                        "Clara",
-                        "Clara@2026",
-                        "The Gentlemen Dangbk",
-                        "07-07-2026"
-                }
-        };
-    }
+@DataProvider(name = "booking-without-login")
+public static Object[][] bookingWithoutLogin() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    "21-12-2021",
+                    02
+            }
+    };
+}
 
-    @DataProvider(name = "booking-valid-seat")
-    public static Object[][] bookingValidSeat() {
-        return new Object[][]{
-                {
-                        "Clara",
-                        "Clara@2026",
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        147
-                }
-        };
-    }
-
-    @DataProvider(name = "booking-without-login")
-    public static Object[][] bookingWithoutLogin() {
-        return new Object[][]{
-                {
-                        "The Gentlemen Dangbk",
-                        "07-07-2026",
-                        10
-                }
-        };
-    }
+@DataProvider(name = "booking-history")
+public static Object[][] bookingHistory() {
+    return new Object[][]{
+            {
+                    "Clara",
+                    "Clara@2026",
+                    "10-09-2026"
+            }
+    };
+}
 
 
 // =========================================================
 // SEARCH
 // =========================================================
 
-    @DataProvider(name = "search-by-name")
-    public static Object[][] searchByName() {
-        return new Object[][]{
-                {"Man of Steel", "C18"}
-        };
-    }
+@DataProvider(name = "search-by-name")
+public static Object[][] searchByName() {
+    return new Object[][]{
+            {"Man of Steel", "C18"}
+    };
+}
 
-    @DataProvider(name = "search-by-character")
-    public static Object[][] searchByCharacter() {
-        return new Object[][]{
-                {new String[]{"Man of Steel", "AVATAR 2"}, "T", "C18"}
-        };
-    }
+@DataProvider(name = "search-by-character")
+public static Object[][] searchByCharacter() {
+    return new Object[][]{
+            {"T", "Man of Steel", "AVATAR 2", "C18"}
+    };
+}
 
-    @DataProvider(name = "search-non-existing")
-    public static Object[][] searchNonExisting() {
-        return new Object[][]{
-                {"Ác Ma"}
-        };
-    }
+@DataProvider(name = "search-non-existing")
+public static Object[][] searchNonExisting() {
+    return new Object[][]{
+            {"Ác Ma"}
+    };
+}
 
-    @DataProvider(name = "search-select-result")
-    public static Object[][] searchSelectResult() {
-        return new Object[][]{
-                {"Man of Steel"}
-        };
-    }
+@DataProvider(name = "search-select-result")
+public static Object[][] searchSelectResult() {
+    return new Object[][]{
+            {"Địa đạo"}
+    };
+}
 
 
 // =========================================================
@@ -508,26 +473,26 @@ public class TestDataProvider {
         };
     }
 
-    @DataProvider(name = "news-big-article")
-    public static Object[][] newsBigArticle() {
-        return new Object[][]{
-                {"TENET công bố ngày khởi chiếu chính thức tại Việt Nam"}
-        };
-    }
+@DataProvider(name = "news-big-article")
+public static Object[][] newsBigArticle() {
+    return new Object[][]{
+            {"TENET công bố ngày khởi chiếu chính thức tại Việt Nam"}
+    };
+}
 
-    @DataProvider(name = "news-small-article")
-    public static Object[][] newsSmallArticle() {
-        return new Object[][]{
-                {"Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!"}
-        };
-    }
+@DataProvider(name = "news-small-article")
+public static Object[][] newsSmallArticle() {
+    return new Object[][]{
+            {"Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!"}
+    };
+}
 
-    @DataProvider(name = "news-medium-article")
-    public static Object[][] newsMediumArticle() {
-        return new Object[][]{
-                {"Gerard Butler cùng bồ cũ Deadpool tham gia Greenland"}
-        };
-    }
+@DataProvider(name = "news-medium-article")
+public static Object[][] newsMediumArticle() {
+    return new Object[][]{
+            {"Gerard Butler cùng bồ cũ Deadpool tham gia Greenland"}
+    };
+}
 
 
 // =========================================================
@@ -553,59 +518,44 @@ public class TestDataProvider {
 // SECURITY
 // =========================================================
 
-    @DataProvider(name = "security-login")
-    public static Object[][] securityLogin() {
-        return new Object[][]{
-                {"Clara", "Clara@2026"}
-        };
-    }
+@DataProvider(name = "security-login")
+public static Object[][] securityLogin() {
+    return new Object[][]{
+            {"Clara", "Clara@2026"}
+    };
+}
 
-    @DataProvider(name = "security-booking")
-    public static Object[][] securityBooking() {
-        return new Object[][]{
-                {
-                        "gái già lắm chiêu",
-                        22,
-                        "21-12-2021"
-                }
-        };
-    }
+@DataProvider(name = "security-booking")
+public static Object[][] securityBooking() {
+    return new Object[][]{
+            {
+                    "gái già lắm chiêu",
+                    24
+            }
+    };
+}
 
 
 // =========================================================
 // LOGOUT
 // =========================================================
 
-    @DataProvider(name = "logout-credentials")
-    public static Object[][] logoutCredentials() {
-        return new Object[][]{
-                {"Clara", "Clara@2026"}
-        };
-    }
+@DataProvider(name = "logout-credentials")
+public static Object[][] logoutCredentials() {
+    return new Object[][]{
+            {"Clara", "Clara@2026"}
+    };
+}
 
 
 // =========================================================
 // PROFILE
 // =========================================================
 
-    @DataProvider(name = "profile-login")
-    public static Object[][] profileLogin() {
-        return new Object[][]{
-                {"Clara", "Clara@2026"}
-        };
-    }
-
-    @DataProvider(name = "profile-update-successfully")
-    public static Object[][] profileUpdateSuccessfully() {
-        return new Object[][]{
-                {"Clara", "Clara@2026", "Clara JohnShon", "0379211821", "Clara@gmail.com"}
-        };
-    }
-
-    @DataProvider(name = "profile-without-update")
-    public static Object[][] profileWithoutUpdate() {
-        return new Object[][]{
-                {"Clara", "Clara@2026", "Clara JohnShon", "0379211821"}
-        };
-    }
+@DataProvider(name = "profile-login")
+public static Object[][] profileLogin() {
+    return new Object[][]{
+            {"Clara", "Clara@2026"}
+    };
+}
 }

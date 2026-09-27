@@ -33,9 +33,8 @@ public class BaseTest {
     public void beforeMethod(Method method) {
         LOG.info("BeforeMethod executing...");
         String browser = ConfigManager.getProperty("browser");
-        String baseUrl = ConfigManager.getProperty("baseUrl");
-        //report: group by class and then by method
-        ExtentReportManager.createTest(getClass(), method.getName());
+        //report
+        ExtentReportManager.createTest(method.getName());
 
         //Khoi tao driver
         DriverManager driverManager = DriverManagerFactory.getDriverManager(browser);
@@ -46,25 +45,23 @@ public class BaseTest {
 
         //Get driver
         driver.manage().window().maximize();
-        driver.get(baseUrl);
+        driver.get("https://demo1.cybersoft.edu.vn/");
         LOG.info("BeforeMethod ended...");
     }
 
     @AfterMethod
     public void afterMethod(ITestResult result) {
         LOG.info("AfterMethod executing...");
-        if (result.getStatus() == ITestResult.FAILURE) {
+        if(result.getStatus() == ITestResult.FAILURE){
             ExtentReportManager.captureScreenshot(driver, result.getMethod().getMethodName());
             ExtentReportManager.fail(result.getThrowable().toString());
-        } else {
-            ExtentReportManager.pass("Test case passed");
         }
         driver.quit();
         LOG.info("AfterMethod ended...");
     }
 
     @AfterSuite
-    public void afterSuite() {
+    public  void afterSuite(){
         LOG.info("AfterSuite executing...");
         ExtentReportManager.flushReports(); //tong ket report
         LOG.info("AfterSuite ended...");
