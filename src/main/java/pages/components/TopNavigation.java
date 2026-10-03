@@ -48,6 +48,8 @@ public class TopNavigation extends BasePage {
         click(byLnkRegister);
     }
 
+    public void clickLoginButton() {click(byLnkLogin);}
+
     public void clickOnLogOut() {
         click(byLnkLogOut);
     }
