@@ -499,7 +499,36 @@ public class TestDataProvider {
 // =========================================================
 // SEARCH
 // =========================================================
-
+    @DataProvider(name = "search-case-insensitive")
+    public static Object[][] searchCaseInsensitive() {
+        return new Object[][]{
+                {"THE GENTLEMEN", "The Gentlemen Dangbk"}
+        };
+    }
+    @DataProvider(name = "search-partial-name")
+    public static Object[][] searchPartialName() {
+        return new Object[][]{
+                {"gentle", "The Gentlemen Dangbk"}
+        };
+    }
+    @DataProvider(name = "search-special-characters")
+    public static Object[][] searchSpecialCharacters() {
+        return new Object[][]{
+                {"@#$%^&*"}
+        };
+    }
+    @DataProvider(name = "search-long-string")
+    public static Object[][] searchLongString() {
+        return new Object[][]{
+                {"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+        };
+    }
+    @DataProvider(name = "search-trim-whitespace")
+    public static Object[][] searchTrimWhitespace() {
+        return new Object[][]{
+                {" the gentlemen ", "The Gentlemen Dangbk"}
+        };
+    }
     @DataProvider(name = "search-by-name")
     public static Object[][] searchByName() {
         return new Object[][]{

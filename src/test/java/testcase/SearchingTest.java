@@ -142,4 +142,112 @@ public class SearchingTest extends BaseTest {
 
         Assert.assertTrue(recordingSearchingResult, "Search result is displayed when search input contains whitespace");
     }
+    @Test(priority = 6,
+            dataProvider = "search-case-insensitive",
+            dataProviderClass = TestDataProvider.class,
+            groups = "searching")
+    public void verify_Search_Case_Insensitive(String searchKeyword, String expectedMovieName) {
+
+        searching.openHalfScreen();
+
+        // Step 1: Enter uppercase movie name and search
+        LOG.info("Step 1: Enter uppercase movie name and search");
+        ExtentReportManager.info("Step 1: Enter uppercase movie name and search");
+        searching.enterMovieName(searchKeyword);
+
+        // VP: Verify movie is displayed regardless of letter case
+        LOG.info("VP: Verify movie is displayed regardless of letter case");
+        ExtentReportManager.info("VP: Verify movie is displayed regardless of letter case");
+        String recordingFilmDisplay = searching.isFilmDisplayed(expectedMovieName);
+
+        Assert.assertTrue(
+                recordingFilmDisplay.contains(expectedMovieName),
+                "Movie is not displayed when searching with uppercase keyword"
+        );
+    }
+    @Test(priority = 7,
+            dataProvider = "search-partial-name",
+            dataProviderClass = TestDataProvider.class,
+            groups = "searching")
+    public void verify_Search_By_Partial_Movie_Name(String searchKeyword, String expectedMovieName) {
+
+        searching.openHalfScreen();
+
+        // Step 1: Enter partial movie name and search
+        LOG.info("Step 1: Enter partial movie name and search");
+        ExtentReportManager.info("Step 1: Enter partial movie name and search");
+        searching.enterMovieName(searchKeyword);
+
+        // VP: Verify movie containing the keyword is displayed
+        LOG.info("VP: Verify movie containing the keyword is displayed");
+        ExtentReportManager.info("VP: Verify movie containing the keyword is displayed");
+        String recordingFilmDisplay = searching.isFilmDisplayed(expectedMovieName);
+
+        Assert.assertTrue(
+                recordingFilmDisplay.contains(expectedMovieName),
+                "Movie containing the partial search keyword is not displayed"
+        );
+    }
+    @Test(priority = 8,
+            dataProvider = "search-special-characters",
+            dataProviderClass = TestDataProvider.class, groups = "searching")
+    public void verify_Search_With_Special_Characters(String searchKeyword) {
+
+        searching.openHalfScreen();
+
+        // Step 1: Enter special characters and search
+        LOG.info("Step 1: Enter special characters and search");
+        ExtentReportManager.info("Step 1: Enter special characters and search");
+        searching.enterMovieName(searchKeyword);
+
+        // VP: Verify no matching movie message
+        LOG.info("VP: Verify no matching movie message");
+        ExtentReportManager.info("VP: Verify no matching movie message");
+        String recordingMessage = searching.getMessageText();
+
+        Assert.assertEquals(recordingMessage,
+                "Không có bộ phim nào trùng với từ khóa của bạn.",
+                "Incorrect message");
+    }
+    @Test(priority = 9,
+            dataProvider = "search-long-string",
+            dataProviderClass = TestDataProvider.class, groups = "searching")
+    public void verify_Search_With_Long_String(String searchKeyword) {
+
+        searching.openHalfScreen();
+
+        // Step 1: Enter long string and search
+        LOG.info("Step 1: Enter long string and search");
+        ExtentReportManager.info("Step 1: Enter long string and search");
+        searching.enterMovieName(searchKeyword);
+
+        // VP: Verify no matching movie message
+        LOG.info("VP: Verify no matching movie message");
+        ExtentReportManager.info("VP: Verify no matching movie message");
+        String recordingMessage = searching.getMessageText();
+
+        Assert.assertEquals(recordingMessage,
+                "Không có bộ phim nào trùng với từ khóa của bạn.",
+                "Incorrect message");
+    }
+    @Test(priority = 10,
+            dataProvider = "search-trim-whitespace",
+            dataProviderClass = TestDataProvider.class, groups = "searching")
+    public void verify_Search_With_Leading_And_Trailing_Spaces(String searchKeyword, String expectedMovieName) {
+
+        searching.openHalfScreen();
+
+        // Step 1: Enter movie name with leading and trailing spaces
+        LOG.info("Step 1: Enter movie name with leading and trailing spaces");
+        ExtentReportManager.info("Step 1: Enter movie name with leading and trailing spaces");
+        searching.enterMovieName(searchKeyword);
+
+        // VP: Verify movie is displayed
+        LOG.info("VP: Verify movie is displayed");
+        ExtentReportManager.info("VP: Verify movie is displayed");
+        String recordingFilmDisplay = searching.isFilmDisplayed(expectedMovieName);
+
+        Assert.assertTrue(recordingFilmDisplay.contains(expectedMovieName),
+                "Movie is not displayed when keyword contains leading and trailing spaces");
+    }
 }
