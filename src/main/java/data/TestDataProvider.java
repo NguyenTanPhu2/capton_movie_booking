@@ -495,6 +495,81 @@ public class TestDataProvider {
         };
     }
 
+    @DataProvider(name = "booking-multiple-regular-seats")
+    public static Object[][] bookingMultipleRegularSeats() {
+        return new Object[][]{
+                {
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        17,
+                        18,
+                        19,
+                        "Ghế 17, Ghế 18, Ghế 19,",
+                        "225000VND"
+                }
+        };
+    }
+    @DataProvider(name = "booking-regular-and-vip-seat")
+    public static Object[][] bookingRegularAndVipSeat() {
+        return new Object[][]{
+                {
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        17,
+                        36,
+                        "Ghế 17, Ghế 36,",
+                        "165000VND"
+                }
+        };
+    }
+    @DataProvider(name = "booking-remove-one-seat")
+    public static Object[][] bookingRemoveOneSeat() {
+        return new Object[][]{
+                {
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        17,
+                        18,
+                        19,
+                        "Ghế 17, Ghế 19,",
+                        "150000VND"
+                }
+        };
+    }
+    @DataProvider(name = "booking-refresh-page")
+    public static Object[][] bookingRefreshPage() {
+        return new Object[][]{
+                {
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        17
+                }
+        };
+    }
+    @DataProvider(name = "booking-multiple-seats-successfully")
+    public static Object[][] bookingMultipleSeatsSuccessfully() {
+        return new Object[][]{
+                {
+                        "Clara",
+                        "Clara@2026",
+                        "gái già lắm chiêu",
+                        "21-12-2021",
+                        17,
+                        18
+                }
+        };
+    }
+    @DataProvider(name = "booking-price-format")
+    public static Object[][] bookingPriceFormat() {
+        return new Object[][]{
+                {
+                        "Nhà Bà Nữ",
+                        "03-11-2022",
+                        18
+                }
+        };
+    }
+
 
 // =========================================================
 // SEARCH
