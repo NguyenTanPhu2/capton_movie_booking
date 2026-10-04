@@ -3,17 +3,22 @@
 <suite name="Failed suite [Gradle suite]" verbose="0">
   <test thread-count="5" name="Gradle test(failed)" verbose="0">
     <classes>
-      <class name="testcase.ProfileTest">
+      <class name="testcase.FooterTest">
         <methods>
+          <include name="setupTest"/>
           <include name="afterMethod"/>
-          <include name="testUpdateAccountInformationSuccess"/>
+          <include name="testZaloLinkNavigation"/>
+          <include name="testCgvPartnerLinkNavigation"/>
           <include name="beforeSuite"/>
+          <include name="testTermsLinkNavigation"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="testReadOnlyFieldsCannotBeEdited"/>
-          <include name="setupProfileTest"/>
+          <include name="testFaqLinkNavigation"/>
+          <include name="testPrivacyLinkNavigation"/>
+          <include name="testBrandGuidelinesLinkNavigation"/>
+          <include name="testFacebookLinkNavigation"/>
         </methods>
-      </class> <!-- testcase.ProfileTest -->
+      </class> <!-- testcase.FooterTest -->
     </classes>
   </test> <!-- Gradle test(failed) -->
 </suite> <!-- Failed suite [Gradle suite] -->
