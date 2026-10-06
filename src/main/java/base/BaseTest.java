@@ -10,14 +10,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
+
 import report.ExtentReportManager;
 import untils.ConfigManager;
 
 import java.lang.reflect.Method;
 
 public class BaseTest {
+
     protected WebDriver driver;
     protected final Logger LOG = LogManager.getLogger(getClass());
+    protected SoftAssert softAssert;
 
     /// Create report file
     @BeforeSuite
@@ -69,4 +73,5 @@ public class BaseTest {
         ExtentReportManager.flushReports(); //tong ket report
         LOG.info("AfterSuite ended...");
     }
+
 }

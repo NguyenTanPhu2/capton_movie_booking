@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ProfilePage extends CommonPage {
 
-    private By byNewTicket;
+    private final By byNewTicket;
 
     public ProfilePage(WebDriver driver) {
         super(driver);

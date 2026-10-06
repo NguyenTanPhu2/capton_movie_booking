@@ -115,4 +115,8 @@ public class TopNavigation extends BasePage {
     public void navigateToProfilePage() {
         click(byLnkProfile);
     }
+
+    public void navigateToCinemaList() {
+        click(byLnkCinema);
+    }
 }

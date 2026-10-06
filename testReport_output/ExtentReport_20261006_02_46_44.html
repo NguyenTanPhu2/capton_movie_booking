@@ -1,0 +1,2452 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 6, 2026 02:46:44 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">MovieDetailTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag="MovieDetailTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">MovieDetailTest</p>
+            <p class="text-sm">
+              <span>2:46:45 PM</span> / <span>00:02:45:350</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">MovieDetailTest</h5>
+<span class='badge badge-success'>10.06.2026 2:46:45 PM</span>
+<span class='badge badge-danger'>10.06.2026 2:49:30 PM</span>
+<span class='badge badge-default'>00:02:45:350</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">MovieDetailTest</span></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:18:124</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>TC_MV_01_CheckMovieCards</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:48 PM</td>
+        <td>
+          Step 1: Verify movie list on each page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:48 PM</td>
+        <td>
+          CHECK PAGE 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:48 PM</td>
+        <td>
+          Page 1 movie count: 8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:49 PM</td>
+        <td>
+          Page 1 - Movie 1: The Gentlemen Dangbk
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:49 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/the-gentlemen-dangbk_gp09.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:49 PM</td>
+        <td>
+          Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:49 PM</td>
+        <td>
+          Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:49 PM</td>
+        <td>
+          Page 1 - Movie 2: Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:50 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/man-of-steel_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:50 PM</td>
+        <td>
+          Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:50 PM</td>
+        <td>
+          Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:50 PM</td>
+        <td>
+          Page 1 - Movie 3: AVATAR 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:50 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/avatar-2_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:51 PM</td>
+        <td>
+          Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:51 PM</td>
+        <td>
+          Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:51 PM</td>
+        <td>
+          Page 1 - Movie 4: gái già lắm chiêu
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:51 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/gai-gia-lam-chieu_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:52 PM</td>
+        <td>
+          Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:52 PM</td>
+        <td>
+          Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:52 PM</td>
+        <td>
+          Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:52 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/spider-man-no-way-home_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:52 PM</td>
+        <td>
+          Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:52 PM</td>
+        <td>
+          Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:52 PM</td>
+        <td>
+          Page 1 - Movie 6: doctor stranger 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:53 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/doctor-stranger-2_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:53 PM</td>
+        <td>
+          Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:53 PM</td>
+        <td>
+          Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:53 PM</td>
+        <td>
+          Page 1 - Movie 7: Nhà Bà Nữ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:53 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/nha-ba-nu_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:54 PM</td>
+        <td>
+          Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:54 PM</td>
+        <td>
+          Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:54 PM</td>
+        <td>
+          Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:54 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/rung-san-nguoi_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:55 PM</td>
+        <td>
+          Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:55 PM</td>
+        <td>
+          Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:55 PM</td>
+        <td>
+          PAGE 1 PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:55 PM</td>
+        <td>
+          CHECK PAGE 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:56 PM</td>
+        <td>
+          Page 2 movie count: 8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:56 PM</td>
+        <td>
+          Page 2 - Movie 1: Captain Marvel 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:56 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/captain-marvel-2_gp09.jpeg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:57 PM</td>
+        <td>
+          Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:57 PM</td>
+        <td>
+          Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:57 PM</td>
+        <td>
+          Page 2 - Movie 2: iron man 4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:57 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/iron-man-4_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:58 PM</td>
+        <td>
+          Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:58 PM</td>
+        <td>
+          Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:58 PM</td>
+        <td>
+          Page 2 - Movie 3: Thor 6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:58 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/thor-5_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/co-gai-tu-qua-khu_gp09.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:46:59 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/bong-dung-trung-so_gp09.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:00 PM</td>
+        <td>
+          Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:00 PM</td>
+        <td>
+          Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:00 PM</td>
+        <td>
+          Page 2 - Movie 6: John Cena WWE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:00 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/john-cena-wwe_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:00 PM</td>
+        <td>
+          ❌ Poster phim 6 [John Cena WWE] có URL http://movie0706.cybersoft.edu.vn/hinhanh/john-cena-wwe_gp09.jpg nhưng ảnh không load được
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/hanh-trinh-cua-moana-2_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          ❌ Poster phim 7 [HÀNH TRÌNH CỦA MOANA 2] có URL http://movie0706.cybersoft.edu.vn/hinhanh/hanh-trinh-cua-moana-2_gp09.jpg nhưng ảnh không load được
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:01 PM</td>
+        <td>
+          Page 2 - Movie 8: Địa đạo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:02 PM</td>
+        <td>
+          http://movie0706.cybersoft.edu.vn/hinhanh/dia-dao_gp09.jpg
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:02 PM</td>
+        <td>
+          Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:02 PM</td>
+        <td>
+          Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:02 PM</td>
+        <td>
+          PAGE 2 PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:47:03 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_MV_01_CheckMovieCards_20261006_144703.png' src="screenshots/TC_MV_01_CheckMovieCards_20261006_144703.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:47:03 PM</td>
+        <td>
+          java.lang.AssertionError: The following asserts failed:
+	Poster phim 6 [John Cena WWE] có URL http://movie0706.cybersoft.edu.vn/hinhanh/john-cena-wwe_gp09.jpg nhưng ảnh không load được expected [true] but found [false],
+	Poster phim 7 [HÀNH TRÌNH CỦA MOANA 2] có URL http://movie0706.cybersoft.edu.vn/hinhanh/hanh-trinh-cua-moana-2_gp09.jpg nhưng ảnh không load được expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:09:359</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="3"><span>TC_MV_02_CheckHoverMovieCards</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:06 PM</td>
+        <td>
+          Step 1: Verify hover movie cards on each page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:06 PM</td>
+        <td>
+          HOVER PAGE 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:06 PM</td>
+        <td>
+          Page 1 - Hover movie 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:06 PM</td>
+        <td>
+          Page 1 - Hover movie 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:07 PM</td>
+        <td>
+          Page 1 - Hover movie 3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:07 PM</td>
+        <td>
+          Page 1 - Hover movie 4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:07 PM</td>
+        <td>
+          Page 1 - Hover movie 5
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:08 PM</td>
+        <td>
+          Page 1 - Hover movie 6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:08 PM</td>
+        <td>
+          Page 1 - Hover movie 7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:08 PM</td>
+        <td>
+          Page 1 - Hover movie 8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:09 PM</td>
+        <td>
+          HOVER PAGE 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:10 PM</td>
+        <td>
+          Page 2 - Hover movie 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:10 PM</td>
+        <td>
+          Page 2 - Hover movie 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:10 PM</td>
+        <td>
+          Page 2 - Hover movie 3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:10 PM</td>
+        <td>
+          Page 2 - Hover movie 4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:11 PM</td>
+        <td>
+          Page 2 - Hover movie 5
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:11 PM</td>
+        <td>
+          Page 2 - Hover movie 6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:12 PM</td>
+        <td>
+          Page 2 - Hover movie 7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:12 PM</td>
+        <td>
+          Page 2 - Hover movie 8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:47:12 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:14:152</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>TC_MV_03_CheckClickMovieTrailer</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:16 PM</td>
+        <td>
+          Step 1: Find movie CÔ GÁI TỪ QUÁ KHỨ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:26 PM</td>
+        <td>
+          VP 1: Verify movie is found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:26 PM</td>
+        <td>
+          Step 2: Hover to movie card
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:27 PM</td>
+        <td>
+          VP 2: Verify trailer button is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:27 PM</td>
+        <td>
+          Step 3: Click trailer button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:27 PM</td>
+        <td>
+          VP 3: Verify trailer popup is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:27 PM</td>
+        <td>
+          Step 4: Get trailer URL
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:27 PM</td>
+        <td>
+          Trailer URL: https://www.youtube.com/embed/WsBV9s1SqpM?autoplay=1&cc_load_policy=1&controls=1&disablekb=0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=0&showinfo=1&start=0&wmode=transparent&theme=dark&mute=0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:27 PM</td>
+        <td>
+          VP 4: Verify trailer URL
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:47:27 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:04:833</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="5"><span>TC_MV_04_CheckMoviePagination</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:30 PM</td>
+        <td>
+          Step 1: Verify page 1 is active
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:30 PM</td>
+        <td>
+          Step 2: Navigate to page 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:31 PM</td>
+        <td>
+          VP 1: Verify page 2 is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:31 PM</td>
+        <td>
+          Step 3: Navigate back to page 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:32 PM</td>
+        <td>
+          VP 2: Verify page 1 is displayed again
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:47:32 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:14:594</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="6"><span>TC_MV_05_CheckNavigateToMovieDetail</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:35 PM</td>
+        <td>
+          Step 1: Find movie CÔ GÁI TỪ QUÁ KHỨ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:46 PM</td>
+        <td>
+          VP 1: Verify movie is found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:46 PM</td>
+        <td>
+          Step 2: Hover to movie card
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:46 PM</td>
+        <td>
+          Step 3: Click MUA VÉ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:46 PM</td>
+        <td>
+          VP 2: Verify navigate to Movie Detail page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:46 PM</td>
+        <td>
+          VP 3: Verify Movie Detail page is loaded
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:46 PM</td>
+        <td>
+          VP 4: Verify movie title is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:47:47 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:24:356</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="7"><span>TC_MV_05_CheckNavigateToMovieDetail</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:50 PM</td>
+        <td>
+          Step 1: Find movie Địa đạo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:01 PM</td>
+        <td>
+          VP 1: Verify movie is found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:01 PM</td>
+        <td>
+          Step 2: Hover to movie card
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:01 PM</td>
+        <td>
+          Step 3: Click MUA VÉ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:01 PM</td>
+        <td>
+          VP 2: Verify navigate to Movie Detail page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:01 PM</td>
+        <td>
+          VP 3: Verify Movie Detail page is loaded
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:01 PM</td>
+        <td>
+          VP 4: Verify movie title is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:48:12 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_MV_05_CheckNavigateToMovieDetail_20261006_144812.png' src="screenshots/TC_MV_05_CheckNavigateToMovieDetail_20261006_144812.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:48:12 PM</td>
+        <td>
+          java.lang.AssertionError: The following asserts failed:
+	Trang chi tiết phim Địa đạo không hiển thị dữ liệu phim expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:04:547</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="8"><span>TC_MV_07_CheckMovieNameAndDuration</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:15 PM</td>
+        <td>
+          Step 1: Navigation to detail page of Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:15 PM</td>
+        <td>
+          Step 2: Verify movie detail information
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:15 PM</td>
+        <td>
+          VP: Verify movie title is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:16 PM</td>
+        <td>
+          VP: Verify movie duration is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:16 PM</td>
+        <td>
+          VP: Verify movie title is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:16 PM</td>
+        <td>
+          VP: Verify movie duration is correct
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:48:17 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:03:878</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>TC_MV_08_CheckMovieRating</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:20 PM</td>
+        <td>
+          Step 1: Navigation to detail page of Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:20 PM</td>
+        <td>
+          VP 1: Check movie is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:48:21 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:07:997</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="10"><span>TC_MV_011_CheckMovieTrailerDisplayedCorrectly</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:24 PM</td>
+        <td>
+          Step 1: Navigation to detail page of Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:24 PM</td>
+        <td>
+          Step 2: Hover to Trailer and click on trailer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:25 PM</td>
+        <td>
+          VP 1: Verify trailer is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:25 PM</td>
+        <td>
+          Step 3: Get trailer title
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:28 PM</td>
+        <td>
+          Movie name: Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:28 PM</td>
+        <td>
+          Trailer title: Man of Steel - Official Trailer #2 [HD]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:28 PM</td>
+        <td>
+          VP 2: Verify trailer is related to movie
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:48:29 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:18:897</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="11"><span>TC_MV_011_CheckMovieTrailerDisplayedCorrectly</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:32 PM</td>
+        <td>
+          Step 1: Navigation to detail page of John Cena WWE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:44 PM</td>
+        <td>
+          Step 2: Hover to Trailer and click on trailer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:44 PM</td>
+        <td>
+          VP 1: Verify trailer is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:44 PM</td>
+        <td>
+          Step 3: Get trailer title
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:47 PM</td>
+        <td>
+          Movie name: John Cena WWE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:47 PM</td>
+        <td>
+          Trailer title: Nightcore - Chỉ Muốn Bên Em Thật Gần ( Orinn Remix )
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:47 PM</td>
+        <td>
+          VP 2: Verify trailer is related to movie
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:48:48 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_MV_011_CheckMovieTrailerDisplayedCorrectly_20261006_144848.png' src="screenshots/TC_MV_011_CheckMovieTrailerDisplayedCorrectly_20261006_144848.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:48:48 PM</td>
+        <td>
+          java.lang.AssertionError: Trailer is not related to the movie: John Cena WWE. Trailer title: Nightcore - Chỉ Muốn Bên Em Thật Gần ( Orinn Remix ) expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:14:596</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="12"><span>TC_MV_014_CloseTrailerByXButton</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:52 PM</td>
+        <td>
+          Step 1: Navigation to detail page of Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:52 PM</td>
+        <td>
+          Step 2: Hover to movie card and click trailer button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:53 PM</td>
+        <td>
+          Step 4: Click X button to close trailer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:53 PM</td>
+        <td>
+          VP: Verify trailer is closed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:49:03 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:04:315</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="13"><span>TC_MV_016_verify_Movie_Detail_Poster</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:06 PM</td>
+        <td>
+          Step 1: Navigation to detail page of Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:07 PM</td>
+        <td>
+          Step 2: Observe poster, movie name and description
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:07 PM</td>
+        <td>
+          VP 1: Verify movie poster is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:08 PM</td>
+        <td>
+          VP 2: Verify movie name is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:49:08 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:04:584</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="14"><span>TC_MV_017_verify_Movie_Detail_Cinema_System_Switching</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:11 PM</td>
+        <td>
+          Step 1: Navigation to detail page of AVATAR 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:12 PM</td>
+        <td>
+          Step 2: Click CGV cinema system
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:12 PM</td>
+        <td>
+          VP 1: Verify CGV cinema system is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:12 PM</td>
+        <td>
+          Step 3: Click BHD cinema system
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:13 PM</td>
+        <td>
+          VP 2: Verify BHD cinema system is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:13 PM</td>
+        <td>
+          Step 4: Click MegaGS cinema system
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:13 PM</td>
+        <td>
+          VP 3: Verify MegaGS cinema system is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:49:13 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:04:211</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="15"><span>TC_MV_019_verify_Click_Showtime_Navigate_To_Booking</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:16 PM</td>
+        <td>
+          Step 1: Navigation to detail page of Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:17 PM</td>
+        <td>
+          Step 2: Click a showtime
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:17 PM</td>
+        <td>
+          VP: Verify navigate to Booking page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:17 PM</td>
+        <td>
+          Current URL: https://demo1.cybersoft.edu.vn/purchase/45052
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:49:17 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:03:915</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="16"><span>TC_MV_021_verify_Movie_Detail_Release_Date_Format</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:20 PM</td>
+        <td>
+          Step 1: Navigation to detail page of Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          Step 2: Get movie release date
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          Movie name: Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          Expected release date: 14.10.2021
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          Actual release date: 14.10.2021
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          VP 1: Verify release date is valid
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          VP 2: Verify release date format is dd.MM.yyyy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          VP 3: Verify release date matches expected data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:49:21 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:03:889</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="17"><span>TC_MV_022_verify_Movie_Detail_On_Mobile</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:25 PM</td>
+        <td>
+          Step 1: Switch browser to mobile view
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:25 PM</td>
+        <td>
+          Step 2: Navigate to Movie Detail
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:25 PM</td>
+        <td>
+          Step 3: Scroll through Movie Detail page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:25 PM</td>
+        <td>
+          Step 4: Check horizontal overflow
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:25 PM</td>
+        <td>
+          Mobile clientWidth: 390, scrollWidth: 448
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: HEADER class=MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorTransparent jss3 mui-fixed MuiPaper-elevation4 id= left=0 right=448 width=448
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiToolbar-root MuiToolbar-regular jss4 MuiToolbar-gutters id= left=0 right=448 width=448
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center id= left=16 right=432 width=416
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-6 id= left=224 right=432 width=208
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: svg class=[object SVGAnimatedString] id= left=397 right=432 width=35
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: path class=[object SVGAnimatedString] id= left=401.375 right=427.625 width=26.25
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiGrid-root jss221 MuiGrid-item id= left=326.625 right=446.625 width=120
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiBox-root jss224 id= left=326.625 right=446.625 width=120
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiCircularProgress-root jss218 MuiCircularProgress-colorPrimary MuiCircularProgress-determinate id= left=331.625 right=441.625 width=110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: svg class=[object SVGAnimatedString] id= left=331.625 right=441.625 width=110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: circle class=[object SVGAnimatedString] id= left=336.125 right=437.125 width=101
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiBox-root jss225 jss220 id= left=331.625 right=441.625 width=110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiCircularProgress-root jss218 MuiCircularProgress-colorPrimary MuiCircularProgress-determinate id= left=331.625 right=441.625 width=110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: svg class=[object SVGAnimatedString] id= left=331.625 right=441.625 width=110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: circle class=[object SVGAnimatedString] id= left=336.125 right=437.125 width=101
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiBox-root jss226 jss220 id= left=331.625 right=441.625 width=110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: DIV class=MuiTypography-root jss219 MuiTypography-caption MuiTypography-colorTextSecondary id= left=356.84375 right=416.390625 width=59.546875
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: SPAN class=MuiRating-root MuiRating-readOnly id= left=326.625 right=446.625 width=120
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: SPAN class= id= left=374.625 right=398.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: SPAN class=MuiRating-icon MuiRating-iconFilled id= left=374.625 right=398.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: svg class=[object SVGAnimatedString] id= left=374.625 right=398.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: path class=[object SVGAnimatedString] id= left=376.625 right=396.625 width=20
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: SPAN class= id= left=398.625 right=422.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: SPAN class=MuiRating-icon MuiRating-iconFilled id= left=398.625 right=422.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: svg class=[object SVGAnimatedString] id= left=398.625 right=422.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: path class=[object SVGAnimatedString] id= left=400.625 right=420.625 width=20
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: SPAN class= id= left=422.625 right=446.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: SPAN class=MuiRating-icon MuiRating-iconFilled id= left=422.625 right=446.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: svg class=[object SVGAnimatedString] id= left=422.625 right=446.625 width=24
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Horizontal overflow: path class=[object SVGAnimatedString] id= left=424.625 right=444.625 width=20
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          VP 1: Verify page does not have horizontal scrollbar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_MV_022_verify_Movie_Detail_On_Mobile_20261006_144926.png' src="screenshots/TC_MV_022_verify_Movie_Detail_On_Mobile_20261006_144926.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:49:26 PM</td>
+        <td>
+          java.lang.AssertionError: Movie Detail page has horizontal scrollbar on mobile expected [false] but found [true]
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:04:047</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="18"><span>TC_MV_023_verify_Refresh_Movie_Detail</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">MovieDetailTest</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:29 PM</td>
+        <td>
+          Step 1: Navigate to Movie Detail
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:29 PM</td>
+        <td>
+          Step 2: Refresh Movie Detail page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:29 PM</td>
+        <td>
+          VP 1: Verify Movie Detail page is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:30 PM</td>
+        <td>
+          VP 1: Verify movie name is correct after refresh
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:30 PM</td>
+        <td>
+          Expected movie name: Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:49:30 PM</td>
+        <td>
+          Actual movie name: Man of Steel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:49:30 PM</td>
+        <td>
+          Test case passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">MovieDetailTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>MovieDetailTest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>MovieDetailTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 6, 2026 02:46:44 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 6, 2026 02:49:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='76%'><b>13</b> steps passed</small></div>
+<div>
+<small data-tooltip='23%'><b>4</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='5%'><b>13</b> events passed</small></div>
+<div>
+<small data-tooltip='3%'><b>8</b> events failed,
+<b data-tooltip='%'>211</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"MovieDetailTest":165.35
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>MovieDetailTest</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>User</td>
+<td>MSI</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 13,
+failChild: 4,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 13,
+failEvents: 8,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 211
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

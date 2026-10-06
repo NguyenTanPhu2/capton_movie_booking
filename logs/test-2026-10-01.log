@@ -1,0 +1,987 @@
+[2026-10-01 15:37:46] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 15:37:46] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 15:37:46] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 15:37:46] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 15:37:51] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 15:37:51] [INFO ] MovieDetailTest - Check movie list pagination
+[2026-10-01 15:37:53] [INFO ] MovieDetailTest - Movie count page 1: 8
+[2026-10-01 15:37:53] [INFO ] MovieDetailTest - Checking movie: The Gentlemen Dangbk
+[2026-10-01 15:37:53] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/the-gentlemen-dangbk_gp09.png
+[2026-10-01 15:37:53] [INFO ] MovieDetailTest - Checking movie: Man of Steel
+[2026-10-01 15:37:54] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/man-of-steel_gp09.jpg
+[2026-10-01 15:37:54] [INFO ] MovieDetailTest - Checking movie: AVATAR 2
+[2026-10-01 15:37:54] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/avatar-2_gp09.jpg
+[2026-10-01 15:37:55] [INFO ] MovieDetailTest - Checking movie: gái già lắm chiêu
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/gai-gia-lam-chieu_gp09.jpg
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Checking movie: SPIDER-MAN: NO WAY HOME
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/spider-man-no-way-home_gp09.jpg
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Checking movie: doctor stranger 2
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/doctor-stranger-2_gp09.jpg
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Checking movie: Nhà Bà Nữ
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/nha-ba-nu_gp09.jpg
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Checking movie: RỪNG SĂN NGƯỜI
+[2026-10-01 15:37:56] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/rung-san-nguoi_gp09.jpg
+[2026-10-01 15:37:57] [INFO ] MovieDetailTest - Pagination button count: 3
+[2026-10-01 15:37:57] [INFO ] MovieDetailTest - Movie count page 2: 8
+[2026-10-01 15:37:58] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 15:37:58] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 15:37:58] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 15:37:58] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 15:37:58] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 15:45:04] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 15:45:04] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 15:45:04] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 15:45:04] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 15:45:07] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 15:45:07] [INFO ] MovieDetailTest - Check movie list pagination
+[2026-10-01 15:45:08] [INFO ] MovieDetailTest - Movie count page 1: 8
+[2026-10-01 15:45:09] [INFO ] MovieDetailTest - Checking movie: The Gentlemen Dangbk
+[2026-10-01 15:45:09] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/the-gentlemen-dangbk_gp09.png
+[2026-10-01 15:45:09] [INFO ] MovieDetailTest - Checking movie: Man of Steel
+[2026-10-01 15:45:09] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/man-of-steel_gp09.jpg
+[2026-10-01 15:45:10] [INFO ] MovieDetailTest - Checking movie: AVATAR 2
+[2026-10-01 15:45:10] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/avatar-2_gp09.jpg
+[2026-10-01 15:45:10] [INFO ] MovieDetailTest - Checking movie: gái già lắm chiêu
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/gai-gia-lam-chieu_gp09.jpg
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Checking movie: SPIDER-MAN: NO WAY HOME
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/spider-man-no-way-home_gp09.jpg
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Checking movie: doctor stranger 2
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/doctor-stranger-2_gp09.jpg
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Checking movie: Nhà Bà Nữ
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/nha-ba-nu_gp09.jpg
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Checking movie: RỪNG SĂN NGƯỜI
+[2026-10-01 15:45:11] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK, Title: OK, Description: OK, Poster: http://movie0706.cybersoft.edu.vn/hinhanh/rung-san-nguoi_gp09.jpg
+[2026-10-01 15:45:12] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:12] [INFO ] MovieDetailTest - Movie [Man of Steel] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:12] [INFO ] MovieDetailTest - Movie [AVATAR 2] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:12] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:13] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:13] [INFO ] MovieDetailTest - Movie [doctor stranger 2] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:13] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:13] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] poster UI: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:45:13] [INFO ] MovieDetailTest - Pagination button count: 3
+[2026-10-01 15:45:14] [INFO ] MovieDetailTest - Movie count page 2: 8
+[2026-10-01 15:45:14] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 15:45:14] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 15:45:15] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 15:45:15] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 15:45:15] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 15:53:58] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 15:53:58] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 15:53:58] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 15:53:58] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 15:54:00] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 15:54:00] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 15:54:00] [INFO ] MovieDetailTest - ========== CHECK PAGE 1 ==========
+[2026-10-01 15:54:02] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 15:54:02] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:03] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 15:54:04] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:04] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:04] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 15:54:04] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:04] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:04] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - ========== PAGE 1 PASSED ==========
+[2026-10-01 15:54:05] [INFO ] MovieDetailTest - ========== CHECK PAGE 2 ==========
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Page 2 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Page 2 - Movie 2: Man of Steel
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:06] [INFO ] MovieDetailTest - Page 2 - Movie 3: AVATAR 2
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Page 2 - Movie 4: gái già lắm chiêu
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Page 2 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:07] [INFO ] MovieDetailTest - Page 2 - Movie 6: doctor stranger 2
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Page 2 - Movie 7: Nhà Bà Nữ
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Page 2 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - ========== PAGE 2 PASSED ==========
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 15:54:08] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 15:54:09] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 15:54:09] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 15:54:09] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:16:50] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:16:50] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:16:50] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:16:51] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:16:53] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:16:53] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:16:53] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:16:54] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:16:54] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:16:54] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:18:05] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:18:05] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:18:05] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:18:05] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:18:07] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:18:09] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:18:09] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 16:18:09] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 16:18:09] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:18:10] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:10] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:10] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 16:18:10] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:10] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:10] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 16:18:11] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:11] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:11] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 16:18:11] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:11] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:12] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 16:18:12] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:12] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:12] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 16:18:12] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:12] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:12] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 16:18:13] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 16:18:14] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 16:18:14] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:14] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:15] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 16:18:15] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:15] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:15] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 16:18:15] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:15] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:15] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 16:18:16] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:16] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:16] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 16:18:16] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:16] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:16] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Page 2 - Movie 8: Địa đạo
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 16:18:17] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 16:18:18] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:18:18] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:18:18] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:18:18] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:22:05] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:22:05] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:22:05] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:22:05] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:22:07] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:22:08] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:22:08] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 16:22:09] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 16:22:09] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:22:10] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:10] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:10] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 16:22:11] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:11] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:11] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 16:22:11] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:11] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:11] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 16:22:12] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:12] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:12] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 16:22:12] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:12] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:12] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 16:22:13] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:13] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:13] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 16:22:13] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:13] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:13] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - Page 2 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:14] [INFO ] MovieDetailTest - Page 2 - Movie 2: Man of Steel
+[2026-10-01 16:22:15] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:15] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:15] [INFO ] MovieDetailTest - Page 2 - Movie 3: AVATAR 2
+[2026-10-01 16:22:15] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:15] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:15] [INFO ] MovieDetailTest - Page 2 - Movie 4: gái già lắm chiêu
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Page 2 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Page 2 - Movie 6: doctor stranger 2
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:16] [INFO ] MovieDetailTest - Page 2 - Movie 7: Nhà Bà Nữ
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - Page 2 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 16:22:17] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:22:18] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:22:18] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:22:19] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:23:18] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:23:18] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:23:18] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:23:18] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:23:20] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:23:22] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:23:22] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 16:23:22] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 16:23:22] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:23:23] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:23] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:23] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 16:23:23] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:23] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:23] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 16:23:24] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:24] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:24] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 16:23:24] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:24] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:24] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 16:23:25] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:25] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:25] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 16:23:25] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:25] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:26] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 16:23:26] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:26] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:26] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 16:23:27] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:27] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:27] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 16:23:27] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 16:23:27] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 16:23:27] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 16:23:28] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:28] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:28] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 16:23:28] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:28] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:28] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:29] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 16:23:30] [INFO ] MovieDetailTest - Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:30] [INFO ] MovieDetailTest - Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:30] [INFO ] MovieDetailTest - Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+[2026-10-01 16:23:30] [INFO ] MovieDetailTest - Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:30] [INFO ] MovieDetailTest - Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:31] [INFO ] MovieDetailTest - Page 2 - Movie 8: Địa đạo
+[2026-10-01 16:23:31] [INFO ] MovieDetailTest - Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:23:31] [INFO ] MovieDetailTest - Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:23:31] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 16:23:31] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 16:23:31] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:23:32] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:23:32] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:23:32] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:25:12] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:25:12] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:25:12] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:25:12] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:25:14] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:25:15] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:25:16] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 16:25:16] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 16:25:16] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:25:17] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:17] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:17] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 16:25:17] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:17] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:17] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 16:25:18] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:18] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:18] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 16:25:18] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:18] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:18] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 16:25:19] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:19] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:19] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 16:25:19] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:19] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:19] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 16:25:20] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:20] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:20] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 16:25:20] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:20] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:20] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 16:25:21] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:25:22] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:25:23] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:25:23] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:25:32] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:25:32] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:25:32] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:25:32] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:25:34] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:25:35] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:25:36] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 16:25:36] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 16:25:36] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:25:37] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:37] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:37] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 16:25:37] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:37] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:37] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 16:25:38] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:38] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:38] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 16:25:38] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:38] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:38] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 16:25:39] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:39] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:39] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 16:25:39] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:39] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:39] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 16:25:40] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:40] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:40] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 16:25:40] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:40] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:40] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 16:25:40] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 16:25:41] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 16:25:41] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:42] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:43] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 16:25:43] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:43] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:43] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 16:25:43] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:43] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:43] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 16:25:44] [INFO ] MovieDetailTest - Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:44] [INFO ] MovieDetailTest - Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:44] [INFO ] MovieDetailTest - Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+[2026-10-01 16:25:44] [INFO ] MovieDetailTest - Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:44] [INFO ] MovieDetailTest - Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:45] [INFO ] MovieDetailTest - Page 2 - Movie 8: Địa đạo
+[2026-10-01 16:25:45] [INFO ] MovieDetailTest - Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:25:45] [INFO ] MovieDetailTest - Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:25:45] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 16:25:45] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 16:25:45] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:25:46] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:25:46] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:25:46] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:44:50] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:44:51] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:44:51] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:44:51] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:44:53] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:44:55] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:44:55] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 16:44:55] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 16:44:56] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:44:56] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:44:57] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:44:57] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:44:57] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 16:53:01] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 16:53:02] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 16:53:02] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 16:53:02] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 16:53:04] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 16:53:05] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 16:53:06] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 16:53:06] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 16:53:06] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 16:53:07] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:07] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:07] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 16:53:07] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:07] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:07] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 16:53:08] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:08] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:08] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 16:53:09] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:09] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:09] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 16:53:09] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:09] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:09] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 16:53:10] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:10] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:10] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 16:53:10] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:10] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:10] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 16:53:11] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:11] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:11] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 16:53:11] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 16:53:11] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 16:53:12] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 16:53:12] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:12] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:12] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 16:53:13] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:13] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:13] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 16:53:13] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:13] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:13] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 16:53:14] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:14] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:14] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 16:53:14] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 16:53:14] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 16:53:15] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 16:53:15] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 16:53:15] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 16:53:16] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 16:53:16] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 17:03:31] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 17:03:31] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 17:03:31] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 17:03:31] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 17:03:33] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 17:03:35] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 17:03:35] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 17:03:35] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 17:03:35] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 17:03:36] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:36] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:36] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 17:03:37] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:37] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:37] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 17:03:37] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:37] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:37] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 17:03:38] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:38] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:38] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 17:03:39] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:39] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:39] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 17:03:39] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:39] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:39] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 17:03:40] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:40] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:40] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 17:03:40] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:40] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:40] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 17:03:40] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 17:03:41] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 17:03:41] [INFO ] MovieDetailTest - Page 2 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 17:03:41] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:41] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:41] [INFO ] MovieDetailTest - Page 2 - Movie 2: Man of Steel
+[2026-10-01 17:03:42] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:42] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:42] [INFO ] MovieDetailTest - Page 2 - Movie 3: AVATAR 2
+[2026-10-01 17:03:42] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:42] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:42] [INFO ] MovieDetailTest - Page 2 - Movie 4: gái già lắm chiêu
+[2026-10-01 17:03:43] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:43] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:43] [INFO ] MovieDetailTest - Page 2 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 17:03:43] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:43] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:43] [INFO ] MovieDetailTest - Page 2 - Movie 6: doctor stranger 2
+[2026-10-01 17:03:44] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:44] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:44] [INFO ] MovieDetailTest - Page 2 - Movie 7: Nhà Bà Nữ
+[2026-10-01 17:03:44] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:44] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:44] [INFO ] MovieDetailTest - Page 2 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 17:03:45] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:03:45] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:03:45] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 17:03:45] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 17:03:45] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 17:03:45] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 17:03:45] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 17:03:46] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 17:21:29] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 17:21:30] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 17:21:30] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 17:21:30] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 17:21:32] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 17:21:34] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 17:21:34] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 17:21:34] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 17:21:34] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 17:21:35] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:35] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:35] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 17:21:35] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:35] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:35] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 17:21:36] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:36] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:36] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 17:21:37] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:37] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:37] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 17:21:37] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:37] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:38] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 17:21:38] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:38] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:38] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 17:21:39] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 17:21:40] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 17:21:41] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:41] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:41] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 17:21:41] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:41] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:41] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 17:21:42] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:42] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:42] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 17:21:42] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:42] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:42] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 17:21:43] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:43] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:43] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 17:21:43] [INFO ] MovieDetailTest - Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:43] [INFO ] MovieDetailTest - Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:43] [INFO ] MovieDetailTest - Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+[2026-10-01 17:21:44] [INFO ] MovieDetailTest - Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:44] [INFO ] MovieDetailTest - Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:44] [INFO ] MovieDetailTest - Page 2 - Movie 8: Địa đạo
+[2026-10-01 17:21:44] [INFO ] MovieDetailTest - Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:21:44] [INFO ] MovieDetailTest - Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:21:45] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 17:21:45] [INFO ] MovieDetailTest - TC_MV_001 passed
+[2026-10-01 17:21:45] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 17:21:45] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 17:21:45] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 17:21:45] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 17:24:31] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 17:24:31] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 17:24:31] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 17:24:32] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 17:24:33] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 17:24:35] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 17:24:35] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 17:24:36] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 17:24:36] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 17:24:36] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:36] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:36] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 17:24:37] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:37] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:37] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 17:24:37] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:37] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:38] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 17:24:38] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:38] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:38] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 17:24:38] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:38] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:38] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 17:24:39] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:39] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:39] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 17:24:40] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:40] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:40] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 17:24:40] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:40] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:40] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 17:24:41] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 17:24:41] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 17:24:41] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 17:24:42] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:42] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:42] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 17:24:42] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:42] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:42] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 17:24:43] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:43] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:43] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 17:24:43] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:43] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:43] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 17:24:44] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:44] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:44] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 17:24:44] [INFO ] MovieDetailTest - Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:44] [INFO ] MovieDetailTest - Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:44] [INFO ] MovieDetailTest - Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+[2026-10-01 17:24:45] [INFO ] MovieDetailTest - Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:45] [INFO ] MovieDetailTest - Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:45] [INFO ] MovieDetailTest - Page 2 - Movie 8: Địa đạo
+[2026-10-01 17:24:45] [INFO ] MovieDetailTest - Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:24:45] [INFO ] MovieDetailTest - Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:24:45] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 17:24:45] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 17:24:46] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 17:24:46] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 17:24:47] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 17:28:40] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 17:28:41] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 17:28:41] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 17:28:41] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 17:28:43] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 17:28:44] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 17:28:45] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 17:28:45] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 17:28:45] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 17:28:46] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:46] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:46] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 17:28:46] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:46] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:46] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 17:28:47] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:47] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:47] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 17:28:47] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:47] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:47] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 17:28:48] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:48] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:48] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 17:28:48] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:48] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:48] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 17:28:49] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 17:28:50] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 17:28:51] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:51] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:51] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 17:28:51] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:51] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:51] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 17:28:52] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:52] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:52] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 17:28:52] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:52] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:52] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 17:28:53] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:53] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:53] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 17:28:53] [INFO ] MovieDetailTest - Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:53] [INFO ] MovieDetailTest - Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:53] [INFO ] MovieDetailTest - Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+[2026-10-01 17:28:54] [INFO ] MovieDetailTest - Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:54] [INFO ] MovieDetailTest - Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:54] [INFO ] MovieDetailTest - Page 2 - Movie 8: Địa đạo
+[2026-10-01 17:28:54] [INFO ] MovieDetailTest - Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:28:54] [INFO ] MovieDetailTest - Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:28:55] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 17:28:55] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 17:28:56] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 17:28:56] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 17:28:56] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 17:38:11] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 17:38:11] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 17:38:11] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 17:38:11] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 17:38:14] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 17:38:15] [INFO ] MovieDetailTest - Start TC_MV_001 - Check movie list
+[2026-10-01 17:38:15] [INFO ] MovieDetailTest - CHECK PAGE 1
+[2026-10-01 17:38:15] [INFO ] MovieDetailTest - Page 1 movie count: 8
+[2026-10-01 17:38:16] [INFO ] MovieDetailTest - Page 1 - Movie 1: The Gentlemen Dangbk
+[2026-10-01 17:38:16] [INFO ] MovieDetailTest - Poster UI - Movie [The Gentlemen Dangbk]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:16] [INFO ] MovieDetailTest - Movie [The Gentlemen Dangbk] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:16] [INFO ] MovieDetailTest - Page 1 - Movie 2: Man of Steel
+[2026-10-01 17:38:17] [INFO ] MovieDetailTest - Poster UI - Movie [Man of Steel]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:17] [INFO ] MovieDetailTest - Movie [Man of Steel] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:17] [INFO ] MovieDetailTest - Page 1 - Movie 3: AVATAR 2
+[2026-10-01 17:38:18] [INFO ] MovieDetailTest - Poster UI - Movie [AVATAR 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:18] [INFO ] MovieDetailTest - Movie [AVATAR 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:18] [INFO ] MovieDetailTest - Page 1 - Movie 4: gái già lắm chiêu
+[2026-10-01 17:38:18] [INFO ] MovieDetailTest - Poster UI - Movie [gái già lắm chiêu]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:18] [INFO ] MovieDetailTest - Movie [gái già lắm chiêu] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:18] [INFO ] MovieDetailTest - Page 1 - Movie 5: SPIDER-MAN: NO WAY HOME
+[2026-10-01 17:38:19] [INFO ] MovieDetailTest - Poster UI - Movie [SPIDER-MAN: NO WAY HOME]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:19] [INFO ] MovieDetailTest - Movie [SPIDER-MAN: NO WAY HOME] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:19] [INFO ] MovieDetailTest - Page 1 - Movie 6: doctor stranger 2
+[2026-10-01 17:38:19] [INFO ] MovieDetailTest - Poster UI - Movie [doctor stranger 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:19] [INFO ] MovieDetailTest - Movie [doctor stranger 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:19] [INFO ] MovieDetailTest - Page 1 - Movie 7: Nhà Bà Nữ
+[2026-10-01 17:38:20] [INFO ] MovieDetailTest - Poster UI - Movie [Nhà Bà Nữ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:20] [INFO ] MovieDetailTest - Movie [Nhà Bà Nữ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:20] [INFO ] MovieDetailTest - Page 1 - Movie 8: RỪNG SĂN NGƯỜI
+[2026-10-01 17:38:20] [INFO ] MovieDetailTest - Poster UI - Movie [RỪNG SĂN NGƯỜI]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:20] [INFO ] MovieDetailTest - Movie [RỪNG SĂN NGƯỜI] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:20] [INFO ] MovieDetailTest - PAGE 1 PASSED
+[2026-10-01 17:38:20] [INFO ] MovieDetailTest - CHECK PAGE 2
+[2026-10-01 17:38:21] [INFO ] MovieDetailTest - Page 2 movie count: 8
+[2026-10-01 17:38:21] [INFO ] MovieDetailTest - Page 2 - Movie 1: Captain Marvel 2
+[2026-10-01 17:38:22] [INFO ] MovieDetailTest - Poster UI - Movie [Captain Marvel 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:22] [INFO ] MovieDetailTest - Movie [Captain Marvel 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:22] [INFO ] MovieDetailTest - Page 2 - Movie 2: iron man 4
+[2026-10-01 17:38:22] [INFO ] MovieDetailTest - Poster UI - Movie [iron man 4]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:22] [INFO ] MovieDetailTest - Movie [iron man 4] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:22] [INFO ] MovieDetailTest - Page 2 - Movie 3: Thor 6
+[2026-10-01 17:38:23] [INFO ] MovieDetailTest - Poster UI - Movie [Thor 6]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:23] [INFO ] MovieDetailTest - Movie [Thor 6] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:23] [INFO ] MovieDetailTest - Page 2 - Movie 4: CÔ GÁI TỪ QUÁ KHỨ
+[2026-10-01 17:38:24] [INFO ] MovieDetailTest - Poster UI - Movie [CÔ GÁI TỪ QUÁ KHỨ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:24] [INFO ] MovieDetailTest - Movie [CÔ GÁI TỪ QUÁ KHỨ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:24] [INFO ] MovieDetailTest - Page 2 - Movie 5: BỖNG DƯNG TRÚNG SỐ
+[2026-10-01 17:38:24] [INFO ] MovieDetailTest - Poster UI - Movie [BỖNG DƯNG TRÚNG SỐ]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:24] [INFO ] MovieDetailTest - Movie [BỖNG DƯNG TRÚNG SỐ] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:24] [INFO ] MovieDetailTest - Page 2 - Movie 6: John Cena WWE
+[2026-10-01 17:38:24] [ERROR] MovieDetailTest - Poster phim 6 [John Cena WWE] có URL http://movie0706.cybersoft.edu.vn/hinhanh/john-cena-wwe_gp09.jpg nhưng ảnh không load được
+[2026-10-01 17:38:25] [INFO ] MovieDetailTest - Poster UI - Movie [John Cena WWE]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:25] [INFO ] MovieDetailTest - Movie [John Cena WWE] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:25] [INFO ] MovieDetailTest - Page 2 - Movie 7: HÀNH TRÌNH CỦA MOANA 2
+[2026-10-01 17:38:25] [ERROR] MovieDetailTest - Poster phim 7 [HÀNH TRÌNH CỦA MOANA 2] có URL http://movie0706.cybersoft.edu.vn/hinhanh/hanh-trinh-cua-moana-2_gp09.jpg nhưng ảnh không load được
+[2026-10-01 17:38:25] [INFO ] MovieDetailTest - Poster UI - Movie [HÀNH TRÌNH CỦA MOANA 2]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:25] [INFO ] MovieDetailTest - Movie [HÀNH TRÌNH CỦA MOANA 2] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:25] [INFO ] MovieDetailTest - Page 2 - Movie 8: Địa đạo
+[2026-10-01 17:38:26] [INFO ] MovieDetailTest - Poster UI - Movie [Địa đạo]: width=210, height=314, background-size=cover, cover, background-position=50% 50%, 50% 50%
+[2026-10-01 17:38:26] [INFO ] MovieDetailTest - Movie [Địa đạo] - C18: OK | Title: OK | Description: OK | Poster URL: OK | Poster UI: OK
+[2026-10-01 17:38:26] [INFO ] MovieDetailTest - PAGE 2 PASSED
+[2026-10-01 17:38:26] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 17:38:26] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 17:38:26] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 17:38:27] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 21:21:04] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 21:21:04] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 21:21:04] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 21:21:04] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 21:21:08] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 21:21:12] [INFO ] MovieDetailTest - Start TC_MV_002 - Check MUA VÉ button when hover
+[2026-10-01 21:21:12] [INFO ] MovieDetailTest - TC_MV_002 passed - Movie index: 1
+[2026-10-01 21:21:12] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 21:21:12] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 21:21:12] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 21:21:13] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 22:09:27] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:09:27] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:09:27] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:09:27] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:09:29] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:09:33] [INFO ] MovieDetailTest - Start TC_MV_002 - Check hover movie cards
+[2026-10-01 22:09:33] [INFO ] MovieDetailTest - HOVER PAGE 1
+[2026-10-01 22:09:33] [INFO ] MovieDetailTest - Page 1 - Hover movie 1
+[2026-10-01 22:09:33] [INFO ] MovieDetailTest - Page 1 - Hover movie 2
+[2026-10-01 22:09:34] [INFO ] MovieDetailTest - Page 1 - Hover movie 3
+[2026-10-01 22:09:34] [INFO ] MovieDetailTest - Page 1 - Hover movie 4
+[2026-10-01 22:09:34] [INFO ] MovieDetailTest - Page 1 - Hover movie 5
+[2026-10-01 22:09:35] [INFO ] MovieDetailTest - Page 1 - Hover movie 6
+[2026-10-01 22:09:35] [INFO ] MovieDetailTest - Page 1 - Hover movie 7
+[2026-10-01 22:09:41] [INFO ] MovieDetailTest - Page 1 - Hover movie 8
+[2026-10-01 22:09:41] [INFO ] MovieDetailTest - HOVER PAGE 2
+[2026-10-01 22:09:42] [INFO ] MovieDetailTest - Page 2 - Hover movie 1
+[2026-10-01 22:09:42] [INFO ] MovieDetailTest - Page 2 - Hover movie 2
+[2026-10-01 22:09:43] [INFO ] MovieDetailTest - Page 2 - Hover movie 3
+[2026-10-01 22:09:43] [INFO ] MovieDetailTest - Page 2 - Hover movie 4
+[2026-10-01 22:09:43] [INFO ] MovieDetailTest - Page 2 - Hover movie 5
+[2026-10-01 22:09:44] [INFO ] MovieDetailTest - Page 2 - Hover movie 6
+[2026-10-01 22:09:44] [INFO ] MovieDetailTest - Page 2 - Hover movie 7
+[2026-10-01 22:09:44] [INFO ] MovieDetailTest - Page 2 - Hover movie 8
+[2026-10-01 22:09:44] [INFO ] MovieDetailTest - TC_MV_002 passed
+[2026-10-01 22:09:45] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 22:09:45] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 22:09:45] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 22:09:46] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 22:11:07] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:11:07] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:11:07] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:11:07] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:11:09] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:11:11] [INFO ] MovieDetailTest - Start TC_MV_002 - Check hover movie cards
+[2026-10-01 22:11:11] [INFO ] MovieDetailTest - HOVER PAGE 1
+[2026-10-01 22:11:11] [INFO ] MovieDetailTest - Page 1 - Hover movie 1
+[2026-10-01 22:11:12] [INFO ] MovieDetailTest - Page 1 - Hover movie 2
+[2026-10-01 22:11:12] [INFO ] MovieDetailTest - Page 1 - Hover movie 3
+[2026-10-01 22:11:12] [INFO ] MovieDetailTest - Page 1 - Hover movie 4
+[2026-10-01 22:11:13] [INFO ] MovieDetailTest - Page 1 - Hover movie 5
+[2026-10-01 22:11:13] [INFO ] MovieDetailTest - Page 1 - Hover movie 6
+[2026-10-01 22:11:13] [INFO ] MovieDetailTest - Page 1 - Hover movie 7
+[2026-10-01 22:11:14] [INFO ] MovieDetailTest - Page 1 - Hover movie 8
+[2026-10-01 22:11:14] [INFO ] MovieDetailTest - HOVER PAGE 2
+[2026-10-01 22:11:15] [INFO ] MovieDetailTest - Page 2 - Hover movie 1
+[2026-10-01 22:11:15] [INFO ] MovieDetailTest - Page 2 - Hover movie 2
+[2026-10-01 22:11:16] [INFO ] MovieDetailTest - Page 2 - Hover movie 3
+[2026-10-01 22:11:16] [INFO ] MovieDetailTest - Page 2 - Hover movie 4
+[2026-10-01 22:11:17] [INFO ] MovieDetailTest - Page 2 - Hover movie 5
+[2026-10-01 22:11:17] [INFO ] MovieDetailTest - Page 2 - Hover movie 6
+[2026-10-01 22:11:17] [INFO ] MovieDetailTest - Page 2 - Hover movie 7
+[2026-10-01 22:11:18] [INFO ] MovieDetailTest - Page 2 - Hover movie 8
+[2026-10-01 22:11:18] [INFO ] MovieDetailTest - TC_MV_002 passed
+[2026-10-01 22:11:18] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 22:11:18] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 22:11:18] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 22:11:18] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 22:44:52] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:44:53] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:44:53] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:44:53] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:44:56] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:45:07] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 22:45:08] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 22:45:08] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 22:45:09] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 22:45:12] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:45:12] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:45:12] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:45:12] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:45:14] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:54:04] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:54:04] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:54:04] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:54:04] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:54:06] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:54:08] [INFO ] MovieDetailTest - Start TC_MV_003 - Check movie trailer
+[2026-10-01 22:54:22] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 22:54:23] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 22:54:23] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 22:55:25] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:55:25] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:55:25] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:55:25] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:55:27] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:55:29] [INFO ] MovieDetailTest - Start TC_MV_003 - Check movie trailer
+[2026-10-01 22:55:49] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 22:55:50] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 22:55:50] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 22:55:50] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 22:57:19] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:57:19] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:57:19] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:57:19] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:57:21] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:57:23] [INFO ] MovieDetailTest - Start TC_MV_003 - Check movie trailer
+[2026-10-01 22:57:49] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 22:57:49] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 22:57:50] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 22:58:56] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 22:58:57] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 22:58:57] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 22:58:57] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 22:58:58] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 22:59:00] [INFO ] MovieDetailTest - Start TC_MV_003 - Check movie trailer
+[2026-10-01 22:59:11] [INFO ] MovieDetailTest - Trailer URL: https://www.youtube.com/embed/WsBV9s1SqpM?autoplay=1&cc_load_policy=1&controls=1&disablekb=0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=0&showinfo=1&start=0&wmode=transparent&theme=dark&mute=0
+[2026-10-01 22:59:11] [INFO ] MovieDetailTest - TC_MV_003 passed
+[2026-10-01 22:59:11] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 22:59:12] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 22:59:12] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 22:59:12] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 23:02:48] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 23:02:48] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 23:02:48] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 23:02:48] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 23:02:50] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 23:02:52] [INFO ] MovieDetailTest - Start TC_MV_003 - Check movie trailer
+[2026-10-01 23:03:12] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 23:03:13] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 23:03:13] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 23:03:13] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 23:06:32] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 23:06:32] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 23:06:32] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 23:06:32] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 23:06:34] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 23:06:36] [INFO ] MovieDetailTest - Start TC_MV_003 - Check movie trailer
+[2026-10-01 23:06:56] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 23:06:57] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 23:06:57] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 23:06:57] [INFO ] MovieDetailTest - AfterSuite ended...
+[2026-10-01 23:09:42] [INFO ] MovieDetailTest - BeforeSuite executing...
+[2026-10-01 23:09:42] [INFO ] ConfigManager - Properties loaded successfully
+[2026-10-01 23:09:42] [INFO ] MovieDetailTest - BeforeSuite ended...
+[2026-10-01 23:09:42] [INFO ] MovieDetailTest - BeforeMethod executing...
+[2026-10-01 23:09:44] [INFO ] MovieDetailTest - BeforeMethod ended...
+[2026-10-01 23:09:45] [INFO ] MovieDetailTest - Start TC_MV_003 - Check movie trailer
+[2026-10-01 23:09:57] [INFO ] MovieDetailTest - Trailer URL: https://www.youtube.com/embed/WsBV9s1SqpM?autoplay=1&cc_load_policy=1&controls=1&disablekb=0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=0&showinfo=1&start=0&wmode=transparent&theme=dark&mute=0
+[2026-10-01 23:09:57] [INFO ] MovieDetailTest - TC_MV_003 passed
+[2026-10-01 23:09:57] [INFO ] MovieDetailTest - AfterMethod executing...
+[2026-10-01 23:09:57] [INFO ] MovieDetailTest - AfterMethod ended...
+[2026-10-01 23:09:57] [INFO ] MovieDetailTest - AfterSuite executing...
+[2026-10-01 23:09:57] [INFO ] MovieDetailTest - AfterSuite ended...

@@ -30,8 +30,7 @@ public class BookingTest extends BaseTest {
         profilePage = new ProfilePage(driver);
     }
 
-    @Test(priority = 1, dataProvider = "booking-information",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
+    @Test
     public void verify_Booking_Information_Displayed(String movieName, String schedule, int numSeat, String cinema) {
         ///Step 1: Click name film to movieDetails
         LOG.info("Step 1: Click name film to movieDetails");

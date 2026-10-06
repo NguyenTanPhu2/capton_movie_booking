@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-06T16:01:46 ICT" name="Gradle suite" finished-at="2026-10-06T16:02:06 ICT" duration-ms="20662">
+    <groups>
+      <group name="cinema-list">
+        <method signature="CinemaListTest.TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testcase.CinemaListTest@9bd0fa6]" name="TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color" class="testcase.CinemaListTest"/>
+        <method signature="CinemaListTest.TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:testcase.CinemaListTest@9bd0fa6]" name="TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking" class="testcase.CinemaListTest"/>
+      </group> <!-- cinema-list -->
+      <group name="cinema">
+        <method signature="CinemaListTest.TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly()[pri:1, instance:testcase.CinemaListTest@9bd0fa6]" name="TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly" class="testcase.CinemaListTest"/>
+        <method signature="CinemaListTest.TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS()[pri:2, instance:testcase.CinemaListTest@9bd0fa6]" name="TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS" class="testcase.CinemaListTest"/>
+        <method signature="CinemaListTest.TC_CIN_12_verify_Cinema_List_Showtime_Displayed()[pri:3, instance:testcase.CinemaListTest@9bd0fa6]" name="TC_CIN_12_verify_Cinema_List_Showtime_Displayed" class="testcase.CinemaListTest"/>
+        <method signature="CinemaListTest.TC_CIN_15_verify_Cinema_List_Inner_Scrollbar()[pri:6, instance:testcase.CinemaListTest@9bd0fa6]" name="TC_CIN_15_verify_Cinema_List_Inner_Scrollbar" class="testcase.CinemaListTest"/>
+      </group> <!-- cinema -->
+    </groups>
+    <test started-at="2026-10-06T16:01:46 ICT" name="Gradle test" finished-at="2026-10-06T16:02:06 ICT" duration-ms="20662">
+      <class name="testcase.CinemaListTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:45 ICT" name="beforeSuite" finished-at="2026-10-06T16:01:46 ICT" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:46 ICT" name="beforeMethod" finished-at="2026-10-06T16:01:47 ICT" duration-ms="1565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.CinemaListTest.TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:47 ICT" name="initializePages" finished-at="2026-10-06T16:01:47 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly()[pri:1, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:47 ICT" name="TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly" finished-at="2026-10-06T16:01:47 ICT" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:47 ICT" name="afterMethod" finished-at="2026-10-06T16:01:48 ICT" duration-ms="211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly status=SUCCESS method=CinemaListTest.TC_CIN_10_verify_Cinema_List_Movie_Poster_Displayed_Correctly()[pri:1, instance:testcase.CinemaListTest@9bd0fa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:48 ICT" name="beforeMethod" finished-at="2026-10-06T16:01:49 ICT" duration-ms="1349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.CinemaListTest.TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:49 ICT" name="initializePages" finished-at="2026-10-06T16:01:49 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS()[pri:2, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:49 ICT" name="TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS" finished-at="2026-10-06T16:01:51 ICT" duration-ms="1956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:51 ICT" name="afterMethod" finished-at="2026-10-06T16:01:51 ICT" duration-ms="210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS status=SUCCESS method=CinemaListTest.TC_CIN_11_verify_Cinema_System_Switching_CGV_BHD_MegaGS()[pri:2, instance:testcase.CinemaListTest@9bd0fa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:51 ICT" name="beforeMethod" finished-at="2026-10-06T16:01:52 ICT" duration-ms="1268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.CinemaListTest.TC_CIN_12_verify_Cinema_List_Showtime_Displayed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:52 ICT" name="initializePages" finished-at="2026-10-06T16:01:52 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_CIN_12_verify_Cinema_List_Showtime_Displayed()[pri:3, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:52 ICT" name="TC_CIN_12_verify_Cinema_List_Showtime_Displayed" finished-at="2026-10-06T16:01:54 ICT" duration-ms="1817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CIN_12_verify_Cinema_List_Showtime_Displayed -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:54 ICT" name="afterMethod" finished-at="2026-10-06T16:01:54 ICT" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_CIN_12_verify_Cinema_List_Showtime_Displayed status=SUCCESS method=CinemaListTest.TC_CIN_12_verify_Cinema_List_Showtime_Displayed()[pri:3, instance:testcase.CinemaListTest@9bd0fa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:54 ICT" name="beforeMethod" finished-at="2026-10-06T16:01:56 ICT" duration-ms="1245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.CinemaListTest.TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:56 ICT" name="initializePages" finished-at="2026-10-06T16:01:56 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:56 ICT" name="TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color" data-provider="cinema-list-showtime" finished-at="2026-10-06T16:01:58 ICT" duration-ms="2151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Wick]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01-01-2019]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10:10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:58 ICT" name="afterMethod" finished-at="2026-10-06T16:01:58 ICT" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color status=SUCCESS method=CinemaListTest.TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testcase.CinemaListTest@9bd0fa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:01:58 ICT" name="beforeMethod" finished-at="2026-10-06T16:02:00 ICT" duration-ms="1434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.CinemaListTest.TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:00 ICT" name="initializePages" finished-at="2026-10-06T16:02:00 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:00 ICT" name="TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking" data-provider="cinema-list-showtime" finished-at="2026-10-06T16:02:01 ICT" duration-ms="1561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Wick]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01-01-2019]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10:10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:01 ICT" name="afterMethod" finished-at="2026-10-06T16:02:03 ICT" duration-ms="1814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking status=SUCCESS method=CinemaListTest.TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:testcase.CinemaListTest@9bd0fa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:03 ICT" name="beforeMethod" finished-at="2026-10-06T16:02:04 ICT" duration-ms="1229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.CinemaListTest.TC_CIN_15_verify_Cinema_List_Inner_Scrollbar() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:04 ICT" name="initializePages" finished-at="2026-10-06T16:02:04 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_CIN_15_verify_Cinema_List_Inner_Scrollbar()[pri:6, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:04 ICT" name="TC_CIN_15_verify_Cinema_List_Inner_Scrollbar" finished-at="2026-10-06T16:02:06 ICT" duration-ms="1809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CIN_15_verify_Cinema_List_Inner_Scrollbar -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:06 ICT" name="afterMethod" finished-at="2026-10-06T16:02:06 ICT" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_CIN_15_verify_Cinema_List_Inner_Scrollbar status=SUCCESS method=CinemaListTest.TC_CIN_15_verify_Cinema_List_Inner_Scrollbar()[pri:6, instance:testcase.CinemaListTest@9bd0fa6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcase.CinemaListTest@9bd0fa6]" started-at="2026-10-06T16:02:06 ICT" name="afterSuite" finished-at="2026-10-06T16:02:06 ICT" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcase.CinemaListTest -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
+</testng-results>
