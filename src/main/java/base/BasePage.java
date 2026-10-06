@@ -1,6 +1,7 @@
 package base;
 
 import constants.TimeOutConstants;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -10,10 +11,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+
+
 public class BasePage {
-    private WebDriver driver;
+    private  WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -23,6 +27,9 @@ public class BasePage {
         return driver;
     }
 
+    public By byXpath(String xpath) {
+        return By.xpath(xpath);
+    }
     /// High-light element
     public void highlightElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -63,6 +70,22 @@ public class BasePage {
         return waitVisibilityOfElementLocated(locator, TimeOutConstants.DEFAULT_TIMEOUT);
     }
 
+    public List<WebElement> waitVisibilityOfElementsLocated(By locator, long timeOutInSec) {
+        WebDriverWait wait = getWebDriverWait(timeOutInSec);
+
+        return wait.until(
+            ExpectedConditions.visibilityOfAllElementsLocatedBy(locator)
+        );
+    }
+
+    // don't enter time out
+    public List<WebElement> waitVisibilityOfElementsLocated(By locator) {
+        return waitVisibilityOfElementsLocated(
+            locator,
+            TimeOutConstants.DEFAULT_TIMEOUT
+        );
+    }
+
     /// Action clickable element wait
     // enter time out
     public WebElement waitElementToBeClickable(By locator, long timeOutInSec) {
@@ -75,6 +98,15 @@ public class BasePage {
         return waitElementToBeClickable(locator, TimeOutConstants.DEFAULT_TIMEOUT);
     }
 
+
+    public WebElement waitPresenceOfElementLocated(By locator, long timeOutInSec) {
+        WebDriverWait wait = getWebDriverWait(timeOutInSec);
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    public WebElement waitPresenceOfElementLocated(By locator) {
+            return waitPresenceOfElementLocated(locator, TimeOutConstants.DEFAULT_TIMEOUT);
+    }
     /// Action senkey
     // enter time out
     public void sendKeys(By locator, String value, long timeOutInSec) {
@@ -92,7 +124,7 @@ public class BasePage {
     /// Action click
     // enter time out
     public void click(By locator, long timeOutInSec) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TimeOutConstants.DEFAULT_TIMEOUT));
+        // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TimeOutConstants.DEFAULT_TIMEOUT));
         WebElement element = waitElementToBeClickable(locator, timeOutInSec);
         highlightElement(element);
         element.click();
@@ -101,6 +133,11 @@ public class BasePage {
     //don't enter time out
     public void click(By locator) {
         click(locator, TimeOutConstants.DEFAULT_TIMEOUT);
+    }
+
+    public void clickWebElement(WebElement element) {
+        highlightElement(element);
+        element.click();
     }
 
     /// Action getText
@@ -141,12 +178,19 @@ public class BasePage {
         return waitInVisibilityOfElementLocated(locator, TimeOutConstants.DEFAULT_TIMEOUT);
     }
 
+    //Kiem tra cÃ³ hiá»ƒn thá»‹ hay khÃ´ng
+    public boolean isElementDisplayed(By locator, long timeOutInSec) {
+        try {
+            return waitVisibilityOfElementLocated(locator, timeOutInSec).isDisplayed();
+        } catch (TimeoutException e) {
+            return false;
+        }
+    }
 
-    //Kiem tra có hiển thị hay không
     public boolean isElementDisplayed(By locator) {
         try {
             return waitVisibilityOfElementLocated(locator).isDisplayed();
-        } catch (Exception e) {
+        } catch (TimeoutException e) {
             return false;
         }
     }
@@ -182,9 +226,14 @@ public class BasePage {
         WebElement element = waitVisibilityOfElementLocated(locator);
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
-
     }
 
+    //Move to element
+    public void moveToElement(By locator) {
+        WebElement element = waitPresenceOfElementLocated(locator);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+    }
     /// Scroll
     public void scroll(By locator, int y) {
         Actions actions = new Actions(driver);
@@ -201,6 +250,17 @@ public class BasePage {
         actions.scrollByAmount(0, 3386)
                 .perform();
     }
+
+    public void scrollElement(By locator, int y) {
+        WebElement element = waitVisibilityOfElementLocated(locator);
+
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollTop += arguments[1];",
+                element,
+                y
+        );
+    }
+
 
     /// Find iframe
     public void findIFrame(By locator) {
@@ -261,10 +321,14 @@ public class BasePage {
         );
     }
 
-    /// lấy giá trị CSS của element.
+    /// láº¥y giÃ¡ trá»‹ CSS cá»§a element.
     public String getCssValue(By locator, String propertyName) {
         WebElement element = waitVisibilityOfElementLocated(locator);
         return element.getCssValue(propertyName);
+    }
+    
+    public String getCurrentUrl() {
+        return getDriver().getCurrentUrl();
     }
 
     /// Clear text

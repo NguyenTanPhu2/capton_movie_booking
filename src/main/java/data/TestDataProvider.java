@@ -146,7 +146,7 @@ public class TestDataProvider {
                 {
                         new String[]{
                                 "AVATAR 2",
-                                "Địa đạo",
+                                "Äá»‹a Ä‘áº¡o",
                                 "Man of Steel",
                                 "John Cena WWE"
                         }
@@ -160,7 +160,7 @@ public class TestDataProvider {
                 {
                         new String[]{
                                 "AVATAR 2",
-                                "Địa đạo",
+                                "Äá»‹a Ä‘áº¡o",
                                 "Man of Steel",
                                 "John Cena WWE"
                         },
@@ -181,7 +181,7 @@ public class TestDataProvider {
     public static Object[][] movieDetail() {
         return new Object[][]{
                 {
-                        "Địa đạo",
+                        "Äá»‹a Ä‘áº¡o",
                         2
                 }
         };
@@ -190,7 +190,7 @@ public class TestDataProvider {
     @DataProvider(name = "movie-duration-rating")
     public static Object[][] movieDurationRating() {
         return new Object[][]{
-                {"Man of Steel", "120phút"}
+                {"Man of Steel", "120phÃºt"}
         };
     }
 
@@ -245,8 +245,8 @@ public class TestDataProvider {
                 {
                         new String[][]{
                                 {"cgv", "CGV - Pandora City"},
-                                {"bhd-star-cineplex", "BHD Star Cineplex - Phạm Hùng"},
-                                {"lotte-cinema", "Lotte - Phú Thọ"}
+                                {"bhd-star-cineplex", "BHD Star Cineplex - Pháº¡m HÃ¹ng"},
+                                {"lotte-cinema", "Lotte - PhÃº Thá»"}
                         }
                 }
         };
@@ -255,21 +255,21 @@ public class TestDataProvider {
     @DataProvider(name = "cinema-name-address")
     public static Object[][] cinemaNameAddress() {
         return new Object[][]{
-                {"lotte-cinema", "Lotte - Phú Thọ", "L4-Lotte Mart Phú Thọ, Q.11"}
+                {"lotte-cinema", "Lotte - PhÃº Thá»", "L4-Lotte Mart PhÃº Thá», Q.11"}
         };
     }
 
     @DataProvider(name = "cinema-movie")
     public static Object[][] cinemaMovie() {
         return new Object[][]{
-                {"cgv", "CGV - Aeon Tân Phú", "John Wick"}
+                {"cgv", "CGV - Aeon TÃ¢n PhÃº", "John Wick"}
         };
     }
 
     @DataProvider(name = "cinema-poster-schedule")
     public static Object[][] cinemaPosterSchedule() {
         return new Object[][]{
-                {"galaxy-cinema", "GLX - Nguyễn Văn Quá", "John Cena WWE", "12-10-2023"}
+                {"galaxy-cinema", "GLX - Nguyá»…n VÄƒn QuÃ¡", "John Cena WWE", "12-10-2023"}
         };
     }
 
@@ -310,7 +310,7 @@ public class TestDataProvider {
     @DataProvider(name = "cinema-show-time")
     public static Object[][] cinemaShowTime() {
         return new Object[][]{
-                {/*"cgv", "CGV - Aeon Tân Phú", "John Wick", */"10:10"}
+                {/*"cgv", "CGV - Aeon TÃ¢n PhÃº", "John Wick", */"10:10"}
         };
     }
 
@@ -324,7 +324,7 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         "AVATAR 2",
-                        "BHD Star Cineplex - Vincom Lê Văn Việt",
+                        "BHD Star Cineplex - Vincom LÃª VÄƒn Viá»‡t",
                         "18/10/2021 ~ 10:25"
                 }
         };
@@ -342,7 +342,7 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         "AVATAR 2",
-                        "BHD Star Cineplex - Vincom Lê Văn Việt",
+                        "BHD Star Cineplex - Vincom LÃª VÄƒn Viá»‡t",
                 }
         };
     }
@@ -356,7 +356,7 @@ public class TestDataProvider {
     public static Object[][] bookingSeatLegend() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                 }
         };
@@ -366,10 +366,10 @@ public class TestDataProvider {
     public static Object[][] bookingInformation() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         146,
-                        "CGV - Vincom Gò Vấp"
+                        "CGV - Vincom GÃ² Váº¥p"
                 }
         };
     }
@@ -378,7 +378,7 @@ public class TestDataProvider {
     public static Object[][] bookingTotalPrice() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         "0VND"
                 }
@@ -389,10 +389,10 @@ public class TestDataProvider {
     public static Object[][] bookingRegularSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         146,
-                        "Ghế 146,",
+                        "Gháº¿ 146,",
                         "75000VND"
                 }
         };
@@ -402,10 +402,10 @@ public class TestDataProvider {
     public static Object[][] bookingVipSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         52,
-                        "Ghế 52,",
+                        "Gháº¿ 52,",
                         "90000VND"
                 }
         };
@@ -415,7 +415,7 @@ public class TestDataProvider {
     public static Object[][] bookingDeleteSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         81,
                         "",
@@ -428,7 +428,7 @@ public class TestDataProvider {
     public static Object[][] bookingSoldSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         "X"
                 }
@@ -441,7 +441,7 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         "X",
                         "14"
@@ -465,7 +465,7 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021"
                 }
         };
@@ -477,7 +477,7 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         "15"
                 }
@@ -488,7 +488,7 @@ public class TestDataProvider {
     public static Object[][] bookingWithoutLogin() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         146
                 }
@@ -499,12 +499,12 @@ public class TestDataProvider {
     public static Object[][] bookingMultipleRegularSeats() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         17,
                         18,
                         19,
-                        "Ghế 17, Ghế 18, Ghế 19,",
+                        "Gháº¿ 17, Gháº¿ 18, Gháº¿ 19,",
                         "225000VND"
                 }
         };
@@ -513,11 +513,11 @@ public class TestDataProvider {
     public static Object[][] bookingRegularAndVipSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         17,
                         36,
-                        "Ghế 17, Ghế 36,",
+                        "Gháº¿ 17, Gháº¿ 36,",
                         "165000VND"
                 }
         };
@@ -526,12 +526,12 @@ public class TestDataProvider {
     public static Object[][] bookingRemoveOneSeat() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         17,
                         18,
                         19,
-                        "Ghế 17, Ghế 19,",
+                        "Gháº¿ 17, Gháº¿ 19,",
                         "150000VND"
                 }
         };
@@ -540,7 +540,7 @@ public class TestDataProvider {
     public static Object[][] bookingRefreshPage() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         17
                 }
@@ -552,7 +552,7 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         17,
                         18
@@ -563,7 +563,7 @@ public class TestDataProvider {
     public static Object[][] bookingPriceFormat() {
         return new Object[][]{
                 {
-                        "Nhà Bà Nữ",
+                        "NhÃ  BÃ  Ná»¯",
                         "03-11-2022",
                         18
                 }
@@ -621,7 +621,7 @@ public class TestDataProvider {
     @DataProvider(name = "search-non-existing")
     public static Object[][] searchNonExisting() {
         return new Object[][]{
-                {"Ác Ma"}
+                {"Ãc Ma"}
         };
     }
 
@@ -642,9 +642,9 @@ public class TestDataProvider {
         return new Object[][]{
                 {
                         new String[]{
-                                "Điện Ảnh 24h",
+                                "Äiá»‡n áº¢nh 24h",
                                 "Review",
-                                "Khuyến mãi"
+                                "Khuyáº¿n mÃ£i"
                         }
                 }
         };
@@ -654,8 +654,8 @@ public class TestDataProvider {
     public static Object[][] newsBigArticle() {
         return new Object[][]{
                 new String[][]{
-                        {"TENET công bố ngày khởi chiếu chính thức tại Việt Nam", "https://tix.vn/goc-dien-anh/7943-tenet-cong-bo-ngay-khoi-chieu-chinh-thuc-tai-viet-nam"},
-                        {"Khi phụ nữ không còn ở thế trốn chạy của nạn nhân", "https://tix.vn/goc-dien-anh/7941-khi-phu-nu-khong-con-o-the-tron-chay-cua-nan-nhan"}
+                        {"TENET cÃ´ng bá»‘ ngÃ y khá»Ÿi chiáº¿u chÃ­nh thá»©c táº¡i Viá»‡t Nam", "https://tix.vn/goc-dien-anh/7943-tenet-cong-bo-ngay-khoi-chieu-chinh-thuc-tai-viet-nam"},
+                        {"Khi phá»¥ ná»¯ khÃ´ng cÃ²n á»Ÿ tháº¿ trá»‘n cháº¡y cá»§a náº¡n nhÃ¢n", "https://tix.vn/goc-dien-anh/7941-khi-phu-nu-khong-con-o-the-tron-chay-cua-nan-nhan"}
                 }
         };
     }
@@ -664,10 +664,10 @@ public class TestDataProvider {
     public static Object[][] newsSmallArticle() {
         return new Object[][]{
                 new String[][]{
-                        {"Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!", "https://tix.vn/goc-dien-anh/7938-pee-nak-2-van-kiep-thien-thu-di-tu-khong-het-nghiep"},
-                        {"Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!", "https://tix.vn/goc-dien-anh/7937-loat-phim-kinh-di-khong-the-bo-lo-trong-thang-7"},
-                        {"RÒM tung trailer hé lộ cuộc sống của dân chơi số đề", "https://tix.vn/goc-dien-anh/7936-rom-tung-trailer-he-lo-cuoc-song-cua-dan-choi-so-de"},
-                        {"Antebellum - Trailer cuối cùng không hé lộ bất cứ thông tin gì thêm", "https://tix.vn/goc-dien-anh/7935-antebellum-trailer-cuoi-cung-khong-he-lo-bat-cu-thong-tin-gi-them"}
+                        {"Pee Nak 2 - Váº¡n kiáº¿p thiÃªn thu, Ä‘i tu khÃ´ng háº¿t nghiá»‡p!", "https://tix.vn/goc-dien-anh/7938-pee-nak-2-van-kiep-thien-thu-di-tu-khong-het-nghiep"},
+                        {"Loáº¡t phim kinh dá»‹ khÃ´ng thá»ƒ bá» lá»¡ trong thÃ¡ng 7!", "https://tix.vn/goc-dien-anh/7937-loat-phim-kinh-di-khong-the-bo-lo-trong-thang-7"},
+                        {"RÃ’M tung trailer hÃ© lá»™ cuá»™c sá»‘ng cá»§a dÃ¢n chÆ¡i sá»‘ Ä‘á»", "https://tix.vn/goc-dien-anh/7936-rom-tung-trailer-he-lo-cuoc-song-cua-dan-choi-so-de"},
+                        {"Antebellum - Trailer cuá»‘i cÃ¹ng khÃ´ng hÃ© lá»™ báº¥t cá»© thÃ´ng tin gÃ¬ thÃªm", "https://tix.vn/goc-dien-anh/7935-antebellum-trailer-cuoi-cung-khong-he-lo-bat-cu-thong-tin-gi-them"}
                 }
         };
     }
@@ -676,8 +676,8 @@ public class TestDataProvider {
     public static Object[][] newsMediumArticle() {
         return new Object[][]{
                 new String[][]{
-                        {"Gerard Butler cùng bồ cũ Deadpool tham gia Greenland", "https://tix.vn/goc-dien-anh/7940-gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland"},
-                        {"Diễn viên đặc biệt của Bằng Chứng Vô Hình", "https://tix.vn/goc-dien-anh/7939-dien-vien-dac-biet-cua-bang-chung-vo-hinh"}
+                        {"Gerard Butler cÃ¹ng bá»“ cÅ© Deadpool tham gia Greenland", "https://tix.vn/goc-dien-anh/7940-gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland"},
+                        {"Diá»…n viÃªn Ä‘áº·c biá»‡t cá»§a Báº±ng Chá»©ng VÃ´ HÃ¬nh", "https://tix.vn/goc-dien-anh/7939-dien-vien-dac-biet-cua-bang-chung-vo-hinh"}
                 }
         };
     }
@@ -694,8 +694,8 @@ public class TestDataProvider {
                         new String[][]{
                                 {"FAQ", "https://demo1.cybersoft.edu.vn/FAQ"},
                                 {"Brand Guidelines", "https://demo1.cybersoft.edu.vn/Brand_Guidelines"},
-                                {"Thỏa thuận sử dụng", "https://demo1.cybersoft.edu.vn/thoa_thuan_su_dung"},
-                                {"Chính sách bảo mật", "https://demo1.cybersoft.edu.vn/chinh_sach_bao_mat"}
+                                {"Thá»a thuáº­n sá»­ dá»¥ng", "https://demo1.cybersoft.edu.vn/thoa_thuan_su_dung"},
+                                {"ChÃ­nh sÃ¡ch báº£o máº­t", "https://demo1.cybersoft.edu.vn/chinh_sach_bao_mat"}
                         }
                 }
         };
@@ -744,7 +744,7 @@ public class TestDataProvider {
     public static Object[][] securityBooking() {
         return new Object[][]{
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         113,
                         "21-12-2021"
                 }
@@ -795,4 +795,83 @@ public class TestDataProvider {
                 {"Clara", "Clara@2026", "Clara JohnShon", "0379211821"}
         };
     }
+
+    // ===== Cinema & Movie Detail - merged from Duy =====
+    @DataProvider(name = "cinema-list-showtime")
+    public static Object[][] cinemaListShowtime() {
+        return new Object[][]{
+            {"John Wick", "01-01-2019", "10:10"}
+        };
+    }
+
+    @DataProvider(name = "movie-trailer-click")
+    public static Object[][] movieTrailerClick() {
+        return new Object[][]{
+            {"CÃ” GÃI Tá»ª QUÃ KHá»¨"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-navigate")
+    public static Object[][] movieDetailNavigate() {
+        return new Object[][]{
+            {"CÃ” GÃI Tá»ª QUÃ KHá»¨"}, {"Äá»‹a Ä‘áº¡o"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-duration")
+    public static Object[][] movieDetailDuration() {
+        return new Object[][]{
+            {"Man of Steel",  "120phÃºt"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-trailer-close")
+    public static Object[][] movieTrailerClose() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-poster")
+    public static Object[][] movieDetailPoster() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-cinema-system-switching")
+    public static Object[][] movieDetailCinemaSystemSwitching() {
+        return new Object[][]{
+            {"AVATAR 2"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-navigate-to-booking")
+    public static Object[][] movieDetailNavigateToBooking() {
+        return new Object[][]{
+            {"Man of Steel", "09-10-2021", "02:40"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-release-date")
+    public static Object[][] movieDetailReleaseDate() {
+        return new Object[][]{
+            {"Man of Steel", "14.10.2021"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-mobile")
+    public static Object[][] movieDetailMobile() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-refresh")
+    public static Object[][] movieDetailRefresh() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
 }
