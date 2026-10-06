@@ -53,4 +53,8 @@ public class CommonModal extends BasePage {
     public String getMuitAler() {
         return getText(byMuiAlertMessage);
     }
+
+    public boolean isLbMessage() {
+        return isElementDisplayed(byLbMessage);
+    }
 }

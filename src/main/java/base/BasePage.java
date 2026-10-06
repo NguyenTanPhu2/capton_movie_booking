@@ -266,4 +266,12 @@ public class BasePage {
         WebElement element = waitVisibilityOfElementLocated(locator);
         return element.getCssValue(propertyName);
     }
+
+    /// Clear text
+    public void clearText(By locator) {
+        WebElement element = waitVisibilityOfElementLocated(locator);
+        element.click();
+        element.sendKeys(Keys.CONTROL, "a");
+        element.sendKeys(Keys.BACK_SPACE);
+    }
 }

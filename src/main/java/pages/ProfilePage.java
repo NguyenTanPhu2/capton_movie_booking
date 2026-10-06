@@ -6,89 +6,132 @@ import org.openqa.selenium.WebDriver;
 public class ProfilePage extends CommonPage {
 
     private By byNewTicket;
-
-    // --- Locators cho 6 mục Cài đặt tài khoản chung ---
-    private final By usernameInput = By.xpath("//input[@name='taiKhoan' or @id='taiKhoan']");     // 1. Tài Khoản
-    private final By fullNameInput = By.xpath("//input[@name='hoTen' or @id='hoTen']");           // 2. Họ Tên
-    private final By phoneInput = By.xpath("//input[@name='soDT' or @name='soDt' or @id='soDT']"); // 3. Số điện thoại
-    private final By passwordInput = By.xpath("//input[@name='matKhau' or @type='password']");   // 4. Mật Khẩu
-    private final By emailInput = By.xpath("//input[@name='email' or @type='email']");            // 5. Email
-    private final By userTypeInput = By.xpath("//input[@name='maLoaiNguoiDung'] | //select[@name='maLoaiNguoiDung']"); // 6. Mã Loại Người Dùng
-
-    // Nút Cập Nhật
-    private final By updateButton = By.xpath("//button[contains(text(),'CẬP NHẬT') or contains(text(),'Cập nhật')]");
+    private By byProfilePage;
+    private By byTxtAccount;
+    private By byTxtPassword;
+    private By byTxtUserName;
+    private By byTxtEmail;
+    private By byHidePassword;
+    private By byTxtPhone;
+    private By byLbHelpFullName;
+    private By byLbHelpNumPhone;
+    private By byLbHelpEmail;
+    private By byLbHelpPassword;
+    private By byBtnUpdate;
 
     public ProfilePage(WebDriver driver) {
         super(driver);
-        this.byNewTicket = By.xpath("//div[contains(@class, 'MuiGrid-grid-md-6')]");
+        this.byNewTicket = By.xpath("(//div[contains(@class,'MuiGrid-grid-md-6')])[last()]");
+        this.byProfilePage = By.xpath("//div[h1[text()='Cài đặt tài khoản chung']]");
+        this.byHidePassword = By.xpath("//button[contains(@class,'MuiIconButton-edgeEnd')]");
+
+        this.byTxtAccount = By.xpath("//input[@id='taiKhoan']");
+        this.byTxtPassword = By.xpath("//input[@id='matKhau']");
+        this.byTxtUserName = By.xpath("//input[@id='hoTen']");
+        this.byTxtEmail = By.xpath("//input[@id='email']");
+        this.byTxtPhone = By.xpath("//input[@id='soDt']");
+
+        this.byLbHelpFullName = By.xpath("//p[@id='hoTen-helper-text']");
+        this.byLbHelpNumPhone = By.xpath("//p[@id='soDt-helper-text']");
+        this.byLbHelpEmail = By.xpath("//p[@id='email-helper-text']");
+        this.byLbHelpPassword = By.xpath("//p[@id='matKhau-helper-text']");
+
+        this.byBtnUpdate = By.xpath("//button[span[text()='Cập Nhật']]");
     }
 
     public boolean isNewTicket() {
         return isElementDisplayed(byNewTicket);
     }
 
-    // --- Lấy giá trị hiển thị trên ô Input bằng hàm getAttribute của CommonPage ---
-    public String getUsernameValue() {
-        return getAttribute(usernameInput, "value");
+    public String getProfilePageTitle() {
+        return getText(byProfilePage);
     }
 
-    public String getFullNameValue() {
-        return getAttribute(fullNameInput, "value");
+    public String getTxtAccount() {
+        return getAttribute(byTxtAccount, "value");
     }
 
-    public String getPhoneValue() {
-        return getAttribute(phoneInput, "value");
+    public String getTxtPassword() {
+        return getAttribute(byTxtPassword, "value");
     }
 
-    public String getEmailValue() {
-        return getAttribute(emailInput, "value");
+    public String getTxtUserName() {
+        return getAttribute(byTxtAccount, "value");
     }
 
-    public String getUserTypeValue() {
-        return getAttribute(userTypeInput, "value");
+    public String getTxtEmail() {
+        return getAttribute(byTxtEmail, "value");
     }
 
-    // --- Kiểm tra thuộc tính Read-only / Disabled ---
-    public boolean isUsernameDisabled() {
-        String disabled = getAttribute(usernameInput, "disabled");
-        String readonly = getAttribute(usernameInput, "readonly");
-        return disabled != null || readonly != null;
+    public boolean isTxtAccountDisabled() {
+        return waitVisibilityOfElementLocated(byTxtAccount).isEnabled();
     }
 
-    public boolean isUserTypeDisabled() {
-        String disabled = getAttribute(userTypeInput, "disabled");
-        String readonly = getAttribute(userTypeInput, "readonly");
-        return disabled != null || readonly != null;
+    public void clickHidePassword() {
+        click(byHidePassword);
     }
 
-    // --- Thao tác nhập liệu ---
+    /// lay type input
+    public String getPasswordInputType() {
+        return getAttribute(byTxtPassword, "type");
+    }
+
+    public boolean isPasswordVisible() {
+        return "text".equalsIgnoreCase(getPasswordInputType());
+    }
+
+    public void clearFullName() {
+        clearText(byTxtUserName);
+    }
+
+    public void clearPhoneNumber() {
+        clearText(byTxtPhone);
+    }
+
+    public void clearPassword() {
+        clearText(byTxtPassword);
+    }
+
+    public void clearEmail() {
+        clearText(byTxtEmail);
+    }
+
+    public void clickUpdate() {
+        click(byBtnUpdate);
+    }
+
+    public String getHelpMessageText(String field) {
+        return switch (field) {
+            case "password" -> getText(byLbHelpPassword);
+            case "phone" -> getText(byLbHelpNumPhone);
+            case "fullName" -> getText(byLbHelpFullName);
+            case "email" -> getText(byLbHelpEmail);
+            default -> "";
+        };
+    }
+
+    public void enterPhoneNumber(String phoneNumber) {
+        clearPhoneNumber();
+        sendKeys(byTxtPhone, phoneNumber);
+    }
+
     public void enterFullName(String fullName) {
-        sendKeys(fullNameInput, fullName);
-    }
-
-    public void enterPhone(String phone) {
-        sendKeys(phoneInput, phone);
+        clearFullName();
+        sendKeys(byTxtUserName, fullName);
     }
 
     public void enterPassword(String password) {
-        sendKeys(passwordInput, password);
+        clearPassword();
+        sendKeys(byTxtPassword, password);
     }
 
     public void enterEmail(String email) {
-        sendKeys(emailInput, email);
-
+        clearEmail();
+        sendKeys(byTxtEmail, email);
     }
 
-    public void clickUpdateButton() {
-        click(updateButton);
+    public String getTxtPhoneNumber() {
+        return getAttribute(byTxtPhone, "value");
     }
 
-    // Hàm tổng hợp: Cập nhật thông tin tài khoản
-    public void updateAccountInfo(String fullName, String phone, String password, String email) {
-        enterFullName(fullName);
-        enterPhone(phone);
-        enterPassword(password);
-        enterEmail(email);
-        clickUpdateButton();
-    }
 }
