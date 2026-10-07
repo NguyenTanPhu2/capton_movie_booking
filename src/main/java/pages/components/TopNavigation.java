@@ -19,6 +19,8 @@ public class TopNavigation extends BasePage {
     private By byIsCinema;
     private By byIsNews;
     private By byIsApplication;
+    private By byIsAvatar;
+    private By byIsAccount;
 
     public TopNavigation(WebDriver driver) {
         super(driver);
@@ -36,9 +38,8 @@ public class TopNavigation extends BasePage {
         this.byIsCinema = By.xpath("//div[@id='cumRap']");
         this.byIsNews = By.xpath("//div[@id='tinTuc']");
         this.byIsApplication = By.xpath("//div[@id='ungDung']");
-
-
-    }
+        this.byIsAvatar = By.xpath("//img[@alt='Avatar']");
+        this.byIsAccount = By.xpath("//h3[text()='Clara']");    }
 
     public void navigateToLoginPage() {
         click(byLnkLogin);
@@ -47,6 +48,8 @@ public class TopNavigation extends BasePage {
     public void navigateToRegisterPage() {
         click(byLnkRegister);
     }
+
+    public void clickLoginButton() {click(byLnkLogin);}
 
     public void clickOnLogOut() {
         click(byLnkLogOut);
@@ -114,6 +117,14 @@ public class TopNavigation extends BasePage {
 
     public void navigateToProfilePage() {
         click(byLnkProfile);
+    }
+
+    public boolean isAvatarDisplayed() {
+        return isElementDisplayed(byIsAvatar);
+    }
+
+    public String isUserDisplays() {
+        return getText(byIsAccount);
     }
 
     public void navigateToCinemaList() {

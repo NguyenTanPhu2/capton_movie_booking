@@ -10,15 +10,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.asserts.SoftAssert;
-
 import report.ExtentReportManager;
 import untils.ConfigManager;
-
+import org.testng.asserts.SoftAssert;
 import java.lang.reflect.Method;
 
 public class BaseTest {
-
     protected WebDriver driver;
     protected final Logger LOG = LogManager.getLogger(getClass());
     protected SoftAssert softAssert;
@@ -39,7 +36,7 @@ public class BaseTest {
         String browser = ConfigManager.getProperty("browser");
         String baseUrl = ConfigManager.getProperty("baseUrl");
         //report: group by class and then by method
-        ExtentReportManager.createTest(getClass(), method.getName());
+        ExtentReportManager.createTest(method.getName());
 
         //Khoi tao driver
         DriverManager driverManager = DriverManagerFactory.getDriverManager(browser);

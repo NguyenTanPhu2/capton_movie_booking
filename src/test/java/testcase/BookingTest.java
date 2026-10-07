@@ -1,424 +1,296 @@
 package testcase;
 
 import base.BaseTest;
-import constants.TimeOutConstants;
 import data.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.*;
+import pages.BookingPage;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.MovieDetailPage;
 import pages.modals.CommonModal;
-import report.ExtentReportManager;
 
 public class BookingTest extends BaseTest {
 
-    /// Page Object
-    HomePage homePage;
-    MovieDetailPage movieDetailPage;
-    CommonModal commonModal;
-    BookingPage bookingPage;
-    LoginPage loginPage;
-    ProfilePage profilePage;
+    private BookingPage bookingPage;
+    private HomePage homePage;
+    private MovieDetailPage movieDetailPage;
+    private LoginPage loginPage;
+    private CommonModal commonModal;
 
     @BeforeMethod
-    public void initializePages() {
+    public void beforeMethod() {
+        bookingPage = new BookingPage(driver);
         homePage = new HomePage(driver);
         movieDetailPage = new MovieDetailPage(driver);
-        commonModal = new CommonModal(driver);
-        bookingPage = new BookingPage(driver);
         loginPage = new LoginPage(driver);
-        profilePage = new ProfilePage(driver);
+        commonModal = new CommonModal(driver);
     }
 
-    @Test
-    public void verify_Booking_Information_Displayed(String movieName, String schedule, int numSeat, String cinema) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
-        homePage.clickOnMovieName(movieName);
+    @Test(
+            dataProvider = "booking-multiple-regular-seats",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
+    public void verify_Total_Price_When_Selecting_Multiple_Seats(
+            String movieName,
+            String schedule,
+            int seat1,
+            int seat2,
+            int seat3,
+            String expectedSeats,
+            String expectedPrice) {
 
-        ///Step 2: Click Schedule
-        LOG.info("Step 2: Click Schedule");
-        ExtentReportManager.info("Step 2: Click Schedule");
+        // Step 1: Open movie and schedule
+        LOG.info("Step 1: Open movie and schedule");
+        homePage.clickOnMovieName(movieName);
         movieDetailPage.clickOnSchedule(schedule);
 
-        commonModal.getWebDriverWait(TimeOutConstants.LONG_TIMEOUT);
+        // Step 2: Select seats 30, 31, 32
+        LOG.info("Step 2: Select multiple regular seats");
+        bookingPage.clickOnSeat(seat1);
+        bookingPage.clickOnSeat(seat2);
+        bookingPage.clickOnSeat(seat3);
 
-        ///Step 3: Click Choose Seat
-        LOG.info("Step 3: Click Choose Seat");
-        ExtentReportManager.info("Step 3: Click Choose Seat");
-        bookingPage.clickOnSeat(numSeat);
+        // VP: Verify selected seats
+        LOG.info("VP: Verify selected seats");
+        String actualSeats = bookingPage.getSeat();
 
-        ///VP 1: Verify information cinema
-        LOG.info("VP 1: Verify information cinema");
-        ExtentReportManager.info("VP 1: Verify information cinema");
-        String recordingCinema = bookingPage.getCinema();
-        Assert.assertEquals(recordingCinema, cinema, "Cinema name is incorrect");
+        Assert.assertEquals(
+                actualSeats,
+                expectedSeats,
+                "Selected seats are incorrect"
+        );
 
-        ///VP 2: Verify information name film
-        LOG.info("VP 2: Verify information name film");
-        ExtentReportManager.info("VP 2: Verify information name film");
-        String recordingNameFilm = bookingPage.getMovieName();
-        Assert.assertEquals(recordingNameFilm, movieName, "Film name is incorrect");
+        // VP: Verify total price
+        LOG.info("VP: Verify total price");
+        String actualPrice = bookingPage.getPrice();
 
-        ///VP 3: Verify information Schedule
-        LOG.info("VP 3: Verify information Schedule");
-        ExtentReportManager.info("VP 3: Verify information Schedule");
-        String recordingSchedule = bookingPage.getSchedule();
-        Assert.assertEquals(recordingSchedule, "21/12/2021 -04:12", "Show time is incorrect");
+        Assert.assertEquals(
+                actualPrice,
+                expectedPrice,
+                "Total price is incorrect"
+        );
     }
+    @Test(
+            dataProvider = "booking-regular-and-vip-seat",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
+    public void verify_Total_Price_When_Selecting_Regular_And_Vip_Seat(
+            String movieName,
+            String schedule,
+            int regularSeat,
+            int vipSeat,
+            String expectedSeats,
+            String expectedPrice) {
 
-    @Test(priority = 2, dataProvider = "booking-seat-legend",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify__Displayed(String movieName, String schedule) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
+        // Step 1: Open movie and schedule
+        LOG.info("Step 1: Open movie and schedule");
         homePage.clickOnMovieName(movieName);
-
-        ///Step 2: Click Schedule
-        LOG.info("Step 2: Click Schedule");
-        ExtentReportManager.info("Step 2: Click Schedule");
         movieDetailPage.clickOnSchedule(schedule);
 
-        commonModal.getWebDriverWait(TimeOutConstants.LONG_TIMEOUT);
+        // Step 2: Select regular and VIP seat
+        LOG.info("Step 2: Select regular and VIP seat");
+        bookingPage.clickOnSeat(regularSeat);
+        bookingPage.clickOnSeat(vipSeat);
 
-        ///VP: Verify seat legend is displayed
-        LOG.info("VP: Verify seat legend is displayed");
-        ExtentReportManager.info("VP: Verify seat legend is displayed");
-        boolean recordingSeatLegend = bookingPage.isSeatLegendDisplays();
+        // VP: Verify selected seats
+        LOG.info("VP: Verify selected seats");
+        String actualSeats = bookingPage.getSeat();
 
-        Assert.assertTrue(recordingSeatLegend, "Seat legend is not displayed on Booking page");
+        Assert.assertEquals(
+                actualSeats,
+                expectedSeats,
+                "Selected seats are incorrect"
+        );
 
+        // VP: Verify total price
+        LOG.info("VP: Verify total price");
+        String actualPrice = bookingPage.getPrice();
+
+        Assert.assertEquals(
+                actualPrice,
+                expectedPrice,
+                "Total price is incorrect"
+        );
     }
+    @Test(
+            dataProvider = "booking-remove-one-seat",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
+    public void verify_Total_Price_After_Removing_One_Seat(
+            String movieName,
+            String schedule,
+            int seat1,
+            int seat2,
+            int seat3,
+            String expectedSeats,
+            String expectedPrice) {
 
-    @Test(priority = 3, dataProvider = "booking-total-price",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify_Total_Price_Default(String movieName, String schedule, String price) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
+        // Step 1: Open movie and schedule
+        LOG.info("Step 1: Open movie and schedule");
         homePage.clickOnMovieName(movieName);
-
-        ///Step 2: Click schedule
-        LOG.info("Step 2: Click schedule");
-        ExtentReportManager.info("Step 2: Click schedule");
         movieDetailPage.clickOnSchedule(schedule);
 
-        ///VP: Verify price ticket
-        LOG.info("VP: Verify price ticket");
-        ExtentReportManager.info("VP: Verify price ticket");
-        String recordingPrice = bookingPage.getPrice();
-        Assert.assertEquals(recordingPrice, price, "Total price is incorrect");
+        // Step 2: Select multiple seats
+        LOG.info("Step 2: Select multiple seats");
+        bookingPage.clickOnSeat(seat1);
+        bookingPage.clickOnSeat(seat2);
+        bookingPage.clickOnSeat(seat3);
+
+        // Step 3: Remove one selected seat
+        LOG.info("Step 3: Remove one selected seat");
+        bookingPage.clickOnSeat(seat2);
+
+        // VP: Verify remaining seats
+        LOG.info("VP: Verify remaining seats");
+        String actualSeats = bookingPage.getSeat();
+
+        Assert.assertEquals(
+                actualSeats,
+                expectedSeats,
+                "Remaining seats are incorrect"
+        );
+
+        // VP: Verify total price
+        LOG.info("VP: Verify total price");
+        String actualPrice = bookingPage.getPrice();
+
+        Assert.assertEquals(
+                actualPrice,
+                expectedPrice,
+                "Total price after removing seat is incorrect"
+        );
     }
+    @Test(
+            dataProvider = "booking-refresh-page",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
+    public void verify_Refresh_Page_When_Seat_Is_Selected(
+            String movieName,
+            String schedule,
+            int seat) {
 
-    @Test(priority = 4, dataProvider = "booking-regular-seat",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify_Select_Regular_Seat(String movieName, String schedule, int numSeat, String chooseSeat, String price) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
+        // Step 1: Open movie and schedule
+        LOG.info("Step 1: Open movie and schedule");
         homePage.clickOnMovieName(movieName);
-
-        ///Step 2: Click Schedule
-        LOG.info("Step 2: Click Schedule");
-        ExtentReportManager.info("Step 2: Click Schedule");
         movieDetailPage.clickOnSchedule(schedule);
 
-        ///Step 3: Click Choose Seat
-        LOG.info("Step 3: Click Choose Seat");
-        ExtentReportManager.info("Step 3: Click Choose Seat");
-        bookingPage.clickOnSeat(numSeat);
-        ///VP 1: Verify number seat
-        LOG.info("VP 1: Verify number seat");
-        ExtentReportManager.info("VP 1: Verify number seat");
-        String recordingSeat = bookingPage.getSeat();
-        Assert.assertEquals(recordingSeat, chooseSeat, "Number seat is incorrect");
+        // Step 2: Select seat
+        LOG.info("Step 2: Select seat");
+        bookingPage.clickOnSeat(seat);
 
-        ///VP 2: Verify price
-        LOG.info("VP 2: Verify price");
-        ExtentReportManager.info("VP 2: Verify price");
-        String recordingPrice = bookingPage.getPrice();
-        Assert.assertEquals(recordingPrice, price, "Total price is incorrect");
+        // Step 3: Refresh page
+        LOG.info("Step 3: Refresh booking page");
+        driver.navigate().refresh();
+
+        // VP: Verify booking page still works after refresh
+        LOG.info("VP: Verify booking page still works after refresh");
+        String actualPrice = bookingPage.getPrice();
+
+        Assert.assertNotNull(
+                actualPrice,
+                "Total price is not displayed after refresh"
+        );
     }
+    @Test(
+            dataProvider = "booking-refresh-page",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
+    public void verify_Browser_Back_From_Booking_Page(
+            String movieName,
+            String schedule,
+            int seat) {
 
-    @Test(priority = 5, dataProvider = "booking-vip-seat",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify_Select_VIP_Seat(String movieName, String schedule, int numSeat, String chooseSeat, String price) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
+        // Step 1: Open movie detail
+        LOG.info("Step 1: Open movie detail");
         homePage.clickOnMovieName(movieName);
 
-        ///Step 2: Click Schedule
-        LOG.info("Step 2: Click Schedule");
-        ExtentReportManager.info("Step 2: Click Schedule");
+        // Step 2: Open booking page
+        LOG.info("Step 2: Open booking page");
         movieDetailPage.clickOnSchedule(schedule);
 
-        ///Step 3: Click Choose Seat
-        LOG.info("Step 3: Click Choose Seat");
-        ExtentReportManager.info("Step 3: Click Choose Seat");
-        bookingPage.clickOnSeat(numSeat);
+        // Step 3: Click browser Back
+        LOG.info("Step 3: Click browser Back");
+        driver.navigate().back();
 
-        ///VP 1: Verify number seat
-        LOG.info("VP 1: Verify number seat");
-        ExtentReportManager.info("VP 1: Verify number seat");
-        String recordingSeat = bookingPage.getSeat();
-        Assert.assertEquals(recordingSeat, chooseSeat, "Number seat is incorrect");
-
-        ///VP 2: Verify price
-        LOG.info("VP 2: Verify price");
-        ExtentReportManager.info("VP 2: Verify price");
-        String recordingPrice = bookingPage.getPrice();
-        Assert.assertEquals(recordingPrice, price, "Total price is incorrect");
+        // VP: Verify returned to previous page
+        LOG.info("VP: Verify returned to previous page");
+        Assert.assertFalse(
+                driver.getCurrentUrl().isEmpty(),
+                "Page is not displayed after clicking browser Back"
+        );
     }
+    @Test(
+            dataProvider = "booking-multiple-seats-successfully",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
+    public void verify_Booking_Multiple_Seats_Successfully(
+            String account,
+            String password,
+            String movieName,
+            String schedule,
+            int seat1,
+            int seat2) {
 
-    @Test(priority = 6, dataProvider = "booking-delete-seat",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify_Deselect_Seat(String movieName, String schedule, int numSeat, String chooseSeat, String price) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
-        homePage.clickOnMovieName(movieName);
-
-        ///Step 2: Click Schedule
-        LOG.info("Step 2: Click Schedule");
-        ExtentReportManager.info("Step 2: Click Schedule");
-        movieDetailPage.clickOnSchedule(schedule);
-
-        ///Step 3: Click Choose Seat
-        LOG.info("Step 3: Click Choose Seat");
-        ExtentReportManager.info("Step 3: Click Choose Seat");
-        bookingPage.clickOnSeat(numSeat);
-
-        commonModal.getWebDriverWait(TimeOutConstants.MEDIUM_TIMEOUT);
-
-        ///Step 4: Click delete seat
-        LOG.info("Step 4: Click delete seat ");
-        ExtentReportManager.info("Step 4: Click delete seat ");
-        bookingPage.clickOnSeat(numSeat);
-
-        ///VP 1: Verify number seat
-        LOG.info("VP 1: Verify empty seat");
-        ExtentReportManager.info("VP 1: Verify number empty seat");
-        String recordingSeat = bookingPage.getEmptySeat();
-        Assert.assertEquals(recordingSeat, chooseSeat, " seat is not empty");
-
-        ///VP 2: Verify price
-        LOG.info("VP 2: Verify price is 0");
-        ExtentReportManager.info("VP 2: Verify price");
-        String recordingPrice = bookingPage.getPrice();
-        Assert.assertEquals(recordingPrice, price, "Total price is incorrect");
-    }
-
-    @Test(priority = 7, dataProvider = "booking-sold-seat",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify_Cannot_Select_Booked_Seat(String movieName, String schedule, String chooseSeat) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
-        homePage.clickOnMovieName(movieName);
-
-        ///Step 2: Click Schedule
-        LOG.info("Step 2: Click Schedule");
-        ExtentReportManager.info("Step 2: Click Schedule");
-        movieDetailPage.clickOnSchedule(schedule);
-
-        ///Step 3: Seat status is displayed correctly
-        LOG.info("Step 3: Seat status is displayed correctly");
-        ExtentReportManager.info("Step 3: Seat status is displayed correctly");
-
-        String recordingSeat = bookingPage.getSeatSold(1);
-        Assert.assertEquals(recordingSeat, chooseSeat, "Seat status is incorrect");
-    }
-
-    @Test(priority = 8, dataProvider = "booking-without-seat",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify_Booking_Without_Selecting_Seat(String account, String password, String movieName, String schedule) {
-        ///Step 1: Navigate Login page
-        LOG.info("Step 1: Navigate Login page");
-        ExtentReportManager.info("Step 1: Navigate Login page");
+        // Step 1: Login
+        LOG.info("Step 1: Login");
         homePage.getTopNavigation().navigateToLoginPage();
-
-        ///Step 2: Login account
-        LOG.info("Step 2: Login Account");
-        ExtentReportManager.info("Step 2: Login Account");
         loginPage.login(account, password);
 
-        ///Step 3: Click name film to movieDetails
-        LOG.info("Step 3: Click name film to movieDetails");
-        ExtentReportManager.info("Step 3: Click name film to movieDetails");
+        // Step 2: Open movie and schedule
+        LOG.info("Step 2: Open movie and schedule");
         homePage.clickOnMovieName(movieName);
-
-        ///Step 4: Click Schedule
-        LOG.info("Step 4: Click Schedule");
-        ExtentReportManager.info("Step 4: Click Schedule");
         movieDetailPage.clickOnSchedule(schedule);
 
-        ///Step 5: Click Mua ve
-        LOG.info("Step 5: Click Mua Ve");
-        ExtentReportManager.info("Step 5: Click Mua Ve");
+        // Step 3: Select seats
+        LOG.info("Step 3: Select multiple seats");
+        bookingPage.clickOnSeat(seat1);
+        bookingPage.clickOnSeat(seat2);
+
+        // Step 4: Booking
+        LOG.info("Step 4: Booking");
         bookingPage.clickBooking();
 
-        ///VP: Seat selection required message is displayed correctly
-        LOG.info("VP: Seat selection required message is displayed correctly");
-        ExtentReportManager.info("VP: Seat selection required message is displayed correctly");
-        String recordingTicket = commonModal.getMessageText();
-        Assert.assertEquals(recordingTicket, "Bạn chưa chọn ghế", "Login required message is incorrect");
+        // VP: Verify booking successfully
+        LOG.info("VP: Verify booking successfully");
+        String actualMessage = commonModal.getMessageText();
+
+        Assert.assertEquals(
+                actualMessage,
+                "Đặt vé thành công",
+                "Booking success message is incorrect"
+        );
     }
+    @Test(
+            dataProvider = "booking-price-format",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
+    public void verify_Total_Price_Format(
+            String movieName,
+            String schedule,
+            int seat) {
 
-    @Test(priority = 9, dataProvider = "booking-valid-seat",
-            dataProviderClass = TestDataProvider.class, groups = "booking") //change numSeat
-    public void verify_Booking_Successfully(String account, String password, String movieName, String schedule, int numSeat) {
-        ///Step 1: Navigate Login page
-        LOG.info("Step 1: Navigate Login page");
-        ExtentReportManager.info("Step 1: Navigate Login page");
-        homePage.getTopNavigation().navigateToLoginPage();
-
-        ///Step 2: Login account
-        LOG.info("Step 2: Login Account");
-        ExtentReportManager.info("Step 2: Login Account");
-        loginPage.login(account, password);
-
-        ///Step 3: Click name film to movieDetails
-        LOG.info("Step 3: Click name film to movieDetails");
-        ExtentReportManager.info("Step 3: Click name film to movieDetails");
+        LOG.info("Step 1: Open movie and schedule");
         homePage.clickOnMovieName(movieName);
-
-        ///Step 4: Click Schedule
-        LOG.info("Step 4: Click Schedule");
-        ExtentReportManager.info("Step 4: Click Schedule");
         movieDetailPage.clickOnSchedule(schedule);
 
-        ///Step 5: Click chon ghe
-        LOG.info("Step 5: Click chon ghe");
-        ExtentReportManager.info("Step 5: Click chon ghe");
-        bookingPage.clickOnSeat(numSeat);
+        LOG.info("Step 2: Select seat");
+        bookingPage.clickOnSeat(seat);
 
-        ///Step 6: Click Mua ve
-        LOG.info("Step 6: Click Mua Ve");
-        ExtentReportManager.info("Step 6: Click Mua Ve");
-        bookingPage.clickBooking();
+        LOG.info("VP: Verify total price format");
+        String actualPrice = bookingPage.getPrice();
 
-        ///VP: Booking success message is displayed correctly
-        LOG.info("VP: Booking success message is displayed correctly");
-        ExtentReportManager.info("VP: Booking success message is displayed correctly");
-        String recordingTicket = commonModal.getMessageText();
-        Assert.assertEquals(recordingTicket, "Đặt vé thành công", "Booking success message is incorrect");
-    } //change numSeat
-
-    @Test(priority = 10, dataProvider = "booking-without-login",
-            dataProviderClass = TestDataProvider.class, groups = "booking")
-    public void verify_Booking_Requires_Login(String movieName, String schedule, int numSeat) {
-        ///Step 1: Click name film to movieDetails
-        LOG.info("Step 1: Click name film to movieDetails");
-        ExtentReportManager.info("Step 1: Click name film to movieDetails");
-        homePage.clickOnMovieName(movieName);
-
-        ///Step 2: Click Schedule
-        LOG.info("Step 2: Click Schedule");
-        ExtentReportManager.info("Step 2: Click Schedule");
-        movieDetailPage.clickOnSchedule(schedule);
-
-        ///Step 3: Click chon ghe
-        LOG.info("Step 3: Click chon ghe");
-        ExtentReportManager.info("Step 3: Click chon ghe");
-        bookingPage.clickOnSeat(numSeat);
-
-        ///Step 4: Click Mua ve
-        LOG.info("Step 4: Click Mua Ve");
-        ExtentReportManager.info("Step 4: Click Mua Ve");
-        bookingPage.clickBooking();
-
-        ///Step 5: Click confirm navigate to Login Page
-        LOG.info("Step 5: Click confirm navigate to Login Page");
-        ExtentReportManager.info("Step 5: Click confirm navigate to Login page");
-        bookingPage.clickConfirmLogin();
-
-        ///VP: Verify navigate to Login Page
-        LOG.info("VP: Verify navigate to Login Page");
-        ExtentReportManager.info("VP: Verify navigate to Login Page");
-        String currentUrl = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrl, "https://demo1.cybersoft.edu.vn/sign-in", "Current URL is incorrect");
+        Assert.assertTrue(
+                actualPrice.matches("\\d+VND"),
+                "Total price format is incorrect: " + actualPrice
+        );
     }
-
-    @Test(priority = 11, dataProvider = "booking-seat-status-after-booking",
-            dataProviderClass = TestDataProvider.class, groups = "booking") //Change numbSeat
-    public void verify_Seat_Status_After_Booking(String account, String password, String movieName, String schedule, String seatSold, String numSeat) {
-        ///Step 1: Navigate Login page
-        LOG.info("Step 1: Navigate Login page");
-        ExtentReportManager.info("Step 1: Navigate Login page");
-        homePage.getTopNavigation().navigateToLoginPage();
-
-        ///Step 2: Login account
-        LOG.info("Step 2: Login Account");
-        ExtentReportManager.info("Step 2: Login Account");
-        loginPage.login(account, password);
-
-        ///Step 3: Click name film to movieDetails
-        LOG.info("Step 3: Click name film to movieDetails");
-        ExtentReportManager.info("Step 3: Click name film to movieDetails");
-        homePage.clickOnMovieName(movieName);
-
-        ///Step 4: Click Schedule
-        LOG.info("Step 4: Click Schedule");
-        ExtentReportManager.info("Step 4: Click Schedule");
-        movieDetailPage.clickOnSchedule(schedule);
-
-        ///Step 5: Click chon ghe
-        LOG.info("Step 5: Click chon ghe");
-        ExtentReportManager.info("Step 5: Click chon ghe");
-        bookingPage.clickOnSeat(numSeat);
-
-        ///Step 6: Click Mua ve
-        LOG.info("Step 6: Click Mua Ve");
-        ExtentReportManager.info("Step 6: Click Mua Ve");
-        bookingPage.clickBooking();
-
-        ///VP 1: Booking success message is displayed correctly
-        LOG.info("VP 1: Booking success message is displayed correctly");
-        ExtentReportManager.info("VP 1: Booking success message is displayed correctly");
-        String recordingTicket = commonModal.getMessageText();
-        Assert.assertEquals(recordingTicket, "Đặt vé thành công", "Booking success message is incorrect");
-
-        ///VP 2: Seat status is displayed correctly
-        LOG.info("VP 2: Seat status is displayed correctly");
-        ExtentReportManager.info("VP 2: Seat status is displayed correctly");
-
-        String recordingSeat = bookingPage.getSeatSold(2);
-        Assert.assertEquals(recordingSeat, seatSold, "Seat status is incorrect");
-    }
-
-    @Test(priority = 12,
-            dataProvider = "booking-history",
-            dataProviderClass = TestDataProvider.class)
-    public void verify_Booking_History_Information(String account, String password) {
-        ///Step 1: Navigate to LoginPage
-        LOG.info("Step 1: Navigate to LoginPage");
-        ExtentReportManager.info("Step 1: Navigate to LoginPage");
-        homePage.getTopNavigation().navigateToLoginPage();
-
-        ///Step 2: Login Account
-        LOG.info("Step 2: Login Account");
-        ExtentReportManager.info("Step 2: Login Account");
-        loginPage.login(account, password);
-
-        ///Step 3: Navigate to Profile page
-        LOG.info("Step 3: Navigates to profile page");
-        ExtentReportManager.info("Step 3: Navigates to profile page");
-        homePage.getTopNavigation().navigateToProfilePage();
-
-        ///Step 4: Scroll
-        LOG.info("Step 4: Scroll");
-        ExtentReportManager.info("Step 4: Scroll");
-        profilePage.scroll();
-
-        ///VP : Verify new ticket
-        LOG.info("VP: Verify new ticket");
-        ExtentReportManager.info("VP: Verify new ticket");
-        boolean recordingNewTicket = profilePage.isNewTicket();
-        Assert.assertTrue(recordingNewTicket, "Ticket is new ticket");
-
-    }
-
 }

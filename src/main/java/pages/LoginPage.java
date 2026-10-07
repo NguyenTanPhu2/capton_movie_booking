@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends CommonPage {
 
-   private final By byTxtAccount;
-   private final By byTxtPassword;
-   private final By byBtnLogin;
-   private final By byBtnRemember;
-   private final By byLnkRegister;
-   private final By byLnkProfile;
+    private By byTxtAccount;
+    private By byTxtPassword;
+    private By byBtnLogin;
+    private By byBtnRemember;
+    private By byLnkRegister;
+    private By byLnkProfile;
 
     public LoginPage(WebDriver driver) {
         super(driver);

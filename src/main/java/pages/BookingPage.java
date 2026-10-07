@@ -1,22 +1,25 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
+import java.util.List;
 
 public class BookingPage extends CommonPage {
 
     private By bySeat;
-    private final By byBtnBooking;
-    private final By byLbNameCinema;
-    private final By byLbMovieName;
-    private final By byLbSchedule;
-    private final By byAreaSeatLegend;
-    private final By byLbPrice;
-    private final By byLbSeat;
-    private final By byLbEmptySeat;
+    private By byBtnBooking;
+    private By byLbNameCinema;
+    private By byLbMovieName;
+    private By byLbSchedule;
+    private By byAreaSeatLegend;
+    private By byLbPrice;
+    private By byLbSeat;
+    private By byLbEmptySeat;
     private By bySeatSold;
-    private final By byConfirmLogin;
+    private By byConfirmLogin;
 
     public BookingPage(WebDriver driver) {
         super(driver);
