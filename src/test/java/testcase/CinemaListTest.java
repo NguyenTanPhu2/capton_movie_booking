@@ -25,7 +25,7 @@ public class CinemaListTest extends BaseTest {
         LOG.info("Step 1: Navigate to Cinema List");
         ExtentReportManager.info("Step 1: Navigate to Cinema List");
 
-        cinemaListPage.getTopNavigation().navigateToCinemaList();
+        cinemaListPage.getTopNavigation().clickOnCinema();
 
         /// VP: Verify movie poster is displayed correctly
         LOG.info("VP: Verify movie poster is displayed correctly");
@@ -44,7 +44,7 @@ public class CinemaListTest extends BaseTest {
         LOG.info("Step 1: Navigate to Cinema List");
         ExtentReportManager.info("Step 1: Navigate to Cinema List");
 
-        cinemaListPage.getTopNavigation().navigateToCinemaList();
+        cinemaListPage.getTopNavigation().clickOnCinema();
 
         /// Step 2: Click CGV
         LOG.info("Step 2: Click CGV cinema system");
@@ -93,7 +93,7 @@ public class CinemaListTest extends BaseTest {
         LOG.info("Step 1: Navigate to Cinema List");
         ExtentReportManager.info("Step 1: Navigate to Cinema List");
 
-        cinemaListPage.getTopNavigation().navigateToCinemaList();
+        cinemaListPage.getTopNavigation().clickOnCinema();
 
         /// VP: Verify showtime buttons are displayed
         LOG.info("VP: Verify showtime buttons are displayed");
@@ -115,7 +115,7 @@ public class CinemaListTest extends BaseTest {
         /// Step 1: Navigate to Cinema List
         LOG.info("Step 1: Navigate to Cinema List");
         ExtentReportManager.info("Step 1: Navigate to Cinema List");
-        cinemaListPage.getTopNavigation().navigateToCinemaList();
+        cinemaListPage.getTopNavigation().clickOnCinema();
 
         /// Step 2: Get date and time color before hover
         LOG.info("Step 2: Get showtime date and time color before hover");
@@ -165,7 +165,7 @@ public class CinemaListTest extends BaseTest {
         LOG.info("Step 1: Navigate to Cinema List");
         ExtentReportManager.info("Step 1: Navigate to Cinema List");
 
-        cinemaListPage.getTopNavigation().navigateToCinemaList();
+        cinemaListPage.getTopNavigation().clickOnCinema();
 
         LOG.info("Step 2: Click showtime " + movieName + " " + day + " " + time );
         ExtentReportManager.info("Step 2: Click showtime " + movieName + " " + day + " " + time );
@@ -192,7 +192,7 @@ public class CinemaListTest extends BaseTest {
         LOG.info("Step 1: Navigate to Cinema List");
         ExtentReportManager.info("Step 1: Navigate to Cinema List");
 
-        cinemaListPage.getTopNavigation().navigateToCinemaList();
+        cinemaListPage.getTopNavigation().clickOnCinema();
 
         LOG.info("Step 2: Scroll inside cinema list column");
         ExtentReportManager.info("Step 2: Scroll inside cinema list column");

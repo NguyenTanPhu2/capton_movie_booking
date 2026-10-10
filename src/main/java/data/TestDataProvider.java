@@ -43,7 +43,7 @@ public class TestDataProvider {
     public static Object[][] registerValid() {
         String account = UUID.randomUUID().toString();
 
-        return new Object[][] {
+        return new Object[][]{
                 {
                         account,
                         "123456",
@@ -57,7 +57,7 @@ public class TestDataProvider {
     public static Object[][] registerInvalidEmail() {
         String account = UUID.randomUUID().toString();
 
-        return new Object[][] {
+        return new Object[][]{
                 {
                         account,
                         "123456",
@@ -71,7 +71,7 @@ public class TestDataProvider {
     public static Object[][] registerHidePassword() {
         String account = UUID.randomUUID().toString();
 
-        return new Object[][] {
+        return new Object[][]{
                 {
                         account,
                         "123456",
@@ -85,7 +85,7 @@ public class TestDataProvider {
     public static Object[][] registerWrongConfirmPassword() {
         String account = UUID.randomUUID().toString();
 
-        return new Object[][] {
+        return new Object[][]{
                 {
                         account,
                         "123456",
@@ -99,7 +99,7 @@ public class TestDataProvider {
     public static Object[][] registerExistingEmail() {
         String account = UUID.randomUUID().toString();
 
-        return new Object[][] {
+        return new Object[][]{
                 {
                         account,
                         "123456",
@@ -113,7 +113,7 @@ public class TestDataProvider {
     public static Object[][] registerInvalidPassword() {
         String account = UUID.randomUUID().toString();
 
-        return new Object[][] {
+        return new Object[][]{
                 {
                         account,
                         "1234"
@@ -125,7 +125,7 @@ public class TestDataProvider {
     public static Object[][] withWhitespace() {
         String account = UUID.randomUUID().toString();
 
-        return new Object[][] {
+        return new Object[][]{
                 {
                         account,
                         "1 2 3 4 56 ",
@@ -178,16 +178,16 @@ public class TestDataProvider {
 
     @DataProvider(name = "movie-pagination")
     public static Object[][] moviePagination() {
-        return new Object[][] {
-                { new int[] { 1, 2, 3 } }
+        return new Object[][]{
+                {new int[]{1, 2, 3}}
         };
     }
 
     @DataProvider(name = "movie-detail")
     public static Object[][] movieDetail() {
-        return new Object[][] {
+        return new Object[][]{
                 {
-                        "Địa đạo",
+                        "Äá»‹a Ä‘áº¡o",
                         2
                 }
         };
@@ -195,112 +195,28 @@ public class TestDataProvider {
 
     @DataProvider(name = "movie-duration-rating")
     public static Object[][] movieDurationRating() {
-        return new Object[][] {
-                { "Man of Steel", "120phút" }
+        return new Object[][]{
+                {"Man of Steel", "120phút" }
         };
     }
 
     @DataProvider(name = "movie-trailer")
     public static Object[][] movieTrailer() {
-        return new Object[][] {
+        return new Object[][]{
                 {
-                        new String[][] {
-                                { "Man of Steel", "Man of Steel - Official Trailer #2 [HD]" },
-                                { "John Cena WWE", "John Cena WWE - Official Trailer #2 [HD]" }
+                        new String[][]{
+                                {"Man of Steel", "Man of Steel - Official Trailer #2 [HD]"},
+                                {"John Cena WWE", "John Cena WWE - Official Trailer #2 [HD]"}
                         }
                 }
         };
     }
 
-    @DataProvider(name = "movie-trailer-click")
-    public static Object[][] movieTrailerClick() {
-        return new Object[][] {
-                { "CÔ GÁI TỪ QUÁ KHỨ" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-navigate")
-    public static Object[][] movieDetailNavigate() {
-        return new Object[][] {
-                { "CÔ GÁI TỪ QUÁ KHỨ" }, { "Địa đạo" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-rating")
-    public static Object[][] movieDetailRating() {
-        return new Object[][] {
-                { "Man of Steel" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-duration")
-    public static Object[][] movieDetailDuration() {
-        return new Object[][] {
-                { "Man of Steel", "120phút" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-trailer-playing")
-    public static Object[][] movieDetailTrailerPlaying() {
-        return new Object[][] {
-                { "Man of Steel" },
-                { "John Cena WWE" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-trailer-close")
-    public static Object[][] movieTrailerClose() {
-        return new Object[][] {
-                { "Man of Steel" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-poster")
-    public static Object[][] movieDetailPoster() {
-        return new Object[][] {
-                { "Man of Steel" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-cinema-system-switching")
-    public static Object[][] movieDetailCinemaSystemSwitching() {
-        return new Object[][] {
-                { "AVATAR 2" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-navigate-to-booking")
-    public static Object[][] movieDetailNavigateToBooking() {
-        return new Object[][] {
-                { "Man of Steel", "09-10-2021", "02:40" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-release-date")
-    public static Object[][] movieDetailReleaseDate() {
-        return new Object[][] {
-                { "Man of Steel", "14.10.2021" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-mobile")
-    public static Object[][] movieDetailMobile() {
-        return new Object[][] {
-                { "Man of Steel" }
-        };
-    }
-
-    @DataProvider(name = "movie-detail-refresh")
-    public static Object[][] movieDetailRefresh() {
-        return new Object[][] {
-                { "Man of Steel" }
-        };
-    }
 
     @DataProvider(name = "movie-search-result")
     public static Object[][] movieSearchResult() {
-        return new Object[][] {
-                { "Man of Steel" }
+        return new Object[][]{
+                {"Man of Steel"}
         };
     }
 
@@ -323,8 +239,8 @@ public class TestDataProvider {
 
     @DataProvider(name = "cinema-system-list")
     public static Object[][] cinemaSystemList() {
-        return new Object[][] {
-                { "cgv", "CGV - Pandora City" }
+        return new Object[][]{
+                {"cgv", "CGV - Pandora City"}
         };
     }
 
@@ -333,7 +249,7 @@ public class TestDataProvider {
 
         return new Object[][] {
                 {
-                        new String[][] {
+                        new String[][]{
                                 { "cgv", "CGV - Pandora City" },
                                 { "bhd-star-cineplex", "BHD Star Cineplex - Phạm Hùng" },
                                 { "lotte-cinema", "Lotte - Phú Thọ" }
@@ -344,21 +260,21 @@ public class TestDataProvider {
 
     @DataProvider(name = "cinema-name-address")
     public static Object[][] cinemaNameAddress() {
-        return new Object[][] {
+        return new Object[][]{
                 { "lotte-cinema", "Lotte - Phú Thọ", "L4-Lotte Mart Phú Thọ, Q.11" }
         };
     }
 
     @DataProvider(name = "cinema-movie")
     public static Object[][] cinemaMovie() {
-        return new Object[][] {
+        return new Object[][]{
                 { "cgv", "CGV - Aeon Tân Phú", "John Wick" }
         };
     }
 
     @DataProvider(name = "cinema-poster-schedule")
     public static Object[][] cinemaPosterSchedule() {
-        return new Object[][] {
+        return new Object[][]{
                 { "galaxy-cinema", "GLX - Nguyễn Văn Quá", "John Cena WWE", "12-10-2023" }
         };
     }
@@ -379,19 +295,19 @@ public class TestDataProvider {
 
     @DataProvider(name = "cinema-sold_out_schedule")
     public static Object[][] cinemaSoldOutSchedule() {
-        return new Object[][] {
-                { "cgv", "CGV - Golden Plaza", "The Gentlemen Dangbk", "07-12-2025", "06:00" }
+        return new Object[][]{
+                {"cgv", "CGV - Golden Plaza", "The Gentlemen Dangbk", "07-12-2025", "06:00"}
         };
     }
 
     @DataProvider(name = "cinema-system-switching")
     public static Object[][] cinemaSystemSwitching() {
 
-        return new Object[][] {
+        return new Object[][]{
                 {
-                        new String[][] {
-                                { "BHD Star Cineplex - 3/2", "10-12-2021" },
-                                { "BHD Star Cineplex - Bitexco", "22-11-2021" },
+                        new String[][]{
+                                {"BHD Star Cineplex - 3/2", "10-12-2021"},
+                                {"BHD Star Cineplex - Bitexco", "22-11-2021"},
                         }
                 }
         };
@@ -399,7 +315,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "cinema-show-time")
     public static Object[][] cinemaShowTime() {
-        return new Object[][] {
+        return new Object[][]{
                 { /* "cgv", "CGV - Aeon Tân Phú", "John Wick", */"10:10" }
         };
     }
@@ -413,7 +329,7 @@ public class TestDataProvider {
         return new Object[][] {
                 {
                         "AVATAR 2",
-                        "BHD Star Cineplex - Vincom Lê Văn Việt",
+                        "BHD Star Cineplex - Vincom LÃª VÄƒn Viá»‡t",
                         "18/10/2021 ~ 10:25"
                 }
         };
@@ -421,17 +337,17 @@ public class TestDataProvider {
 
     @DataProvider(name = "filter-movie")
     public static Object[][] filterMovie() {
-        return new Object[][] {
-                { "AVATAR 2" }
+        return new Object[][]{
+                {"AVATAR 2"}
         };
     }
 
     @DataProvider(name = "filter-cinema")
-    public static Object[][] filterCinema() {
+    public static Object[][] filterCinema(){
         return new Object[][] {
                 {
                         "AVATAR 2",
-                        "BHD Star Cineplex - Vincom Lê Văn Việt",
+                        "BHD Star Cineplex - Vincom LÃª VÄƒn Viá»‡t",
                 }
         };
     }
@@ -444,7 +360,7 @@ public class TestDataProvider {
     public static Object[][] bookingSeatLegend() {
         return new Object[][] {
                 {
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                 }
         };
@@ -452,7 +368,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-information")
     public static Object[][] bookingInformation() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
@@ -464,7 +380,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-total-price")
     public static Object[][] bookingTotalPrice() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
@@ -475,7 +391,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-regular-seat")
     public static Object[][] bookingRegularSeat() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
@@ -488,7 +404,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-vip-seat")
     public static Object[][] bookingVipSeat() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
@@ -501,7 +417,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-delete-seat")
     public static Object[][] bookingDeleteSeat() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
@@ -514,7 +430,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-sold-seat")
     public static Object[][] bookingSoldSeat() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
@@ -539,7 +455,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-history")
     public static Object[][] bookingHistory() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "Clara",
                         "Clara@2026"
@@ -549,7 +465,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-without-seat")
     public static Object[][] bookingWithoutSeat() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "Clara",
                         "Clara@2026",
@@ -561,7 +477,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-valid-seat")
     public static Object[][] bookingValidSeat() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "Clara",
                         "Clara@2026",
@@ -574,7 +490,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "booking-without-login")
     public static Object[][] bookingWithoutLogin() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
@@ -644,7 +560,7 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gái già lắm chiêu",
+                        "gÃ¡i giÃ  láº¯m chiÃªu",
                         "21-12-2021",
                         17,
                         18
@@ -656,7 +572,7 @@ public class TestDataProvider {
     public static Object[][] bookingPriceFormat() {
         return new Object[][] {
                 {
-                        "Nhà Bà Nữ",
+                        "NhÃ  BÃ  Ná»¯",
                         "03-11-2022",
                         18
                 }
@@ -696,36 +612,35 @@ public class TestDataProvider {
 
     @DataProvider(name = "search-trim-whitespace")
     public static Object[][] searchTrimWhitespace() {
-        return new Object[][] {
-                { " the gentlemen ", "The Gentlemen Dangbk" }
+        return new Object[][]{
+                {" the gentlemen ", "The Gentlemen Dangbk"}
         };
     }
-
     @DataProvider(name = "search-by-name")
     public static Object[][] searchByName() {
-        return new Object[][] {
-                { "Man of Steel", "C18" }
+        return new Object[][]{
+                {"Man of Steel", "C18"}
         };
     }
 
     @DataProvider(name = "search-by-character")
     public static Object[][] searchByCharacter() {
-        return new Object[][] {
-                { new String[] { "Man of Steel", "AVATAR 2" }, "T", "C18" }
+        return new Object[][]{
+                {new String[]{"Man of Steel", "AVATAR 2"}, "T", "C18"}
         };
     }
 
     @DataProvider(name = "search-non-existing")
     public static Object[][] searchNonExisting() {
-        return new Object[][] {
+        return new Object[][]{
                 { "Ác Ma" }
         };
     }
 
     @DataProvider(name = "search-select-result")
     public static Object[][] searchSelectResult() {
-        return new Object[][] {
-                { "Man of Steel" }
+        return new Object[][]{
+                {"Man of Steel"}
         };
     }
 
@@ -737,7 +652,7 @@ public class TestDataProvider {
     public static Object[][] newsTag() {
         return new Object[][] {
                 {
-                        new String[] {
+                        new String[]{
                                 "Điện Ảnh 24h",
                                 "Review",
                                 "Khuyến mãi"
@@ -748,7 +663,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "news-big-article")
     public static Object[][] newsBigArticle() {
-        return new Object[][] {
+        return new Object[][]{
                 new String[][] {
                         { "TENET công bố ngày khởi chiếu chính thức tại Việt Nam",
                                 "https://tix.vn/goc-dien-anh/7943-tenet-cong-bo-ngay-khoi-chieu-chinh-thuc-tai-viet-nam" },
@@ -760,7 +675,7 @@ public class TestDataProvider {
 
     @DataProvider(name = "news-small-article")
     public static Object[][] newsSmallArticle() {
-        return new Object[][] {
+        return new Object[][]{
                 new String[][] {
                         { "Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!",
                                 "https://tix.vn/goc-dien-anh/7938-pee-nak-2-van-kiep-thien-thu-di-tu-khong-het-nghiep" },
@@ -776,8 +691,8 @@ public class TestDataProvider {
 
     @DataProvider(name = "news-medium-article")
     public static Object[][] newsMediumArticle() {
-        return new Object[][] {
-                new String[][] {
+        return new Object[][]{
+                new String[][]{
                         { "Gerard Butler cùng bồ cũ Deadpool tham gia Greenland",
                                 "https://tix.vn/goc-dien-anh/7940-gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland" },
                         { "Diễn viên đặc biệt của Bằng Chứng Vô Hình",
@@ -837,14 +752,14 @@ public class TestDataProvider {
 
     @DataProvider(name = "security-login")
     public static Object[][] securityLogin() {
-        return new Object[][] {
-                { "Clara", "Clara@2026" }
+        return new Object[][]{
+                {"Clara", "Clara@2026"}
         };
     }
 
     @DataProvider(name = "security-booking")
     public static Object[][] securityBooking() {
-        return new Object[][] {
+        return new Object[][]{
                 {
                         "gái già lắm chiêu",
                         113,
@@ -891,8 +806,79 @@ public class TestDataProvider {
 
     @DataProvider(name = "profile-without-update")
     public static Object[][] profileWithoutUpdate() {
-        return new Object[][] {
-                { "Clara", "Clara@2026", "Clara JohnShon", "0379211821" }
+        return new Object[][]{
+                {"Clara", "Clara@2026", "Clara JohnShon", "0379211821"}
         };
     }
+
+    @DataProvider(name = "movie-trailer-click")
+    public static Object[][] movieTrailerClick() {
+        return new Object[][]{
+            {"CÔ GÁI TỪ QUÁ KHỨ¨"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-navigate")
+    public static Object[][] movieDetailNavigate() {
+        return new Object[][]{
+            {"CÔ GÁI TỪ QUÁ KHỨ¨"}, {"Äá»‹a Ä‘áº¡o"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-duration")
+    public static Object[][] movieDetailDuration() {
+        return new Object[][]{
+            {"Man of Steel",  "120phút"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-trailer-close")
+    public static Object[][] movieTrailerClose() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-poster")
+    public static Object[][] movieDetailPoster() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-cinema-system-switching")
+    public static Object[][] movieDetailCinemaSystemSwitching() {
+        return new Object[][]{
+            {"AVATAR 2"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-navigate-to-booking")
+    public static Object[][] movieDetailNavigateToBooking() {
+        return new Object[][]{
+            {"Man of Steel", "09-10-2021", "02:40"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-release-date")
+    public static Object[][] movieDetailReleaseDate() {
+        return new Object[][]{
+            {"Man of Steel", "14.10.2021"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-mobile")
+    public static Object[][] movieDetailMobile() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
+    @DataProvider(name = "movie-detail-refresh")
+    public static Object[][] movieDetailRefresh() {
+        return new Object[][]{
+            {"Man of Steel"}
+        };
+    }
+
 }
