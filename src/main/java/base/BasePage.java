@@ -1,6 +1,7 @@
 package base;
 
 import constants.TimeOutConstants;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -13,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class BasePage {
     private  WebDriver driver;
@@ -315,7 +316,20 @@ public class BasePage {
                 mobile);
     }
 
-    /// láº¥y giÃ¡ trá»‹ CSS cá»§a element.
+    public void switchToPhoneEdge() {
+        Map<String, Object> mobile = new HashMap<>();
+
+        mobile.put("width", 390);
+        mobile.put("height", 844);
+        mobile.put("deviceScaleFactor", 1);
+        mobile.put("mobile", true);
+
+        ((EdgeDriver) driver).executeCdpCommand(
+                "Emulation.setDeviceMetricsOverride",
+                mobile);
+    }
+
+    /// lấy giá trị CSS của element.
     public String getCssValue(By locator, String propertyName) {
         WebElement element = waitVisibilityOfElementLocated(locator);
         return element.getCssValue(propertyName);
@@ -331,5 +345,24 @@ public class BasePage {
         element.click();
         element.sendKeys(Keys.CONTROL, "a");
         element.sendKeys(Keys.BACK_SPACE);
+    }
+    public boolean isArticlePageLoaded() {
+        try {
+            return getWebDriverWait(10).until(driver -> {
+                // Kiểm tra trang lỗi của trình duyệt
+                if (!driver.findElements(
+                        By.cssSelector("body.neterror")
+                ).isEmpty()) {
+                    return false;
+                }
+
+                // Kiểm tra nội dung trang đích
+                return driver.findElements(
+                        By.cssSelector("article, main")
+                ).stream().anyMatch(WebElement::isDisplayed);
+            });
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

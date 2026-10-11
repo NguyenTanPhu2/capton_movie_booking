@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Gradle suite</th></tr>
+<tr><td><a href="#t0">Gradle test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">141,176</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Gradle suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Gradle test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">testcase.NewsTest</td><td><a href="#m0">TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs</a></td><td rowspan="1">1791641768011</td><td rowspan="1">16155</td></tr><tr class="failedeven"><td><a href="#m1">TC_NEW_02</a></td><td rowspan="1">1791641648823</td><td rowspan="1">3787</td></tr><tr class="failedeven"><td><a href="#m2">TC_NEW_05_CheckClickLargeNews</a></td><td rowspan="1">1791641685925</td><td rowspan="1">19777</td></tr><tr class="failedeven"><td><a href="#m3">TC_NEW_06_CheckClickMediumNews</a></td><td rowspan="1">1791641707394</td><td rowspan="1">19852</td></tr><tr class="failedeven"><td><a href="#m4">TC_NEW_07_CheckClickSmallNews</a></td><td rowspan="1">1791641728923</td><td rowspan="1">19724</td></tr><tr><th colspan="4">Gradle test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">testcase.NewsTest</td><td><a href="#m5">TC_NEW_004_CheckClickPromotionTab</a></td><td rowspan="1">1791641670254</td><td rowspan="1">14037</td></tr><tr class="passedeven"><td><a href="#m6">TC_NEW_009_CheckExpandNews</a></td><td rowspan="1">1791641754103</td><td rowspan="1">3199</td></tr><tr class="passedeven"><td><a href="#m7">TC_NEW_01</a></td><td rowspan="1">1791641645326</td><td rowspan="1">1994</td></tr><tr class="passedeven"><td><a href="#m8">TC_NEW_010_CheckCollapseNews</a></td><td rowspan="1">1791641759131</td><td rowspan="1">3686</td></tr><tr class="passedeven"><td><a href="#m9">TC_NEW_011_CheckExpandCollapseMobile</a></td><td rowspan="1">1791641764406</td><td rowspan="1">2070</td></tr><tr class="passedeven"><td><a href="#m10">TC_NEW_03_CheckClickReviewTab</a></td><td rowspan="1">1791641654609</td><td rowspan="1">14014</td></tr><tr class="passedeven"><td><a href="#m11">TC_NEW_08_CheckExpandButtonDisplayed</a></td><td rowspan="1">1791641750459</td><td rowspan="1">1778</td></tr></tbody>
+</table>
+<h2>Gradle test</h2><h3 id="m0">testcase.NewsTest#TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	VP 2: Tab Khuyến mãi không hiển thị bài viết hoặc thông báo chưa có khuyến mãi expected [true] but found [false]
+	at testcase.NewsTest.TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs(NewsTest.java:684)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcase.NewsTest#TC_NEW_02</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	VP 10: One or more news images are broken expected [true] but found [false]
+	at testcase.NewsTest.TC_NEW_02(NewsTest.java:209)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcase.NewsTest#TC_NEW_05_CheckClickLargeNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]
+	at testcase.NewsTest.TC_NEW_05_CheckClickLargeNews(NewsTest.java:351)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcase.NewsTest#TC_NEW_06_CheckClickMediumNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]
+	at testcase.NewsTest.TC_NEW_06_CheckClickMediumNews(NewsTest.java:398)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcase.NewsTest#TC_NEW_07_CheckClickSmallNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]
+	at testcase.NewsTest.TC_NEW_07_CheckClickSmallNews(NewsTest.java:445)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcase.NewsTest#TC_NEW_004_CheckClickPromotionTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcase.NewsTest#TC_NEW_009_CheckExpandNews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcase.NewsTest#TC_NEW_01</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcase.NewsTest#TC_NEW_010_CheckCollapseNews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcase.NewsTest#TC_NEW_011_CheckExpandCollapseMobile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcase.NewsTest#TC_NEW_03_CheckClickReviewTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcase.NewsTest#TC_NEW_08_CheckExpandButtonDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

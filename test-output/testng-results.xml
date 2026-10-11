@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-10T21:14:03 ICT" name="Gradle suite" finished-at="2026-10-10T21:16:24 ICT" duration-ms="141176">
+    <groups>
+      <group name="news">
+        <method signature="NewsTest.TC_NEW_01()[pri:1, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_01" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_02()[pri:2, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_02" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_03_CheckClickReviewTab()[pri:3, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_03_CheckClickReviewTab" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_004_CheckClickPromotionTab()[pri:4, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_004_CheckClickPromotionTab" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_05_CheckClickLargeNews()[pri:5, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_05_CheckClickLargeNews" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_06_CheckClickMediumNews()[pri:6, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_06_CheckClickMediumNews" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_07_CheckClickSmallNews()[pri:7, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_07_CheckClickSmallNews" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_08_CheckExpandButtonDisplayed()[pri:8, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_08_CheckExpandButtonDisplayed" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_009_CheckExpandNews()[pri:9, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_009_CheckExpandNews" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_010_CheckCollapseNews()[pri:10, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_010_CheckCollapseNews" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_011_CheckExpandCollapseMobile()[pri:11, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_011_CheckExpandCollapseMobile" class="testcase.NewsTest"/>
+        <method signature="NewsTest.TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs()[pri:12, instance:testcase.NewsTest@18518ccf]" name="TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs" class="testcase.NewsTest"/>
+      </group> <!-- news -->
+    </groups>
+    <test started-at="2026-10-10T21:14:03 ICT" name="Gradle test" finished-at="2026-10-10T21:16:24 ICT" duration-ms="141176">
+      <class name="testcase.NewsTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:03 ICT" name="beforeSuite" finished-at="2026-10-10T21:14:03 ICT" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:03 ICT" name="beforeMethod" finished-at="2026-10-10T21:14:05 ICT" duration-ms="1689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_01() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:05 ICT" name="initializePages" finished-at="2026-10-10T21:14:05 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_01()[pri:1, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:05 ICT" name="TC_NEW_01" finished-at="2026-10-10T21:14:07 ICT" duration-ms="1994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_01 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:07 ICT" name="afterMethod" finished-at="2026-10-10T21:14:07 ICT" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_01 status=SUCCESS method=NewsTest.TC_NEW_01()[pri:1, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:07 ICT" name="beforeMethod" finished-at="2026-10-10T21:14:08 ICT" duration-ms="1232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_02()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:08 ICT" name="initializePages" finished-at="2026-10-10T21:14:08 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_02()[pri:2, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:08 ICT" name="TC_NEW_02" finished-at="2026-10-10T21:14:12 ICT" duration-ms="3787" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+VP 10: One or more news images are broken expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+VP 10: One or more news images are broken expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcase.NewsTest.TC_NEW_02(NewsTest.java:209)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_02 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:12 ICT" name="afterMethod" finished-at="2026-10-10T21:14:13 ICT" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_02 status=FAILURE method=NewsTest.TC_NEW_02()[pri:2, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:13 ICT" name="beforeMethod" finished-at="2026-10-10T21:14:14 ICT" duration-ms="1596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_03_CheckClickReviewTab()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:14 ICT" name="initializePages" finished-at="2026-10-10T21:14:14 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_03_CheckClickReviewTab()[pri:3, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:14 ICT" name="TC_NEW_03_CheckClickReviewTab" finished-at="2026-10-10T21:14:28 ICT" duration-ms="14014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_03_CheckClickReviewTab -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:28 ICT" name="afterMethod" finished-at="2026-10-10T21:14:28 ICT" duration-ms="367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_03_CheckClickReviewTab status=SUCCESS method=NewsTest.TC_NEW_03_CheckClickReviewTab()[pri:3, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:28 ICT" name="beforeMethod" finished-at="2026-10-10T21:14:30 ICT" duration-ms="1259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_004_CheckClickPromotionTab()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:30 ICT" name="initializePages" finished-at="2026-10-10T21:14:30 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_004_CheckClickPromotionTab()[pri:4, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:30 ICT" name="TC_NEW_004_CheckClickPromotionTab" finished-at="2026-10-10T21:14:44 ICT" duration-ms="14037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_004_CheckClickPromotionTab -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:44 ICT" name="afterMethod" finished-at="2026-10-10T21:14:44 ICT" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_004_CheckClickPromotionTab status=SUCCESS method=NewsTest.TC_NEW_004_CheckClickPromotionTab()[pri:4, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:44 ICT" name="beforeMethod" finished-at="2026-10-10T21:14:45 ICT" duration-ms="1275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_05_CheckClickLargeNews()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:45 ICT" name="initializePages" finished-at="2026-10-10T21:14:45 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_05_CheckClickLargeNews()[pri:5, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:14:45 ICT" name="TC_NEW_05_CheckClickLargeNews" finished-at="2026-10-10T21:15:05 ICT" duration-ms="19777" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcase.NewsTest.TC_NEW_05_CheckClickLargeNews(NewsTest.java:351)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_05_CheckClickLargeNews -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:05 ICT" name="afterMethod" finished-at="2026-10-10T21:15:06 ICT" duration-ms="417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_05_CheckClickLargeNews status=FAILURE method=NewsTest.TC_NEW_05_CheckClickLargeNews()[pri:5, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:06 ICT" name="beforeMethod" finished-at="2026-10-10T21:15:07 ICT" duration-ms="1262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_06_CheckClickMediumNews()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:07 ICT" name="initializePages" finished-at="2026-10-10T21:15:07 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_06_CheckClickMediumNews()[pri:6, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:07 ICT" name="TC_NEW_06_CheckClickMediumNews" finished-at="2026-10-10T21:15:27 ICT" duration-ms="19852" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcase.NewsTest.TC_NEW_06_CheckClickMediumNews(NewsTest.java:398)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_06_CheckClickMediumNews -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:27 ICT" name="afterMethod" finished-at="2026-10-10T21:15:27 ICT" duration-ms="422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_06_CheckClickMediumNews status=FAILURE method=NewsTest.TC_NEW_06_CheckClickMediumNews()[pri:6, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:27 ICT" name="beforeMethod" finished-at="2026-10-10T21:15:28 ICT" duration-ms="1240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_07_CheckClickSmallNews()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:28 ICT" name="initializePages" finished-at="2026-10-10T21:15:28 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_07_CheckClickSmallNews()[pri:7, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:28 ICT" name="TC_NEW_07_CheckClickSmallNews" finished-at="2026-10-10T21:15:48 ICT" duration-ms="19724" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+VP 2: URL đã mở nhưng trang chi tiết không tải được nội dung bài viết expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcase.NewsTest.TC_NEW_07_CheckClickSmallNews(NewsTest.java:445)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_07_CheckClickSmallNews -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:48 ICT" name="afterMethod" finished-at="2026-10-10T21:15:49 ICT" duration-ms="448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_07_CheckClickSmallNews status=FAILURE method=NewsTest.TC_NEW_07_CheckClickSmallNews()[pri:7, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:49 ICT" name="beforeMethod" finished-at="2026-10-10T21:15:50 ICT" duration-ms="1351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_08_CheckExpandButtonDisplayed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:50 ICT" name="initializePages" finished-at="2026-10-10T21:15:50 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_08_CheckExpandButtonDisplayed()[pri:8, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:50 ICT" name="TC_NEW_08_CheckExpandButtonDisplayed" finished-at="2026-10-10T21:15:52 ICT" duration-ms="1778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_08_CheckExpandButtonDisplayed -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:52 ICT" name="afterMethod" finished-at="2026-10-10T21:15:52 ICT" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_08_CheckExpandButtonDisplayed status=SUCCESS method=NewsTest.TC_NEW_08_CheckExpandButtonDisplayed()[pri:8, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:52 ICT" name="beforeMethod" finished-at="2026-10-10T21:15:54 ICT" duration-ms="1569" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_009_CheckExpandNews()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:54 ICT" name="initializePages" finished-at="2026-10-10T21:15:54 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_009_CheckExpandNews()[pri:9, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:54 ICT" name="TC_NEW_009_CheckExpandNews" finished-at="2026-10-10T21:15:57 ICT" duration-ms="3199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_009_CheckExpandNews -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:57 ICT" name="afterMethod" finished-at="2026-10-10T21:15:57 ICT" duration-ms="357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_009_CheckExpandNews status=SUCCESS method=NewsTest.TC_NEW_009_CheckExpandNews()[pri:9, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:57 ICT" name="beforeMethod" finished-at="2026-10-10T21:15:59 ICT" duration-ms="1467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_010_CheckCollapseNews()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:59 ICT" name="initializePages" finished-at="2026-10-10T21:15:59 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_010_CheckCollapseNews()[pri:10, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:15:59 ICT" name="TC_NEW_010_CheckCollapseNews" finished-at="2026-10-10T21:16:02 ICT" duration-ms="3686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_010_CheckCollapseNews -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:02 ICT" name="afterMethod" finished-at="2026-10-10T21:16:03 ICT" duration-ms="332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_010_CheckCollapseNews status=SUCCESS method=NewsTest.TC_NEW_010_CheckCollapseNews()[pri:10, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:03 ICT" name="beforeMethod" finished-at="2026-10-10T21:16:04 ICT" duration-ms="1251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_011_CheckExpandCollapseMobile()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:04 ICT" name="initializePages" finished-at="2026-10-10T21:16:04 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_011_CheckExpandCollapseMobile()[pri:11, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:04 ICT" name="TC_NEW_011_CheckExpandCollapseMobile" finished-at="2026-10-10T21:16:06 ICT" duration-ms="2070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_011_CheckExpandCollapseMobile -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:06 ICT" name="afterMethod" finished-at="2026-10-10T21:16:06 ICT" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_011_CheckExpandCollapseMobile status=SUCCESS method=NewsTest.TC_NEW_011_CheckExpandCollapseMobile()[pri:11, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:06 ICT" name="beforeMethod" finished-at="2026-10-10T21:16:08 ICT" duration-ms="1248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.NewsTest.TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:08 ICT" name="initializePages" finished-at="2026-10-10T21:16:08 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs()[pri:12, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:08 ICT" name="TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs" finished-at="2026-10-10T21:16:24 ICT" duration-ms="16155" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+VP 2: Tab Khuyến mãi không hiển thị bài viết hoặc thông báo chưa có khuyến mãi expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+VP 2: Tab Khuyến mãi không hiển thị bài viết hoặc thông báo chưa có khuyến mãi expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcase.NewsTest.TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs(NewsTest.java:684)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:24 ICT" name="afterMethod" finished-at="2026-10-10T21:16:24 ICT" duration-ms="616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs status=FAILURE method=NewsTest.TC_NEW_012_CheckExpandCollapseWhenSwitchingTabs()[pri:12, instance:testcase.NewsTest@18518ccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcase.NewsTest@18518ccf]" started-at="2026-10-10T21:16:24 ICT" name="afterSuite" finished-at="2026-10-10T21:16:25 ICT" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcase.NewsTest -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
+</testng-results>

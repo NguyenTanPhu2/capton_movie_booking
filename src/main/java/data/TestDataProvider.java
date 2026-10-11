@@ -329,7 +329,7 @@ public class TestDataProvider {
         return new Object[][] {
                 {
                         "AVATAR 2",
-                        "BHD Star Cineplex - Vincom LÃª VÄƒn Viá»‡t",
+                        "BHD Star Cineplex - Vincom Lê Văn Việt",
                         "18/10/2021 ~ 10:25"
                 }
         };
@@ -347,7 +347,7 @@ public class TestDataProvider {
         return new Object[][] {
                 {
                         "AVATAR 2",
-                        "BHD Star Cineplex - Vincom LÃª VÄƒn Viá»‡t",
+                        "BHD Star Cineplex - Vincom Lê Văn Việt",
                 }
         };
     }
@@ -560,7 +560,7 @@ public class TestDataProvider {
                 {
                         "Clara",
                         "Clara@2026",
-                        "gÃ¡i giÃ  láº¯m chiÃªu",
+                        "gái già lắm chiêu",
                         "21-12-2021",
                         17,
                         18
@@ -572,7 +572,7 @@ public class TestDataProvider {
     public static Object[][] bookingPriceFormat() {
         return new Object[][] {
                 {
-                        "NhÃ  BÃ  Ná»¯",
+                        "Nhà Bà Nữ",
                         "03-11-2022",
                         18
                 }
@@ -821,7 +821,7 @@ public class TestDataProvider {
     @DataProvider(name = "movie-detail-navigate")
     public static Object[][] movieDetailNavigate() {
         return new Object[][]{
-            {"CÔ GÁI TỪ QUÁ KHỨ¨"}, {"Äá»‹a Ä‘áº¡o"}
+            {"CÔ GÁI TỪ QUÁ KHỨ¨"}, {"Địa đạo"}
         };
     }
 

@@ -82,7 +82,7 @@ public class MovieDetailTest extends BaseTest {
                 LOG.info("VP 1: Verify movie is found");
                 ExtentReportManager.info("VP 1: Verify movie is found");
 
-                softAssert.assertTrue(movieFound, "Không tìm thấy phim: " + movieName);
+                softAssert.assertTrue(movieFound, "VP 1: Không tìm thấy phim: " + movieName);
 
                 // Step 2: Hover to movie card
                 LOG.info("Step 2: Hover to movie card");
@@ -95,7 +95,7 @@ public class MovieDetailTest extends BaseTest {
                 ExtentReportManager.info("VP 2: Verify trailer button is displayed");
 
                 softAssert.assertTrue( movieDetailPage.isTrailerButtonDisplayedByMovieName(movieName),
-                                "Không hiển thị nút Play trailer của " + movieName);
+                                "VP 2: Không hiển thị nút Play trailer của " + movieName);
 
                 // Step 3: Click trailer button
                 LOG.info("Step 3: Click trailer button");
@@ -105,6 +105,9 @@ public class MovieDetailTest extends BaseTest {
                 // VP 3: Verify trailer popup is displayed
                 LOG.info("VP 3: Verify trailer popup is displayed");
                 ExtentReportManager.info("VP 3: Verify trailer popup is displayed");
+
+                softAssert.assertTrue( movieDetailPage.isTrailerPopupDisplayed(), 
+                        "VP 3: Trailer popup không hiển thị sau khi nhấn Play trailer của " + movieName );
 
                 // Step 4: Get trailer URL
                 LOG.info("Step 4: Get trailer URL");
@@ -119,9 +122,9 @@ public class MovieDetailTest extends BaseTest {
                 LOG.info("VP 4: Verify trailer URL");
                 ExtentReportManager.info("VP 4: Verify trailer URL");
 
-                softAssert.assertNotNull(trailerUrl,"Trailer không có URL");
+                softAssert.assertNotNull(trailerUrl,"VP 4: Trailer không có URL");
 
-                softAssert.assertFalse(trailerUrl.trim().isEmpty(),"URL trailer bị rỗng");
+                softAssert.assertFalse(trailerUrl.trim().isEmpty(),"VP 4: URL trailer bị rỗng");
                                 
                 softAssert.assertAll();
         }
@@ -153,10 +156,10 @@ public class MovieDetailTest extends BaseTest {
                 String firstMoviePage2 = movieDetailPage.getFirstMovieHref();
 
                 Assert.assertNotEquals(firstMoviePage2, firstMoviePage1,
-                                "Danh sách phim không thay đổi khi chuyển sang trang 2");
+                                "VP 1: Danh sách phim không thay đổi khi chuyển sang trang 2");
 
                 Assert.assertTrue(movieDetailPage.isPaginationActive(2),
-                                "Nút pagination trang 2 chưa chuyển sang màu cam");
+                                "VP 1: Nút pagination trang 2 chưa chuyển sang màu cam");
 
 
                 // Step 3: Navigate back to page 1
@@ -173,10 +176,10 @@ public class MovieDetailTest extends BaseTest {
                 String firstMovieAfterBackPage1 = movieDetailPage.getFirstMovieHref();
 
                 Assert.assertEquals(firstMovieAfterBackPage1, firstMoviePage1,
-                                "Danh sách phim không quay lại trang 1");
+                                "VP 2: Danh sách phim không quay lại trang 1");
 
                 Assert.assertTrue(movieDetailPage.isPaginationActive(1),
-                                "Nút pagination trang 1 chưa chuyển sang màu cam");
+                                "VP 2: Nút pagination trang 1 chưa chuyển sang màu cam");
         }
 
         @Test(priority = 5, dataProvider = "movie-detail-navigate", 
@@ -193,7 +196,7 @@ public class MovieDetailTest extends BaseTest {
                 LOG.info("VP 1: Verify movie is found");
                 ExtentReportManager.info("VP 1: Verify movie is found");
 
-                Assert.assertTrue(movieFound, "Không tìm thấy phim: " + movieName);
+                Assert.assertTrue(movieFound, "VP 1: Không tìm thấy phim: " + movieName);
 
                 // Step 2: Hover to movie card
                 LOG.info("Step 2: Hover to movie card");
@@ -213,19 +216,19 @@ public class MovieDetailTest extends BaseTest {
                 String currentUrl = movieDetailPage.getCurrentUrl();
 
                 softAssert.assertTrue(currentUrl.contains("/detail/"),
-                                "Không điều hướng đến trang chi tiết. URL: " + currentUrl);
+                                "VP 2: Không điều hướng đến trang chi tiết. URL: " + currentUrl);
 
                 // VP 3: Verify Movie Detail page is loaded
                 LOG.info("VP 3: Verify Movie Detail page is loaded");
                 ExtentReportManager.info("VP 3: Verify Movie Detail page is loaded");
                 softAssert.assertTrue(movieDetailPage.isMovieDetailPageLoaded(),
-                        "Trang chi tiết phim " + movieName + " bị trắng: #root không có nội dung");
+                        "VP 3: Trang chi tiết phim " + movieName + " bị trắng: #root không có nội dung");
 
                 // VP 4: Verify movie title is displayed
                 LOG.info("VP 4: Verify movie title is displayed");
                 ExtentReportManager.info("VP 4: Verify movie title is displayed");
                 softAssert.assertTrue(movieDetailPage.isMovieDetailTitleDisplayed(),
-                        "Trang chi tiết phim " + movieName + " không hiển thị dữ liệu phim");
+                        "VP 4: Trang chi tiết phim " + movieName + " không hiển thị dữ liệu phim");
 
                 softAssert.assertAll();
         }
@@ -247,36 +250,36 @@ public class MovieDetailTest extends BaseTest {
                 ExtentReportManager.info("Step 2: Verify movie detail information");
 
                 // VP 1: Verify movie title is displayed
-                LOG.info("VP: Verify movie title is displayed");
-                ExtentReportManager.info("VP: Verify movie title is displayed");
+                LOG.info("VP 1: Verify movie title is displayed");
+                ExtentReportManager.info("VP 1: Verify movie title is displayed");
 
                 Assert.assertTrue(
                         movieDetailPage.isMovieDetailTitleDisplayed(),
-                        "Movie title is not displayed on the Movie Detail page");
+                        "VP 1: Movie title is not displayed on the Movie Detail page");
 
                 // VP 2: Verify movie duration is displayed
-                LOG.info("VP: Verify movie duration is displayed");
+                LOG.info("VP 2: Verify movie duration is displayed");
                 ExtentReportManager.info(
-                        "VP: Verify movie duration is displayed");
+                        "VP 2: Verify movie duration is displayed");
 
                 Assert.assertTrue(
                         movieDetailPage.isMovieDetailDurationDisplayed(),
-                         "Movie duration is not displayed on the Movie Detail page");
+                         "VP 2: Movie duration is not displayed on the Movie Detail page");
 
                 // VP 3: Verify movie title
-                LOG.info("VP: Verify movie title is correct");
-                ExtentReportManager.info("VP: Verify movie title is correct");
+                LOG.info("VP 3: Verify movie title is correct");
+                ExtentReportManager.info("VP 3: Verify movie title is correct");
 
                 Assert.assertEquals( movieDetailPage.getMovieDetailTitle().trim(), movieName,
-                        "Movie title on the Movie Detail page is incorrect");
+                        "VP 3: Movie title on the Movie Detail page is incorrect");
 
                 // VP 4: Verify movie duration
-                LOG.info("VP: Verify movie duration is correct");
+                LOG.info("VP 4: Verify movie duration is correct");
                 ExtentReportManager.info(
-                        "VP: Verify movie duration is correct");
+                        "VP 4: Verify movie duration is correct");
 
                 Assert.assertEquals( movieDetailPage.getMovieDetailDuration().trim(), expectedDuration,
-                          "Movie duration on the Movie Detail page is incorrect");
+                          "VP 4: Movie duration on the Movie Detail page is incorrect");
         }
 
         @Test(priority = 8, dataProvider = "movie-detail-rating", 
@@ -296,22 +299,24 @@ public class MovieDetailTest extends BaseTest {
                 ExtentReportManager.info("VP 1: Check movie is displayed");
                 Assert.assertTrue(
                                 movieDetailPage.isMovieDetailRatingDisplayed(),
-                                "Rating movie is not display");
+                                "VP 1: Rating movie is not display");
 
-                // Lấy rating từ aria-label
+                // VP 2: Verify from aria-label
+                LOG.info("VP 2: Verify from aria-label");
+                ExtentReportManager.info("VP 2: Verify from aria-label");
                 String actualRating = movieDetailPage.getMovieDetailRating();
 
                 Assert.assertNotNull(
                                 actualRating,
-                                "Không lấy được rating của phim");
+                                "VP 2: Không lấy được rating của phim");
 
                 Assert.assertFalse(
                                 actualRating.trim().isEmpty(),
-                                "Rating phim đang rỗng");
+                                "VP 2: Rating phim đang rỗng");
 
                 Assert.assertTrue(
                                 actualRating.matches("\\d+ Stars"),
-                                "Rating không đúng định dạng: " + actualRating);
+                                "VP 2: Rating không đúng định dạng: " + actualRating);
 
                 LOG.info("Movie rating: " + actualRating);
         }
@@ -342,7 +347,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                         movieDetailPage.isTrailerPopupDisplayed(),
-                        "Trailer không được mở");
+                        "VP 1: Trailer không được mở");
 
                 /// Step 3: Get trailer title
                 LOG.info("Step 3: Get trailer title");
@@ -368,14 +373,14 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                         movieDetailPage.isTrailerRelatedToMovie(movieName),
-                        "Trailer is not related to the movie: " + movieName
+                        "VP 2: Trailer is not related to the movie: " + movieName
                                 + ". Trailer title: " + trailerTitle);
         }
 
         @Test(priority = 12, dataProvider = "movie-detail-trailer-playing", 
                 dataProviderClass = TestDataProvider.class, groups = "movie-detail")
-        public void TC_MV_012_CheckMovieTrailerPlayNormally() {
-                String movieName = "Man of Steel";
+        public void TC_MV_012_CheckMovieTrailerPlayNormally(String movieName) {
+
                 // Step 1: Navigation to detail page of Movie
                 LOG.info("Step 1: Navigation to detail page of " + movieName);
                 ExtentReportManager.info("Step 1: Navigation to detail page of " + movieName);
@@ -395,21 +400,21 @@ public class MovieDetailTest extends BaseTest {
                 ExtentReportManager.info("VP 1: Trailer popup is open");
                 Assert.assertTrue(
                                 movieDetailPage.isTrailerPopupDisplayed(),
-                                "Trailer not open");
+                                "VP 1: Trailer not open");
 
                 // VP 2: Verify trailer player
                 LOG.info("VP 2: Verify trailer player");
                 ExtentReportManager.info("VP 2: Verify trailer player");
                 Assert.assertTrue(
                                 movieDetailPage.isTrailerPlayerDisplayed(),
-                                "Trình phát trailer không hiển thị");
+                                "VP 2: Trình phát trailer không hiển thị");
 
                 // VP 3: Verify trailer is playing
                 LOG.info("VP 3: Verify trailer is playing");
                 ExtentReportManager.info("VP 3: Verify trailer is playing");
                 Assert.assertTrue(
                                 movieDetailPage.isTrailerPlaying(),
-                                "Trailer is not playing");
+                                "VP 3: Trailer is not playing");
         }
 
         @Test(priority = 14, dataProvider = "movie-detail-trailer-close", 
@@ -501,7 +506,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                                 movieDetailPage.isMovieDetailPosterDisplayed(),
-                                "Movie poster is not displayed correctly");
+                                "VP 1: Movie poster is not displayed correctly");
 
                 /// VP 2: Verify movie name is displayed
                 LOG.info("VP 2: Verify movie name is displayed");
@@ -509,12 +514,12 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                                 movieDetailPage.isMovieDetailTitleDisplayed(),
-                                "Movie name is not displayed");
+                                "VP 2: Movie name is not displayed");
 
                 Assert.assertEquals(
                                 movieDetailPage.getMovieDetailTitle().trim(),
                                 movieName,
-                                "Movie name is incorrect");
+                                "VP 2: Movie name is incorrect");
         }
 
         @Test(priority = 17, dataProvider = "movie-detail-cinema-system-switching", dataProviderClass = TestDataProvider.class, groups = "movie-detail")
@@ -540,7 +545,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                                 movieDetailPage.isCinemaShowtimeDisplayed("CGV"),
-                                "CGV cinema system is not displayed");
+                                "VP 1: CGV cinema system is not displayed");
 
                 /// Step 3: Click BHD cinema system
                 LOG.info("Step 3: Click BHD cinema system");
@@ -555,7 +560,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                                 movieDetailPage.isCinemaShowtimeDisplayed("BHD"),
-                                "BHD cinema system is not displayed");
+                                "VP 2: BHD cinema system is not displayed");
 
                 /// Step 4: Click MegaGS cinema system
                 LOG.info("Step 4: Click MegaGS cinema system");
@@ -571,7 +576,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                                 movieDetailPage.isCinemaShowtimeDisplayed("MegaGS"),
-                                "MegaGS cinema system is not displayed");
+                                "VP 3: MegaGS cinema system is not displayed");
         }
 
         @Test(priority = 19, dataProvider = "movie-detail-navigate-to-booking", dataProviderClass = TestDataProvider.class, groups = "movie-detail")
@@ -640,16 +645,16 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertNotNull(
                                 releaseDate,
-                                "Movie release date is null");
+                                "VP 1: Movie release date is null");
 
                 Assert.assertFalse(
                                 releaseDate.trim().isEmpty(),
-                                "Movie release date is empty");
+                                "VP 1: Movie release date is empty");
 
                 Assert.assertNotEquals(
                                 releaseDate.trim(),
                                 "Invalid Date",
-                                "Movie release date displays Invalid Date");
+                                "VP 1: Movie release date displays Invalid Date");
 
                 /// VP 2: Verify release date format is dd.MM.yyyy
                 LOG.info("VP 2: Verify release date format is dd.MM.yyyy");
@@ -658,7 +663,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                                 releaseDate.matches("\\d{2}\\.\\d{2}\\.\\d{4}"),
-                                "Movie release date does not have format dd.MM.yyyy: "
+                                "VP 2: Movie release date does not have format dd.MM.yyyy: "
                                                 + releaseDate);
 
                 /// VP 3: Verify release date matches expected data
@@ -669,7 +674,7 @@ public class MovieDetailTest extends BaseTest {
                 Assert.assertEquals(
                                 releaseDate.trim(),
                                 expectedReleaseDate.trim(),
-                                "Movie release date does not match expected data");
+                                "VP 2: Movie release date does not match expected data");
         }
 
         @Test(priority = 22, dataProvider = "movie-detail-mobile",
@@ -680,7 +685,7 @@ public class MovieDetailTest extends BaseTest {
                 LOG.info("Step 1: Switch browser to mobile view");
                 ExtentReportManager.info("Step 1: Switch browser to mobile view");
 
-                movieDetailPage.switchToPhone();
+                movieDetailPage.switchToPhoneEdge();
 
                 LOG.info("Window width: " + driver.manage().window().getSize().getWidth());
                 LOG.info("Window height: " + driver.manage().window().getSize().getHeight());
@@ -714,7 +719,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertFalse(
                         movieDetailPage.isHorizontalScrollbarDisplayed(),
-                        "Movie Detail page has horizontal scrollbar on mobile");
+                        "VP 1: Movie Detail page has horizontal scrollbar on mobile");
 
                 /// VP 2: Verify page layout is not overflowed
                 LOG.info("VP 2: Verify Movie Detail page layout is not overflowed");
@@ -723,7 +728,7 @@ public class MovieDetailTest extends BaseTest {
 
                 Assert.assertTrue(
                         movieDetailPage.isMobileLayoutDisplayedCorrectly(),
-                        "Movie Detail page layout is broken or overflowed on mobile");
+                        "VP 2: Movie Detail page layout is broken or overflowed on mobile");
         }
 
 
@@ -750,12 +755,12 @@ public class MovieDetailTest extends BaseTest {
                 ExtentReportManager.info( "VP 1: Verify Movie Detail page is displayed");
 
                 Assert.assertTrue( movieDetailPage.isMovieDetailTitleDisplayed(),
-                        "Movie Detail page is blank after refresh");
+                        "VP 2: Movie Detail page is blank after refresh");
 
-                /// VP: Verify movie name is correct after refresh
-                LOG.info("VP 1: Verify movie name is correct after refresh");
+                /// VP 2: Verify movie name is correct after refresh
+                LOG.info("VP 2: Verify movie name is correct after refresh");
                 ExtentReportManager.info(
-                        "VP 1: Verify movie name is correct after refresh"
+                        "VP 2: Verify movie name is correct after refresh"
                 );
 
                 String actualMovieName = movieDetailPage.getMovieDetailTitle();
@@ -767,7 +772,7 @@ public class MovieDetailTest extends BaseTest {
 
                 ExtentReportManager.info("Actual movie name: " + actualMovieName);
                 Assert.assertEquals( actualMovieName.trim(), movieName.trim(),
-                        "Movie name is incorrect after refresh");
+                        "VP 2: Movie name is incorrect after refresh");
         }
 
         private void checkMoviePage(int pageNumber) {
