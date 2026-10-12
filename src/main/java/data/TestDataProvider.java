@@ -360,7 +360,7 @@ public class TestDataProvider {
     public static Object[][] bookingSeatLegend() {
         return new Object[][] {
                 {
-                        "gÃ¡i giÃ  láº¯m chiÃªu",
+                        "gái già lắm chiêu",
                         "21-12-2021",
                 }
         };
@@ -483,7 +483,7 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        "15"
+                        15
                 }
         };
     }
@@ -505,10 +505,10 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        17,
-                        18,
-                        19,
-                        "Ghế 17, Ghế 18, Ghế 19,",
+                        145,
+                        146,
+                        132,
+                        "Ghế 145, Ghế 146, Ghế 132,",
                         "225000VND"
                 }
         };
@@ -520,9 +520,9 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        17,
+                        146,
                         36,
-                        "Ghế 17, Ghế 36,",
+                        "Ghế 146, Ghế 36,",
                         "165000VND"
                 }
         };
@@ -534,10 +534,10 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        17,
-                        18,
-                        19,
-                        "Ghế 17, Ghế 19,",
+                        145,
+                        146,
+                        132,
+                        "Ghế 145, Ghế 132,",
                         "150000VND"
                 }
         };
@@ -549,7 +549,7 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        17
+                        146
                 }
         };
     }
@@ -562,8 +562,8 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        17,
-                        18
+                        38,
+                        52
                 }
         };
     }
@@ -881,4 +881,21 @@ public class TestDataProvider {
         };
     }
 
+
+    @DataProvider(name = "register-long-email")
+    public static Object[][] registerLongEmail() {
+        String account = UUID.randomUUID().toString();
+        String longEmail = "a".repeat(100) + "@gmail.com";
+
+        return new Object[][]{
+                {
+                        account,
+                        "123456",
+                        "John",
+                        longEmail
+                }
+        };
+    }
 }
+
+

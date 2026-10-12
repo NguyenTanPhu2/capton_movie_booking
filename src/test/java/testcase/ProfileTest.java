@@ -460,5 +460,58 @@ public class ProfileTest extends BaseTest {
         String recordingPhoneNumber = profilePage.getTxtPhoneNumber();
         Assert.assertEquals(recordingPhoneNumber, phoneNumberBeforeUpdate, "phoneNumber was updated unexpectedly");
     }
+    @Test(priority = 11, dataProvider = "profile-login",
+            dataProviderClass = TestDataProvider.class, groups = "security")
+    public void TC_SECURITY_005_verify_XSS_In_FullName(String account, String password) {
+
+        String xssPayload = "<script>alert(1)</script>";
+
+        // Step 1: Navigate to Login Page
+        LOG.info("Step 1: Navigate to Login Page");
+        ExtentReportManager.info("Step 1: Navigate to Login Page");
+        homePage.getTopNavigation().navigateToLoginPage();
+
+        // Step 2: Login
+        LOG.info("Step 2: Login account");
+        ExtentReportManager.info("Step 2: Login account");
+        loginPage.login(account, password);
+
+        if (commonModal.isLbMessage()) {
+            commonModal.waitModalDisappear();
+        }
+
+        // Step 3: Navigate to Profile Page
+        LOG.info("Step 3: Navigate to Profile Page");
+        ExtentReportManager.info("Step 3: Navigate to Profile Page");
+        homePage.getTopNavigation().navigateToProfilePage();
+
+        // Step 4: Enter XSS payload into Full Name
+        LOG.info("Step 4: Enter XSS payload into Full Name");
+        ExtentReportManager.info("Step 4: Enter XSS payload into Full Name");
+        profilePage.enterFullName(xssPayload);
+
+        // Step 5: Click Update
+        LOG.info("Step 5: Click Update");
+        ExtentReportManager.info("Step 5: Click Update");
+        profilePage.clickUpdate();
+
+        // VP: Verify XSS script is not executed
+        LOG.info("VP: Verify XSS script is not executed");
+        ExtentReportManager.info("VP: Verify XSS script is not executed");
+
+        boolean alertDisplayed;
+
+        try {
+            driver.switchTo().alert();
+            alertDisplayed = true;
+        } catch (org.openqa.selenium.NoAlertPresentException e) {
+            alertDisplayed = false;
+        }
+
+        Assert.assertFalse(
+                alertDisplayed,
+                "SECURITY BUG: XSS script was executed in Full Name field"
+        );
+    }
 
 }

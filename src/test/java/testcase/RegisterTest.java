@@ -492,4 +492,63 @@ public class RegisterTest extends BaseTest {
         String recordingFormat = commonModal.getMuitAler();
         Assert.assertEquals(recordingFormat, "Vui lòng nhập đúng định dạng", "Invalid format message is incorrect");
     }
+
+    @Test(
+            priority = 12,
+            dataProvider = "register-long-email",
+            dataProviderClass = TestDataProvider.class,
+            groups = "register"
+    )
+    public void TC_REG_016_verify_Register_With_Very_Long_Email(
+            String account,
+            String password,
+            String fullName,
+            String email) {
+
+        // Step 1: Navigate to Register Page
+        LOG.info("Step 1: Navigate to Register Page");
+        ExtentReportManager.info("Step 1: Navigate to Register Page");
+        homePage.getTopNavigation().navigateToRegisterPage();
+
+        // Step 2: Enter valid account
+        LOG.info("Step 2: Enter valid account");
+        ExtentReportManager.info("Step 2: Enter valid account");
+        registerPage.enterAccount(account);
+
+        // Step 3: Enter valid password
+        LOG.info("Step 3: Enter valid password");
+        ExtentReportManager.info("Step 3: Enter valid password");
+        registerPage.enterPassword(password);
+
+        // Step 4: Enter confirm password
+        LOG.info("Step 4: Enter confirm password");
+        ExtentReportManager.info("Step 4: Enter confirm password");
+        registerPage.enterConfirmPassword(password);
+
+        // Step 5: Enter valid full name
+        LOG.info("Step 5: Enter valid full name");
+        ExtentReportManager.info("Step 5: Enter valid full name");
+        registerPage.enterFullName(fullName);
+
+        // Step 6: Enter very long email
+        LOG.info("Step 6: Enter very long email");
+        ExtentReportManager.info("Step 6: Enter very long email");
+        registerPage.enterEmail(email);
+
+        // Step 7: Click Register
+        LOG.info("Step 7: Click Register");
+        ExtentReportManager.info("Step 7: Click Register");
+        registerPage.clickBtnRegister();
+
+        // VP: Verify long email is rejected
+        LOG.info("VP: Verify very long email is rejected");
+        ExtentReportManager.info("VP: Verify very long email is rejected");
+
+        boolean successModalDisplayed = commonModal.isLbMessage();
+
+        Assert.assertFalse(
+                successModalDisplayed,
+                "BUG TC_REG_016: System accepts an email longer than 100 characters"
+        );
+    }
 }

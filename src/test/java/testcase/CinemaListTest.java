@@ -202,4 +202,49 @@ public class CinemaListTest extends BaseTest {
         LOG.info("VP: Verify inner scrollbar works normally");
         ExtentReportManager.info("VP: Verify inner scrollbar works normally");
     }
+    @Test(priority = 7, groups = "cinema")
+    public void TC_CIN_016_verify_CGV_Data_After_Switching_Back() {
+
+        cinemaListPage.getTopNavigation().clickOnCinema();
+
+        // Bước 1: Chọn CGV
+        cinemaListPage.selectCinemaSystem("CGV");
+
+        String cgvBefore = cinemaListPage.getCinemaListContent();
+
+        Assert.assertFalse(
+                cgvBefore.isEmpty(),
+                "CGV cinema list is empty"
+        );
+
+        // Bước 2: Chuyển sang BHD
+        cinemaListPage.selectCinemaSystem("BHD");
+
+        String bhdList = cinemaListPage.getCinemaListContent();
+
+        Assert.assertFalse(
+                bhdList.isEmpty(),
+                "BHD cinema list is empty"
+        );
+
+        Assert.assertNotEquals(
+                bhdList,
+                cgvBefore,
+                "Cinema list did not change when switching to BHD"
+        );
+
+        // Bước 3: Quay lại CGV
+        cinemaListPage.selectCinemaSystem("CGV");
+
+        String cgvAfter = cinemaListPage.getCinemaListContent();
+
+        // Bước 4: Kiểm tra dữ liệu CGV
+        Assert.assertEquals(
+                cgvAfter,
+                cgvBefore,
+                "CGV cinema list is incorrect after switching back"
+        );
+
+        LOG.info("TC_CIN_016: CGV cinema list restored successfully");
+    }
 }

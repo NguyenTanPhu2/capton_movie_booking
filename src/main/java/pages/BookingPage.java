@@ -86,4 +86,37 @@ public class BookingPage extends CommonPage {
         click(byConfirmLogin);
     }
 
+
+    public List<String> getAvailableSeatNumbers() {
+        List<WebElement> seats = getDriver().findElements(
+                By.xpath("//button[span[normalize-space() != 'X']]/span")
+        );
+
+        return seats.stream()
+                .map(WebElement::getText)
+                .filter(text -> text.matches("\\d+"))
+                .toList();
+    }
+
+    public void debugBookingButtons() {
+        List<WebElement> buttons = getDriver().findElements(By.tagName("button"));
+
+        System.out.println("TOTAL BUTTONS = " + buttons.size());
+
+        for (int i = 0; i < buttons.size(); i++) {
+            WebElement button = buttons.get(i);
+
+            System.out.println(
+                    "BUTTON " + i +
+                    " | text=[" + button.getText() + "]" +
+                    " | enabled=" + button.isEnabled() +
+                    " | class=[" + button.getAttribute("class") + "]" +
+                    " | html=[" + button.getAttribute("outerHTML") + "]"
+            );
+        }
+    }
+
+    public void waitForSeatsToLoad() {
+        waitPresenceOfElementLocated(By.xpath("//button[span]"));
+    }
 }

@@ -29,8 +29,12 @@ public class BookingTest extends BaseTest {
         loginPage = new LoginPage(driver);
         profilePage = new ProfilePage(driver);
     }
-
-    @Test
+    @Test(
+            priority = 1,
+            dataProvider = "booking-information",
+            dataProviderClass = TestDataProvider.class,
+            groups = "booking"
+    )
     public void verify_Booking_Information_Displayed(String movieName, String schedule, int numSeat, String cinema) {
         ///Step 1: Click name film to movieDetails
         LOG.info("Step 1: Click name film to movieDetails");
@@ -440,7 +444,13 @@ public class BookingTest extends BaseTest {
         // Step 1: Open movie and schedule
         LOG.info("Step 1: Open movie and schedule");
         homePage.clickOnMovieName(movieName);
+        System.out.println("URL BEFORE SCHEDULE = " + movieDetailPage.getCurrentUrl());
+
         movieDetailPage.clickOnSchedule(schedule);
+        bookingPage.waitForSeatsToLoad();
+        System.out.println("URL AFTER SCHEDULE = " + movieDetailPage.getCurrentUrl());
+        System.out.println("AVAILABLE SEATS = " + bookingPage.getAvailableSeatNumbers());
+        bookingPage.debugBookingButtons();
 
         // Step 2: Select seats 30, 31, 32
         LOG.info("Step 2: Select multiple regular seats");
@@ -659,7 +669,7 @@ public class BookingTest extends BaseTest {
 
         Assert.assertEquals(
                 actualMessage,
-                "─Éß║╖t v├⌐ th├ánh c├┤ng",
+                "Đặt vé thành công",
                 "Booking success message is incorrect"
         );
     }
