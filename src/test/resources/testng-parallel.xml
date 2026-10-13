@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Test Suite"
+       parallel="classes"
+       thread-count="5"
+>
+
+    <test name="All Tests">
+        <packages>
+            <package name="testcase"/>
+        </packages>
+    </test>
+
+<!--    <test name="smoke">-->
+<!--        <classes>-->
+<!--            <class name="testcase.BannerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>

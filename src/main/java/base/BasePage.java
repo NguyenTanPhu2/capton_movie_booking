@@ -365,4 +365,17 @@ public class BasePage {
             return false;
         }
     }
+
+    /// Action click via JS to avoid obstruction by overlays
+    public void jsClick(By locator, long timeOutInSec) {
+        WebElement element = waitVisibilityOfElementLocated(locator, timeOutInSec);
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block: 'center'}); arguments[0].click();",
+                element
+        );
+    }
+
+    public void jsClick(By locator) {
+        jsClick(locator, TimeOutConstants.DEFAULT_TIMEOUT);
+    }
 }

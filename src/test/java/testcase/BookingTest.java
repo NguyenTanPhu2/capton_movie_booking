@@ -427,7 +427,7 @@ public class BookingTest extends BaseTest {
 
 
     // ===== Additional Booking Tests =====
-    @Test(
+    @Test(priority = 13,
             dataProvider = "booking-multiple-regular-seats",
             dataProviderClass = TestDataProvider.class,
             groups = "booking"
@@ -478,7 +478,7 @@ public class BookingTest extends BaseTest {
                 "Total price is incorrect"
         );
     }
-    @Test(
+    @Test(priority = 14,
             dataProvider = "booking-regular-and-vip-seat",
             dataProviderClass = TestDataProvider.class,
             groups = "booking"
@@ -521,7 +521,7 @@ public class BookingTest extends BaseTest {
                 "Total price is incorrect"
         );
     }
-    @Test(
+    @Test(priority = 15,
             dataProvider = "booking-remove-one-seat",
             dataProviderClass = TestDataProvider.class,
             groups = "booking"
@@ -570,7 +570,7 @@ public class BookingTest extends BaseTest {
                 "Total price after removing seat is incorrect"
         );
     }
-    @Test(
+    @Test(priority = 16,
             dataProvider = "booking-refresh-page",
             dataProviderClass = TestDataProvider.class,
             groups = "booking"
@@ -602,7 +602,7 @@ public class BookingTest extends BaseTest {
                 "Total price is not displayed after refresh"
         );
     }
-    @Test(
+    @Test(priority = 17,
             dataProvider = "booking-refresh-page",
             dataProviderClass = TestDataProvider.class,
             groups = "booking"
@@ -631,7 +631,7 @@ public class BookingTest extends BaseTest {
                 "Page is not displayed after clicking browser Back"
         );
     }
-    @Test(
+    @Test(priority = 18,
             dataProvider = "booking-multiple-seats-successfully",
             dataProviderClass = TestDataProvider.class,
             groups = "booking"
@@ -673,7 +673,7 @@ public class BookingTest extends BaseTest {
                 "Booking success message is incorrect"
         );
     }
-    @Test(
+    @Test(priority = 19,
             dataProvider = "booking-price-format",
             dataProviderClass = TestDataProvider.class,
             groups = "booking"

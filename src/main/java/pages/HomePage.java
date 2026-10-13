@@ -18,4 +18,8 @@ public class HomePage extends CommonPage {
         WebElement movieLink = waitElementToBeClickable(byClickOnName);
         ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", movieLink);
     }
+
+    public void clickBackBrowser() {
+        getDriver().navigate().back();
+    }
 }
