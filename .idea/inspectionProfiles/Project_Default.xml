@@ -4,7 +4,7 @@
     <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="groups">
         <value>
-          <list size="8">
+          <list size="18">
             <item index="0" class="java.lang.String" itemvalue="Register" />
             <item index="1" class="java.lang.String" itemvalue="login" />
             <item index="2" class="java.lang.String" itemvalue="register" />
@@ -13,6 +13,16 @@
             <item index="5" class="java.lang.String" itemvalue="security" />
             <item index="6" class="java.lang.String" itemvalue="searching" />
             <item index="7" class="java.lang.String" itemvalue="booking" />
+            <item index="8" class="java.lang.String" itemvalue="cinema" />
+            <item index="9" class="java.lang.String" itemvalue="compatibility" />
+            <item index="10" class="java.lang.String" itemvalue="error-handling" />
+            <item index="11" class="java.lang.String" itemvalue="filter" />
+            <item index="12" class="java.lang.String" itemvalue="footer" />
+            <item index="13" class="java.lang.String" itemvalue="homepage" />
+            <item index="14" class="java.lang.String" itemvalue="logout" />
+            <item index="15" class="java.lang.String" itemvalue="movie-detail" />
+            <item index="16" class="java.lang.String" itemvalue="news" />
+            <item index="17" class="java.lang.String" itemvalue="profile" />
           </list>
         </value>
       </option>

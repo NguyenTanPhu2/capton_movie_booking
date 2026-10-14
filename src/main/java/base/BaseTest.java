@@ -10,10 +10,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import report.ExtentReportManager;
-
 import untils.ConfigManager;
+
 import java.lang.reflect.Method;
 
 public class BaseTest {
@@ -27,17 +28,18 @@ public class BaseTest {
         LOG.info("BeforeSuite executing...");
         //khoi tao folder report
         ExtentReportManager.initializeExtentReports();
-        ConfigManager.loadProperties(); //Khoi tao device
+        ConfigManager.loadProperties(); //Khoi tao browser va baseUrl
         LOG.info("BeforeSuite ended...");
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void beforeMethod(Method method) {
         LOG.info("BeforeMethod executing...");
         String browser = ConfigManager.getProperty("browser");
         String baseUrl = ConfigManager.getProperty("baseUrl");
-        //report: group by class and then by method
-        ExtentReportManager.createTest(method.getName());
+
+        String[] groups = method.getAnnotation(Test.class) != null ? method.getAnnotation(Test.class).groups() : new String[0];
+        ExtentReportManager.createTest(method.getName(), groups);
 
         //Khoi tao driver
         DriverManager driverManager = DriverManagerFactory.getDriverManager(browser);

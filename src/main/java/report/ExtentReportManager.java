@@ -39,6 +39,14 @@ public class ExtentReportManager {
         test.set(extentTest);
     }
 
+    public static void createTest(String testName, String[] groups) {
+        ExtentTest extentTest = extent.createTest(testName);
+        if (groups != null && groups.length > 0) {
+            extentTest.assignCategory(groups);
+        }
+        test.set(extentTest);
+    }
+
     public static void createTest(Class<?> testClass, String testName) {
         String className = testClass.getSimpleName();
         ExtentTest classTest = classTests.computeIfAbsent(className, key -> {

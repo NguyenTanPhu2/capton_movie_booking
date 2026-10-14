@@ -16,6 +16,7 @@
 <!--    <test name="smoke">-->
 <!--        <classes>-->
 <!--            <class name="testcase.BannerTest"/>-->
+<!--            <class name="testcase.LogOutTest"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 

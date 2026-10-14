@@ -29,11 +29,8 @@ public class BookingTest extends BaseTest {
         loginPage = new LoginPage(driver);
         profilePage = new ProfilePage(driver);
     }
-    @Test(
-            priority = 1,
-            dataProvider = "booking-information",
-            dataProviderClass = TestDataProvider.class,
-            groups = "booking"
+    @Test(priority = 1, dataProvider = "booking-information",
+            dataProviderClass = TestDataProvider.class, groups = "booking"
     )
     public void verify_Booking_Information_Displayed(String movieName, String schedule, int numSeat, String cinema) {
         ///Step 1: Click name film to movieDetails
@@ -427,19 +424,11 @@ public class BookingTest extends BaseTest {
 
 
     // ===== Additional Booking Tests =====
-    @Test(priority = 13,
-            dataProvider = "booking-multiple-regular-seats",
-            dataProviderClass = TestDataProvider.class,
-            groups = "booking"
-    )
+    @Test(priority = 13, dataProvider = "booking-multiple-regular-seats",
+            dataProviderClass = TestDataProvider.class, groups = "booking")
     public void verify_Total_Price_When_Selecting_Multiple_Seats(
-            String movieName,
-            String schedule,
-            int seat1,
-            int seat2,
-            int seat3,
-            String expectedSeats,
-            String expectedPrice) {
+            String movieName, String schedule, int seat1, int seat2, int seat3,
+            String expectedSeats, String expectedPrice) {
 
         // Step 1: Open movie and schedule
         LOG.info("Step 1: Open movie and schedule");
@@ -478,18 +467,11 @@ public class BookingTest extends BaseTest {
                 "Total price is incorrect"
         );
     }
-    @Test(priority = 14,
-            dataProvider = "booking-regular-and-vip-seat",
-            dataProviderClass = TestDataProvider.class,
-            groups = "booking"
-    )
+    @Test(priority = 14, dataProvider = "booking-regular-and-vip-seat",
+            dataProviderClass = TestDataProvider.class, groups = "booking")
     public void verify_Total_Price_When_Selecting_Regular_And_Vip_Seat(
-            String movieName,
-            String schedule,
-            int regularSeat,
-            int vipSeat,
-            String expectedSeats,
-            String expectedPrice) {
+            String movieName, String schedule, int regularSeat, int vipSeat,
+            String expectedSeats, String expectedPrice) {
 
         // Step 1: Open movie and schedule
         LOG.info("Step 1: Open movie and schedule");
@@ -521,19 +503,12 @@ public class BookingTest extends BaseTest {
                 "Total price is incorrect"
         );
     }
-    @Test(priority = 15,
-            dataProvider = "booking-remove-one-seat",
-            dataProviderClass = TestDataProvider.class,
-            groups = "booking"
-    )
+    @Test(priority = 15, dataProvider = "booking-remove-one-seat",
+            dataProviderClass = TestDataProvider.class, groups = "booking")
     public void verify_Total_Price_After_Removing_One_Seat(
-            String movieName,
-            String schedule,
-            int seat1,
-            int seat2,
-            int seat3,
-            String expectedSeats,
-            String expectedPrice) {
+            String movieName, String schedule,
+            int seat1, int seat2, int seat3,
+            String expectedSeats, String expectedPrice) {
 
         // Step 1: Open movie and schedule
         LOG.info("Step 1: Open movie and schedule");
@@ -570,15 +545,10 @@ public class BookingTest extends BaseTest {
                 "Total price after removing seat is incorrect"
         );
     }
-    @Test(priority = 16,
-            dataProvider = "booking-refresh-page",
-            dataProviderClass = TestDataProvider.class,
-            groups = "booking"
-    )
+    @Test(priority = 16, dataProvider = "booking-refresh-page",
+            dataProviderClass = TestDataProvider.class, groups = "booking")
     public void verify_Refresh_Page_When_Seat_Is_Selected(
-            String movieName,
-            String schedule,
-            int seat) {
+            String movieName, String schedule, int seat) {
 
         // Step 1: Open movie and schedule
         LOG.info("Step 1: Open movie and schedule");
@@ -602,15 +572,11 @@ public class BookingTest extends BaseTest {
                 "Total price is not displayed after refresh"
         );
     }
-    @Test(priority = 17,
-            dataProvider = "booking-refresh-page",
-            dataProviderClass = TestDataProvider.class,
-            groups = "booking"
+    @Test(priority = 17, dataProvider = "booking-refresh-page",
+            dataProviderClass = TestDataProvider.class, groups = "booking"
     )
     public void verify_Browser_Back_From_Booking_Page(
-            String movieName,
-            String schedule,
-            int seat) {
+            String movieName, String schedule, int seat) {
 
         // Step 1: Open movie detail
         LOG.info("Step 1: Open movie detail");

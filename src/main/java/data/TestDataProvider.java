@@ -408,8 +408,8 @@ public class TestDataProvider {
                 {
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        52,
-                        "Ghế 52,",
+                        53,
+                        "Ghế 53,",
                         "90000VND"
                 }
         };
@@ -448,7 +448,7 @@ public class TestDataProvider {
                         "gái già lắm chiêu",
                         "21-12-2021",
                         "X",
-                        "14"
+                        "112"
                 }
         };
     }
@@ -483,7 +483,7 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        15
+                        113
                 }
         };
     }
@@ -521,7 +521,7 @@ public class TestDataProvider {
                         "gái già lắm chiêu",
                         "21-12-2021",
                         146,
-                        36,
+                        104,
                         "Ghế 146, Ghế 36,",
                         "165000VND"
                 }
@@ -562,8 +562,8 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        38,
-                        52
+                        131,
+                        99
                 }
         };
     }

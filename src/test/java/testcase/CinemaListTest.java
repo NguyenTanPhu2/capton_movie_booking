@@ -7,15 +7,19 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import data.TestDataProvider;
 import pages.CinemaListPage;
+import pages.HomePage;
 import report.ExtentReportManager;
 
 public class CinemaListTest extends BaseTest {
 
     CinemaListPage cinemaListPage;
+    HomePage homePage;
 
     @BeforeMethod
     public void initializePages() {
         cinemaListPage = new CinemaListPage(driver);
+        homePage = new HomePage(driver);
+
     }
 
     @Test(priority = 1, groups = "cinema")
@@ -109,7 +113,7 @@ public class CinemaListTest extends BaseTest {
     }
 
     @Test(priority = 4, dataProvider = "cinema-list-showtime", 
-                dataProviderClass = TestDataProvider.class, groups = "cinema-list")
+                dataProviderClass = TestDataProvider.class, groups = "cinema")
     public void TC_CIN_13_verify_Cinema_List_Showtime_Hover_Color(String movieName, String day, String time){
 
         /// Step 1: Navigate to Cinema List
@@ -159,7 +163,7 @@ public class CinemaListTest extends BaseTest {
     }
 
     @Test(priority = 5, dataProvider = "cinema-list-showtime", 
-                dataProviderClass = TestDataProvider.class, groups = "cinema-list")
+                dataProviderClass = TestDataProvider.class, groups = "cinema")
     public void TC_CIN_14_verify_Cinema_List_Showtime_Navigate_To_Booking(String movieName, String day, String time){
 
         LOG.info("Step 1: Navigate to Cinema List");
@@ -202,6 +206,7 @@ public class CinemaListTest extends BaseTest {
         LOG.info("VP: Verify inner scrollbar works normally");
         ExtentReportManager.info("VP: Verify inner scrollbar works normally");
     }
+
     @Test(priority = 7, groups = "cinema")
     public void TC_CIN_016_verify_CGV_Data_After_Switching_Back() {
 
@@ -247,4 +252,5 @@ public class CinemaListTest extends BaseTest {
 
         LOG.info("TC_CIN_016: CGV cinema list restored successfully");
     }
+
 }
