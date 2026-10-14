@@ -62,7 +62,7 @@ public class TestDataProvider {
                         account,
                         "123456",
                         "John",
-                        "C lara@.gmail.com"
+                        "C lara@.gmail..com"
                 }
         };
     }
@@ -130,7 +130,7 @@ public class TestDataProvider {
                         account,
                         "1 2 3 4 56 ",
                         "Jo hn ",
-                        "Cla ra@2026"
+                        "Claa ra@2026"
                 }
         };
     }
@@ -814,14 +814,14 @@ public class TestDataProvider {
     @DataProvider(name = "movie-trailer-click")
     public static Object[][] movieTrailerClick() {
         return new Object[][]{
-            {"CÔ GÁI TỪ QUÁ KHỨ¨"}
+            {"CÔ GÁI TỪ QUÁ KHỨ"}
         };
     }
 
     @DataProvider(name = "movie-detail-navigate")
     public static Object[][] movieDetailNavigate() {
         return new Object[][]{
-            {"CÔ GÁI TỪ QUÁ KHỨ¨"}, {"Địa đạo"}
+            {"CÔ GÁI TỪ QUÁ KHỨ"}, {"Địa đạo"}
         };
     }
 
