@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="11" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-14T15:18:11 ICT" name="Gradle suite" finished-at="2026-10-14T15:19:57 ICT" duration-ms="105264">
+    <groups>
+      <group name="movie-detail">
+        <method signature="MovieDetailTest.TC_MV_01_CheckMovieCards()[pri:1, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_01_CheckMovieCards" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_02_CheckHoverMovieCards()[pri:2, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_02_CheckHoverMovieCards" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_03_CheckClickMovieTrailer(java.lang.String)[pri:3, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_03_CheckClickMovieTrailer" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_04_CheckMoviePagination()[pri:4, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_04_CheckMoviePagination" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(java.lang.String)[pri:5, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_05_CheckNavigateToMovieDetail" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_07_CheckMovieNameAndDuration(java.lang.String,java.lang.String)[pri:7, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_07_CheckMovieNameAndDuration" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_08_CheckMovieRating(java.lang.String)[pri:8, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_08_CheckMovieRating" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_011_CheckMovieTrailerDisplayedCorrectly(java.lang.String)[pri:11, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_011_CheckMovieTrailerDisplayedCorrectly" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_012_CheckMovieTrailerPlayNormally(java.lang.String)[pri:12, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_012_CheckMovieTrailerPlayNormally" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_014_CloseTrailerByXButton(java.lang.String)[pri:14, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_014_CloseTrailerByXButton" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_015_CloseTrailerByClickOutsidePopup(java.lang.String)[pri:15, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_015_CloseTrailerByClickOutsidePopup" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_016_verify_Movie_Detail_Poster(java.lang.String)[pri:16, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_016_verify_Movie_Detail_Poster" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(java.lang.String)[pri:17, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_017_verify_Movie_Detail_Cinema_System_Switching" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)[pri:19, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_019_verify_Click_Showtime_Navigate_To_Booking" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_021_verify_Movie_Detail_Release_Date_Format(java.lang.String,java.lang.String)[pri:21, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_021_verify_Movie_Detail_Release_Date_Format" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_022_verify_Movie_Detail_On_Mobile(java.lang.String)[pri:22, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_022_verify_Movie_Detail_On_Mobile" class="testcase.MovieDetailTest"/>
+        <method signature="MovieDetailTest.TC_MV_023_verify_Refresh_Movie_Detail(java.lang.String)[pri:23, instance:testcase.MovieDetailTest@10650953]" name="TC_MV_023_verify_Refresh_Movie_Detail" class="testcase.MovieDetailTest"/>
+      </group> <!-- movie-detail -->
+    </groups>
+    <test started-at="2026-10-14T15:18:11 ICT" name="Gradle test" finished-at="2026-10-14T15:19:57 ICT" duration-ms="105264">
+      <class name="testcase.MovieDetailTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:11 ICT" name="beforeSuite" finished-at="2026-10-14T15:18:11 ICT" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:12 ICT" name="beforeMethod" finished-at="2026-10-14T15:18:13 ICT" duration-ms="1630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_01_CheckMovieCards()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:13 ICT" name="initializePages" finished-at="2026-10-14T15:18:15 ICT" duration-ms="1637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_01_CheckMovieCards()[pri:1, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:15 ICT" name="TC_MV_01_CheckMovieCards" finished-at="2026-10-14T15:18:28 ICT" duration-ms="13523" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Poster phim 6 [John Cena WWE] có URL http://movie0706.cybersoft.edu.vn/hinhanh/john-cena-wwe_gp09.jpg nhưng ảnh không load được expected [true] but found [false],
+Poster phim 7 [HÀNH TRÌNH CỦA MOANA 2] có URL http://movie0706.cybersoft.edu.vn/hinhanh/hanh-trinh-cua-moana-2_gp09.jpg nhưng ảnh không load được expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Poster phim 6 [John Cena WWE] có URL http://movie0706.cybersoft.edu.vn/hinhanh/john-cena-wwe_gp09.jpg nhưng ảnh không load được expected [true] but found [false],
+Poster phim 7 [HÀNH TRÌNH CỦA MOANA 2] có URL http://movie0706.cybersoft.edu.vn/hinhanh/hanh-trinh-cua-moana-2_gp09.jpg nhưng ảnh không load được expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcase.MovieDetailTest.TC_MV_01_CheckMovieCards(MovieDetailTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_01_CheckMovieCards -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:28 ICT" name="afterMethod" finished-at="2026-10-14T15:18:29 ICT" duration-ms="589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_01_CheckMovieCards status=FAILURE method=MovieDetailTest.TC_MV_01_CheckMovieCards()[pri:1, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:29 ICT" name="beforeMethod" finished-at="2026-10-14T15:18:30 ICT" duration-ms="1478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_02_CheckHoverMovieCards()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:30 ICT" name="initializePages" finished-at="2026-10-14T15:18:32 ICT" duration-ms="1628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_02_CheckHoverMovieCards()[pri:2, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:32 ICT" name="TC_MV_02_CheckHoverMovieCards" finished-at="2026-10-14T15:18:39 ICT" duration-ms="6530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_02_CheckHoverMovieCards -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:39 ICT" name="afterMethod" finished-at="2026-10-14T15:18:39 ICT" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_02_CheckHoverMovieCards status=SUCCESS method=MovieDetailTest.TC_MV_02_CheckHoverMovieCards()[pri:2, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:39 ICT" name="beforeMethod" finished-at="2026-10-14T15:18:40 ICT" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_03_CheckClickMovieTrailer(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:40 ICT" name="initializePages" finished-at="2026-10-14T15:18:42 ICT" duration-ms="1654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_03_CheckClickMovieTrailer(java.lang.String)[pri:3, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:42 ICT" name="TC_MV_03_CheckClickMovieTrailer" data-provider="movie-trailer-click" finished-at="2026-10-14T15:18:44 ICT" duration-ms="2325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CÔ GÁI TỪ QUÁ KHỨ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_03_CheckClickMovieTrailer -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:44 ICT" name="afterMethod" finished-at="2026-10-14T15:18:45 ICT" duration-ms="373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_03_CheckClickMovieTrailer status=SUCCESS method=MovieDetailTest.TC_MV_03_CheckClickMovieTrailer(java.lang.String)[pri:3, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:45 ICT" name="beforeMethod" finished-at="2026-10-14T15:18:46 ICT" duration-ms="1420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_04_CheckMoviePagination()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:46 ICT" name="initializePages" finished-at="2026-10-14T15:18:48 ICT" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_04_CheckMoviePagination()[pri:4, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:48 ICT" name="TC_MV_04_CheckMoviePagination" finished-at="2026-10-14T15:18:50 ICT" duration-ms="1831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_04_CheckMoviePagination -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:50 ICT" name="afterMethod" finished-at="2026-10-14T15:18:50 ICT" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_04_CheckMoviePagination status=SUCCESS method=MovieDetailTest.TC_MV_04_CheckMoviePagination()[pri:4, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:50 ICT" name="beforeMethod" finished-at="2026-10-14T15:18:51 ICT" duration-ms="1222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:51 ICT" name="initializePages" finished-at="2026-10-14T15:18:53 ICT" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_05_CheckNavigateToMovieDetail(java.lang.String)[pri:5, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:53 ICT" name="TC_MV_05_CheckNavigateToMovieDetail" data-provider="movie-detail-navigate" finished-at="2026-10-14T15:18:55 ICT" duration-ms="2818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CÔ GÁI TỪ QUÁ KHỨ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_05_CheckNavigateToMovieDetail -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:55 ICT" name="afterMethod" finished-at="2026-10-14T15:18:56 ICT" duration-ms="375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_05_CheckNavigateToMovieDetail status=SUCCESS method=MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(java.lang.String)[pri:5, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:56 ICT" name="beforeMethod" finished-at="2026-10-14T15:18:57 ICT" duration-ms="1342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:57 ICT" name="initializePages" finished-at="2026-10-14T15:18:59 ICT" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_05_CheckNavigateToMovieDetail(java.lang.String)[pri:5, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:18:59 ICT" name="TC_MV_05_CheckNavigateToMovieDetail" data-provider="movie-detail-navigate" finished-at="2026-10-14T15:19:11 ICT" duration-ms="12270" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Địa đạo]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+VP 3: Trang chi tiết phim Địa đạo bị trắng: #root không có nội dung expected [true] but found [false],
+VP 4: Trang chi tiết phim Địa đạo không hiển thị dữ liệu phim expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+VP 3: Trang chi tiết phim Địa đạo bị trắng: #root không có nội dung expected [true] but found [false],
+VP 4: Trang chi tiết phim Địa đạo không hiển thị dữ liệu phim expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcase.MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(MovieDetailTest.java:233)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_05_CheckNavigateToMovieDetail -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:11 ICT" name="afterMethod" finished-at="2026-10-14T15:19:12 ICT" duration-ms="411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_05_CheckNavigateToMovieDetail status=FAILURE method=MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(java.lang.String)[pri:5, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:12 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:13 ICT" duration-ms="1242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_07_CheckMovieNameAndDuration(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:13 ICT" name="initializePages" finished-at="2026-10-14T15:19:14 ICT" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_07_CheckMovieNameAndDuration(java.lang.String,java.lang.String)[pri:7, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:14 ICT" name="TC_MV_07_CheckMovieNameAndDuration" data-provider="movie-detail-duration" finished-at="2026-10-14T15:19:16 ICT" duration-ms="1320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Man of Steel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[120phút]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_07_CheckMovieNameAndDuration -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:16 ICT" name="afterMethod" finished-at="2026-10-14T15:19:16 ICT" duration-ms="301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_07_CheckMovieNameAndDuration status=SUCCESS method=MovieDetailTest.TC_MV_07_CheckMovieNameAndDuration(java.lang.String,java.lang.String)[pri:7, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC_MV_08_CheckMovieRating(java.lang.String)[pri:8, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:16 ICT" name="TC_MV_08_CheckMovieRating" finished-at="2026-10-14T15:19:16 ICT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void testcase.MovieDetailTest.TC_MV_08_CheckMovieRating(java.lang.String) requires a @DataProvider named : movie-detail-rating in class data.TestDataProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_08_CheckMovieRating(java.lang.String) requires a @DataProvider named : movie-detail-rating in class data.TestDataProvider
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_08_CheckMovieRating -->
+        <test-method signature="TC_MV_011_CheckMovieTrailerDisplayedCorrectly(java.lang.String)[pri:11, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:16 ICT" name="TC_MV_011_CheckMovieTrailerDisplayedCorrectly" finished-at="2026-10-14T15:19:16 ICT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void testcase.MovieDetailTest.TC_MV_011_CheckMovieTrailerDisplayedCorrectly(java.lang.String) requires a @DataProvider named : movie-detail-trailer-playing in class data.TestDataProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_011_CheckMovieTrailerDisplayedCorrectly(java.lang.String) requires a @DataProvider named : movie-detail-trailer-playing in class data.TestDataProvider
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_011_CheckMovieTrailerDisplayedCorrectly -->
+        <test-method signature="TC_MV_012_CheckMovieTrailerPlayNormally(java.lang.String)[pri:12, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:16 ICT" name="TC_MV_012_CheckMovieTrailerPlayNormally" finished-at="2026-10-14T15:19:16 ICT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void testcase.MovieDetailTest.TC_MV_012_CheckMovieTrailerPlayNormally(java.lang.String) requires a @DataProvider named : movie-detail-trailer-playing in class data.TestDataProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_012_CheckMovieTrailerPlayNormally(java.lang.String) requires a @DataProvider named : movie-detail-trailer-playing in class data.TestDataProvider
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_012_CheckMovieTrailerPlayNormally -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:16 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:17 ICT" duration-ms="1265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_014_CloseTrailerByXButton(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:17 ICT" name="initializePages" finished-at="2026-10-14T15:19:19 ICT" duration-ms="1622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_014_CloseTrailerByXButton(java.lang.String)[pri:14, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:19 ICT" name="TC_MV_014_CloseTrailerByXButton" data-provider="movie-detail-trailer-close" finished-at="2026-10-14T15:19:30 ICT" duration-ms="11563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Man of Steel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_014_CloseTrailerByXButton -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:30 ICT" name="afterMethod" finished-at="2026-10-14T15:19:31 ICT" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_014_CloseTrailerByXButton status=SUCCESS method=MovieDetailTest.TC_MV_014_CloseTrailerByXButton(java.lang.String)[pri:14, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC_MV_015_CloseTrailerByClickOutsidePopup(java.lang.String)[pri:15, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:31 ICT" name="TC_MV_015_CloseTrailerByClickOutsidePopup" finished-at="2026-10-14T15:19:31 ICT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void testcase.MovieDetailTest.TC_MV_015_CloseTrailerByClickOutsidePopup(java.lang.String) requires a @DataProvider named : movie-trailer-close in class data.TestDataProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_015_CloseTrailerByClickOutsidePopup(java.lang.String) requires a @DataProvider named : movie-trailer-close in class data.TestDataProvider
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_015_CloseTrailerByClickOutsidePopup -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:31 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:32 ICT" duration-ms="1321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_016_verify_Movie_Detail_Poster(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:32 ICT" name="initializePages" finished-at="2026-10-14T15:19:34 ICT" duration-ms="1599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_016_verify_Movie_Detail_Poster(java.lang.String)[pri:16, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:34 ICT" name="TC_MV_016_verify_Movie_Detail_Poster" data-provider="movie-detail-poster" finished-at="2026-10-14T15:19:35 ICT" duration-ms="1222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Man of Steel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_016_verify_Movie_Detail_Poster -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:35 ICT" name="afterMethod" finished-at="2026-10-14T15:19:35 ICT" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_016_verify_Movie_Detail_Poster status=SUCCESS method=MovieDetailTest.TC_MV_016_verify_Movie_Detail_Poster(java.lang.String)[pri:16, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:35 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:37 ICT" duration-ms="1435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:37 ICT" name="initializePages" finished-at="2026-10-14T15:19:38 ICT" duration-ms="1599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(java.lang.String)[pri:17, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:38 ICT" name="TC_MV_017_verify_Movie_Detail_Cinema_System_Switching" data-provider="movie-detail-cinema-system-switching" finished-at="2026-10-14T15:19:40 ICT" duration-ms="1299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AVATAR 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_017_verify_Movie_Detail_Cinema_System_Switching -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:40 ICT" name="afterMethod" finished-at="2026-10-14T15:19:40 ICT" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_017_verify_Movie_Detail_Cinema_System_Switching status=SUCCESS method=MovieDetailTest.TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(java.lang.String)[pri:17, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:40 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:41 ICT" duration-ms="1509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:41 ICT" name="initializePages" finished-at="2026-10-14T15:19:42 ICT" duration-ms="1109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)[pri:19, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:42 ICT" name="TC_MV_019_verify_Click_Showtime_Navigate_To_Booking" data-provider="movie-detail-navigate-to-booking" finished-at="2026-10-14T15:19:44 ICT" duration-ms="1301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Man of Steel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[09-10-2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[02:40]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_019_verify_Click_Showtime_Navigate_To_Booking -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:44 ICT" name="afterMethod" finished-at="2026-10-14T15:19:44 ICT" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_019_verify_Click_Showtime_Navigate_To_Booking status=SUCCESS method=MovieDetailTest.TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(java.lang.String,java.lang.String,java.lang.String)[pri:19, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:44 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:45 ICT" duration-ms="1205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_021_verify_Movie_Detail_Release_Date_Format(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:45 ICT" name="initializePages" finished-at="2026-10-14T15:19:47 ICT" duration-ms="1603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_021_verify_Movie_Detail_Release_Date_Format(java.lang.String,java.lang.String)[pri:21, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:47 ICT" name="TC_MV_021_verify_Movie_Detail_Release_Date_Format" data-provider="movie-detail-release-date" finished-at="2026-10-14T15:19:48 ICT" duration-ms="1156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Man of Steel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14.10.2021]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_021_verify_Movie_Detail_Release_Date_Format -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:48 ICT" name="afterMethod" finished-at="2026-10-14T15:19:48 ICT" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_021_verify_Movie_Detail_Release_Date_Format status=SUCCESS method=MovieDetailTest.TC_MV_021_verify_Movie_Detail_Release_Date_Format(java.lang.String,java.lang.String)[pri:21, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:48 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:49 ICT" duration-ms="1247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_022_verify_Movie_Detail_On_Mobile(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:49 ICT" name="initializePages" finished-at="2026-10-14T15:19:51 ICT" duration-ms="1639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_022_verify_Movie_Detail_On_Mobile(java.lang.String)[pri:22, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:51 ICT" name="TC_MV_022_verify_Movie_Detail_On_Mobile" data-provider="movie-detail-mobile" finished-at="2026-10-14T15:19:52 ICT" duration-ms="943" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Man of Steel]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[VP 1: Movie Detail page has horizontal scrollbar on mobile expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: VP 1: Movie Detail page has horizontal scrollbar on mobile expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at testcase.MovieDetailTest.TC_MV_022_verify_Movie_Detail_On_Mobile(MovieDetailTest.java:720)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestRunner.runTests(TestNGTestRunner.java:131)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestDefinitionProcessor.stop(TestNGTestDefinitionProcessor.java:110)
+at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.stop(SuiteTestDefinitionProcessor.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:195)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_022_verify_Movie_Detail_On_Mobile -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:52 ICT" name="afterMethod" finished-at="2026-10-14T15:19:52 ICT" duration-ms="311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_022_verify_Movie_Detail_On_Mobile status=FAILURE method=MovieDetailTest.TC_MV_022_verify_Movie_Detail_On_Mobile(java.lang.String)[pri:22, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:52 ICT" name="beforeMethod" finished-at="2026-10-14T15:19:54 ICT" duration-ms="1207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.MovieDetailTest.TC_MV_023_verify_Refresh_Movie_Detail(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:54 ICT" name="initializePages" finished-at="2026-10-14T15:19:55 ICT" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="TC_MV_023_verify_Refresh_Movie_Detail(java.lang.String)[pri:23, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:55 ICT" name="TC_MV_023_verify_Refresh_Movie_Detail" data-provider="movie-detail-refresh" finished-at="2026-10-14T15:19:56 ICT" duration-ms="1192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Man of Steel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_MV_023_verify_Refresh_Movie_Detail -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:56 ICT" name="afterMethod" finished-at="2026-10-14T15:19:57 ICT" duration-ms="328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_MV_023_verify_Refresh_Movie_Detail status=SUCCESS method=MovieDetailTest.TC_MV_023_verify_Refresh_Movie_Detail(java.lang.String)[pri:23, instance:testcase.MovieDetailTest@10650953] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcase.MovieDetailTest@10650953]" started-at="2026-10-14T15:19:57 ICT" name="afterSuite" finished-at="2026-10-14T15:19:57 ICT" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcase.MovieDetailTest -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
+</testng-results>

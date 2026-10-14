@@ -1,10 +1,11 @@
 package testcase;
 
-import base.BaseTest;
-import data.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import base.BaseTest;
+import data.TestDataProvider;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.RegisterPage;
@@ -493,17 +494,9 @@ public class RegisterTest extends BaseTest {
         Assert.assertEquals(recordingFormat, "Vui lòng nhập đúng định dạng", "Invalid format message is incorrect");
     }
 
-    @Test(
-            priority = 12,
-            dataProvider = "register-long-email",
-            dataProviderClass = TestDataProvider.class,
-            groups = "register"
-    )
-    public void TC_REG_016_verify_Register_With_Very_Long_Email(
-            String account,
-            String password,
-            String fullName,
-            String email) {
+    @Test(priority = 12, dataProvider = "register-long-email",
+            dataProviderClass = TestDataProvider.class, groups = "register")
+    public void TC_REG_016_verify_Register_With_Very_Long_Email(String account, String password, String fullName, String email) {
 
         // Step 1: Navigate to Register Page
         LOG.info("Step 1: Navigate to Register Page");

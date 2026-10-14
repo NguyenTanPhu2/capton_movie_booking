@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Gradle_suite" class="navigator-link">
+              <span class="suite-name border-failed">Gradle suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Gradle_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Gradle_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Gradle_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Gradle_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Gradle_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Gradle_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Gradle_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 7 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Gradle_suite" class="hide-methods failed suite-Gradle_suite"> (hide)</a> <!-- hide-methods failed suite-Gradle_suite -->
+                      <a href="#" panel-name="suite-Gradle_suite" class="show-methods failed suite-Gradle_suite"> (show)</a> <!-- show-methods failed suite-Gradle_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Gradle_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_011_CheckMovieTrailerDisplayedCorrectly">TC_MV_011_CheckMovieTrailerDisplayedCorrectly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_012_CheckMovieTrailerPlayNormally">TC_MV_012_CheckMovieTrailerPlayNormally</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_015_CloseTrailerByClickOutsidePopup">TC_MV_015_CloseTrailerByClickOutsidePopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_01_CheckMovieCards">TC_MV_01_CheckMovieCards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_022_verify_Movie_Detail_On_Mobile(Man of Steel)">TC_MV_022_verify_Movie_Detail_On_Mobile(Man of Steel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_05_CheckNavigateToMovieDetail(Địa đạo)">TC_MV_05_CheckNavigateToMovieDetail(Địa đạo)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_08_CheckMovieRating">TC_MV_08_CheckMovieRating</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Gradle_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Gradle_suite" class="hide-methods passed suite-Gradle_suite"> (hide)</a> <!-- hide-methods passed suite-Gradle_suite -->
+                      <a href="#" panel-name="suite-Gradle_suite" class="show-methods passed suite-Gradle_suite"> (show)</a> <!-- show-methods passed suite-Gradle_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Gradle_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_014_CloseTrailerByXButton(Man of Steel)">TC_MV_014_CloseTrailerByXButton(Man of Steel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_016_verify_Movie_Detail_Poster(Man of Steel)">TC_MV_016_verify_Movie_Detail_Poster(Man of Steel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(AVATAR 2)">TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(AVATAR 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(Man of Steel, 09-10-2021, 02:40)">TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(Man of Steel, 09-10-2021, 02:40)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_021_verify_Movie_Detail_Release_Date_Format(Man of Steel, 14.10.2021)">TC_MV_021_verify_Movie_Detail_Release_Date_Format(Man of Steel, 14.10.2021)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_023_verify_Refresh_Movie_Detail(Man of Steel)">TC_MV_023_verify_Refresh_Movie_Detail(Man of Steel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_02_CheckHoverMovieCards">TC_MV_02_CheckHoverMovieCards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_03_CheckClickMovieTrailer(CÔ GÁI TỪ QUÁ KHỨ)">TC_MV_03_CheckClickMovieTrailer(CÔ GÁI TỪ QUÁ KHỨ)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_04_CheckMoviePagination">TC_MV_04_CheckMoviePagination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_05_CheckNavigateToMovieDetail(CÔ GÁI TỪ QUÁ KHỨ)">TC_MV_05_CheckNavigateToMovieDetail(CÔ GÁI TỪ QUÁ KHỨ)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcase.MovieDetailTest" class="method navigator-link" hash-for-method="TC_MV_07_CheckMovieNameAndDuration(Man of Steel, 120phút)">TC_MV_07_CheckMovieNameAndDuration(Man of Steel, 120phút)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Gradle_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Gradle_suite" class="panel Gradle_suite">
+          <div class="suite-Gradle_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcase.MovieDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_011_CheckMovieTrailerDisplayedCorrectly">
+                  </a> <!-- TC_MV_011_CheckMovieTrailerDisplayedCorrectly -->
+                  <span class="method-name">TC_MV_011_CheckMovieTrailerDisplayedCorrectly</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_011_CheckMovieTrailerDisplayedCorrectly(java.lang.String) requires a @DataProvider named : movie-detail-trailer-playing in class data.TestDataProvider
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_012_CheckMovieTrailerPlayNormally">
+                  </a> <!-- TC_MV_012_CheckMovieTrailerPlayNormally -->
+                  <span class="method-name">TC_MV_012_CheckMovieTrailerPlayNormally</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_012_CheckMovieTrailerPlayNormally(java.lang.String) requires a @DataProvider named : movie-detail-trailer-playing in class data.TestDataProvider
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_015_CloseTrailerByClickOutsidePopup">
+                  </a> <!-- TC_MV_015_CloseTrailerByClickOutsidePopup -->
+                  <span class="method-name">TC_MV_015_CloseTrailerByClickOutsidePopup</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_015_CloseTrailerByClickOutsidePopup(java.lang.String) requires a @DataProvider named : movie-trailer-close in class data.TestDataProvider
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_01_CheckMovieCards">
+                  </a> <!-- TC_MV_01_CheckMovieCards -->
+                  <span class="method-name">TC_MV_01_CheckMovieCards</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Poster phim 6 [John Cena WWE] có URL http://movie0706.cybersoft.edu.vn/hinhanh/john-cena-wwe_gp09.jpg nhưng ảnh không load được expected [true] but found [false],
+	Poster phim 7 [HÀNH TRÌNH CỦA MOANA 2] có URL http://movie0706.cybersoft.edu.vn/hinhanh/hanh-trinh-cua-moana-2_gp09.jpg nhưng ảnh không load được expected [true] but found [false]
+	at testcase.MovieDetailTest.TC_MV_01_CheckMovieCards(MovieDetailTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_022_verify_Movie_Detail_On_Mobile(Man of Steel)">
+                  </a> <!-- TC_MV_022_verify_Movie_Detail_On_Mobile(Man of Steel) -->
+                  <span class="method-name">TC_MV_022_verify_Movie_Detail_On_Mobile</span>
+                  <span class="parameters">(Man of Steel)</span>
+                  <div class="stack-trace">java.lang.AssertionError: VP 1: Movie Detail page has horizontal scrollbar on mobile expected [false] but found [true]
+	at testcase.MovieDetailTest.TC_MV_022_verify_Movie_Detail_On_Mobile(MovieDetailTest.java:720)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 44 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_05_CheckNavigateToMovieDetail(Địa đạo)">
+                  </a> <!-- TC_MV_05_CheckNavigateToMovieDetail(Địa đạo) -->
+                  <span class="method-name">TC_MV_05_CheckNavigateToMovieDetail</span>
+                  <span class="parameters">(Địa đạo)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	VP 3: Trang chi tiết phim Địa đạo bị trắng: #root không có nội dung expected [true] but found [false],
+	VP 4: Trang chi tiết phim Địa đạo không hiển thị dữ liệu phim expected [true] but found [false]
+	at testcase.MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(MovieDetailTest.java:233)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_08_CheckMovieRating">
+                  </a> <!-- TC_MV_08_CheckMovieRating -->
+                  <span class="method-name">TC_MV_08_CheckMovieRating</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method public void testcase.MovieDetailTest.TC_MV_08_CheckMovieRating(java.lang.String) requires a @DataProvider named : movie-detail-rating in class data.TestDataProvider
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Gradle_suite-class-failed -->
+          <div class="suite-Gradle_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.MovieDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_014_CloseTrailerByXButton(Man of Steel)">
+                  </a> <!-- TC_MV_014_CloseTrailerByXButton(Man of Steel) -->
+                  <span class="method-name">TC_MV_014_CloseTrailerByXButton</span>
+                  <span class="parameters">(Man of Steel)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_016_verify_Movie_Detail_Poster(Man of Steel)">
+                  </a> <!-- TC_MV_016_verify_Movie_Detail_Poster(Man of Steel) -->
+                  <span class="method-name">TC_MV_016_verify_Movie_Detail_Poster</span>
+                  <span class="parameters">(Man of Steel)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(AVATAR 2)">
+                  </a> <!-- TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(AVATAR 2) -->
+                  <span class="method-name">TC_MV_017_verify_Movie_Detail_Cinema_System_Switching</span>
+                  <span class="parameters">(AVATAR 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(Man of Steel, 09-10-2021, 02:40)">
+                  </a> <!-- TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(Man of Steel, 09-10-2021, 02:40) -->
+                  <span class="method-name">TC_MV_019_verify_Click_Showtime_Navigate_To_Booking</span>
+                  <span class="parameters">(Man of Steel,09-10-2021,02:40)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_021_verify_Movie_Detail_Release_Date_Format(Man of Steel, 14.10.2021)">
+                  </a> <!-- TC_MV_021_verify_Movie_Detail_Release_Date_Format(Man of Steel, 14.10.2021) -->
+                  <span class="method-name">TC_MV_021_verify_Movie_Detail_Release_Date_Format</span>
+                  <span class="parameters">(Man of Steel,14.10.2021)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_023_verify_Refresh_Movie_Detail(Man of Steel)">
+                  </a> <!-- TC_MV_023_verify_Refresh_Movie_Detail(Man of Steel) -->
+                  <span class="method-name">TC_MV_023_verify_Refresh_Movie_Detail</span>
+                  <span class="parameters">(Man of Steel)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_02_CheckHoverMovieCards">
+                  </a> <!-- TC_MV_02_CheckHoverMovieCards -->
+                  <span class="method-name">TC_MV_02_CheckHoverMovieCards</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_03_CheckClickMovieTrailer(CÔ GÁI TỪ QUÁ KHỨ)">
+                  </a> <!-- TC_MV_03_CheckClickMovieTrailer(CÔ GÁI TỪ QUÁ KHỨ) -->
+                  <span class="method-name">TC_MV_03_CheckClickMovieTrailer</span>
+                  <span class="parameters">(CÔ GÁI TỪ QUÁ KHỨ)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_04_CheckMoviePagination">
+                  </a> <!-- TC_MV_04_CheckMoviePagination -->
+                  <span class="method-name">TC_MV_04_CheckMoviePagination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_05_CheckNavigateToMovieDetail(CÔ GÁI TỪ QUÁ KHỨ)">
+                  </a> <!-- TC_MV_05_CheckNavigateToMovieDetail(CÔ GÁI TỪ QUÁ KHỨ) -->
+                  <span class="method-name">TC_MV_05_CheckNavigateToMovieDetail</span>
+                  <span class="parameters">(CÔ GÁI TỪ QUÁ KHỨ)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_MV_07_CheckMovieNameAndDuration(Man of Steel, 120phút)">
+                  </a> <!-- TC_MV_07_CheckMovieNameAndDuration(Man of Steel, 120phút) -->
+                  <span class="method-name">TC_MV_07_CheckMovieNameAndDuration</span>
+                  <span class="parameters">(Man of Steel,120phút)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Gradle_suite-class-passed -->
+        </div> <!-- panel Gradle_suite -->
+        <div panel-name="test-xml-Gradle_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Gradle suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Gradle test&quot; verbose=&quot;0&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.MovieDetailTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Gradle test --&gt;
+&lt;/suite&gt; &lt;!-- Gradle suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Gradle_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Gradle suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Gradle test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Gradle_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Gradle suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">movie-detail</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_011_CheckMovieTrailerDisplayedCorrectly</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_012_CheckMovieTrailerPlayNormally</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_014_CloseTrailerByXButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_015_CloseTrailerByClickOutsidePopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_016_verify_Movie_Detail_Poster</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_017_verify_Movie_Detail_Cinema_System_Switching</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_019_verify_Click_Showtime_Navigate_To_Booking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_01_CheckMovieCards</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_021_verify_Movie_Detail_Release_Date_Format</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_022_verify_Movie_Detail_On_Mobile</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_023_verify_Refresh_Movie_Detail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_02_CheckHoverMovieCards</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_03_CheckClickMovieTrailer</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_04_CheckMoviePagination</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_05_CheckNavigateToMovieDetail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_07_CheckMovieNameAndDuration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_MV_08_CheckMovieRating</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Gradle_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Gradle suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Gradle_suite');
+function tableData_Gradle_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_MV_01_CheckMovieCards')
+data.setCell(0, 2, 'testcase.MovieDetailTest')
+data.setCell(0, 3, 13523);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_MV_05_CheckNavigateToMovieDetail')
+data.setCell(1, 2, 'testcase.MovieDetailTest')
+data.setCell(1, 3, 12270);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_MV_014_CloseTrailerByXButton')
+data.setCell(2, 2, 'testcase.MovieDetailTest')
+data.setCell(2, 3, 11563);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_MV_02_CheckHoverMovieCards')
+data.setCell(3, 2, 'testcase.MovieDetailTest')
+data.setCell(3, 3, 6530);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_MV_05_CheckNavigateToMovieDetail')
+data.setCell(4, 2, 'testcase.MovieDetailTest')
+data.setCell(4, 3, 2818);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_MV_03_CheckClickMovieTrailer')
+data.setCell(5, 2, 'testcase.MovieDetailTest')
+data.setCell(5, 3, 2325);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_MV_04_CheckMoviePagination')
+data.setCell(6, 2, 'testcase.MovieDetailTest')
+data.setCell(6, 3, 1831);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_MV_07_CheckMovieNameAndDuration')
+data.setCell(7, 2, 'testcase.MovieDetailTest')
+data.setCell(7, 3, 1320);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_MV_019_verify_Click_Showtime_Navigate_To_Booking')
+data.setCell(8, 2, 'testcase.MovieDetailTest')
+data.setCell(8, 3, 1301);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_MV_017_verify_Movie_Detail_Cinema_System_Switching')
+data.setCell(9, 2, 'testcase.MovieDetailTest')
+data.setCell(9, 3, 1299);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC_MV_016_verify_Movie_Detail_Poster')
+data.setCell(10, 2, 'testcase.MovieDetailTest')
+data.setCell(10, 3, 1222);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC_MV_023_verify_Refresh_Movie_Detail')
+data.setCell(11, 2, 'testcase.MovieDetailTest')
+data.setCell(11, 3, 1192);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC_MV_021_verify_Movie_Detail_Release_Date_Format')
+data.setCell(12, 2, 'testcase.MovieDetailTest')
+data.setCell(12, 3, 1156);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC_MV_022_verify_Movie_Detail_On_Mobile')
+data.setCell(13, 2, 'testcase.MovieDetailTest')
+data.setCell(13, 3, 943);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC_MV_08_CheckMovieRating')
+data.setCell(14, 2, 'testcase.MovieDetailTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC_MV_011_CheckMovieTrailerDisplayedCorrectly')
+data.setCell(15, 2, 'testcase.MovieDetailTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC_MV_015_CloseTrailerByClickOutsidePopup')
+data.setCell(16, 2, 'testcase.MovieDetailTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC_MV_012_CheckMovieTrailerPlayNormally')
+data.setCell(17, 2, 'testcase.MovieDetailTest')
+data.setCell(17, 3, 0);
+window.suiteTableData['Gradle_suite']= { tableData: data, tableDiv: 'times-div-Gradle_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 59 seconds</span>
+              <div id="times-div-Gradle_suite">
+              </div> <!-- times-div-Gradle_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Gradle_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Gradle suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Gradle_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Gradle_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.MovieDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_01_CheckMovieCards())</span>
+                <span class="method-start">175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">1806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_MV_01_CheckMovieCards</span>
+                <span class="method-start">3443 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_01_CheckMovieCards status=FAILURE method=MovieDetailTest.TC_MV_01_CheckMovieC...)</span>
+                <span class="method-start">16971 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_02_CheckHoverMovieCards())</span>
+                <span class="method-start">17564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">19044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_02_CheckHoverMovieCards</span>
+                <span class="method-start">20672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_02_CheckHoverMovieCards status=SUCCESS method=MovieDetailTest.TC_MV_02_CheckH...)</span>
+                <span class="method-start">27204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_03_CheckClickMovieTrailer(java.lang.String))</span>
+                <span class="method-start">27576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">28981 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_03_CheckClickMovieTrailer(CÔ GÁI TỪ QUÁ KHỨ)</span>
+                <span class="method-start">30635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_03_CheckClickMovieTrailer status=SUCCESS method=MovieDetailTest.TC_MV_03_Chec...)</span>
+                <span class="method-start">32961 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_04_CheckMoviePagination())</span>
+                <span class="method-start">33336 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">34757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_04_CheckMoviePagination</span>
+                <span class="method-start">36367 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_04_CheckMoviePagination status=SUCCESS method=MovieDetailTest.TC_MV_04_CheckM...)</span>
+                <span class="method-start">38198 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(java.lang.String))</span>
+                <span class="method-start">38441 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">39666 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_05_CheckNavigateToMovieDetail(CÔ GÁI TỪ QUÁ KHỨ)</span>
+                <span class="method-start">41319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_05_CheckNavigateToMovieDetail status=SUCCESS method=MovieDetailTest.TC_MV_05_...)</span>
+                <span class="method-start">44138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_05_CheckNavigateToMovieDetail(java.lang.String))</span>
+                <span class="method-start">44514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">45859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_MV_05_CheckNavigateToMovieDetail(Địa đạo)</span>
+                <span class="method-start">47501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_05_CheckNavigateToMovieDetail status=FAILURE method=MovieDetailTest.TC_MV_05_...)</span>
+                <span class="method-start">59779 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_07_CheckMovieNameAndDuration(java.lang.String,java.lang.S...)</span>
+                <span class="method-start">60191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">61435 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_07_CheckMovieNameAndDuration(Man of Steel, 120phút)</span>
+                <span class="method-start">63082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_07_CheckMovieNameAndDuration status=SUCCESS method=MovieDetailTest.TC_MV_07_C...)</span>
+                <span class="method-start">64402 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_014_CloseTrailerByXButton(java.lang.String))</span>
+                <span class="method-start">64707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">65978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_014_CloseTrailerByXButton(Man of Steel)</span>
+                <span class="method-start">67600 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_014_CloseTrailerByXButton status=SUCCESS method=MovieDetailTest.TC_MV_014_Clo...)</span>
+                <span class="method-start">79164 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_016_verify_Movie_Detail_Poster(java.lang.String))</span>
+                <span class="method-start">79526 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">80849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_016_verify_Movie_Detail_Poster(Man of Steel)</span>
+                <span class="method-start">82448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_016_verify_Movie_Detail_Poster status=SUCCESS method=MovieDetailTest.TC_MV_01...)</span>
+                <span class="method-start">83671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(java.lang...)</span>
+                <span class="method-start">83927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">85364 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_017_verify_Movie_Detail_Cinema_System_Switching(AVATAR 2)</span>
+                <span class="method-start">86964 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_017_verify_Movie_Detail_Cinema_System_Switching status=SUCCESS method=MovieDe...)</span>
+                <span class="method-start">88264 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(java.lang.S...)</span>
+                <span class="method-start">88519 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">90029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_019_verify_Click_Showtime_Navigate_To_Booking(Man of Steel, 09-10-2021, 02:40)</span>
+                <span class="method-start">91138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_019_verify_Click_Showtime_Navigate_To_Booking status=SUCCESS method=MovieDeta...)</span>
+                <span class="method-start">92439 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_021_verify_Movie_Detail_Release_Date_Format(java.lang.Str...)</span>
+                <span class="method-start">92686 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">93891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_021_verify_Movie_Detail_Release_Date_Format(Man of Steel, 14.10.2021)</span>
+                <span class="method-start">95494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_021_verify_Movie_Detail_Release_Date_Format status=SUCCESS method=MovieDetail...)</span>
+                <span class="method-start">96652 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_022_verify_Movie_Detail_On_Mobile(java.lang.String))</span>
+                <span class="method-start">96917 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">98164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_MV_022_verify_Movie_Detail_On_Mobile(Man of Steel)</span>
+                <span class="method-start">99803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_022_verify_Movie_Detail_On_Mobile status=FAILURE method=MovieDetailTest.TC_MV...)</span>
+                <span class="method-start">100747 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcase.MovieDetailTest.TC_MV_023_verify_Refresh_Movie_Detail(java.lang.String))</span>
+                <span class="method-start">101059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">102266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_MV_023_verify_Refresh_Movie_Detail(Man of Steel)</span>
+                <span class="method-start">103899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_MV_023_verify_Refresh_Movie_Detail status=SUCCESS method=MovieDetailTest.TC_MV_0...)</span>
+                <span class="method-start">105091 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">105454 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
