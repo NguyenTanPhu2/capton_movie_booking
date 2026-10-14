@@ -282,7 +282,7 @@ public class MovieDetailTest extends BaseTest {
                           "VP 4: Movie duration on the Movie Detail page is incorrect");
         }
 
-        @Test(priority = 8, dataProvider = "movie-detail-rating", 
+        @Test(priority = 8, dataProvider = "movie-detail-poster",
                 dataProviderClass = TestDataProvider.class, groups = "movie-detail")
         public void TC_MV_08_CheckMovieRating(String movieName) {
 
@@ -321,7 +321,7 @@ public class MovieDetailTest extends BaseTest {
                 LOG.info("Movie rating: " + actualRating);
         }
 
-        @Test(priority = 11, dataProvider = "movie-detail-trailer-playing",
+        @Test(priority = 11, dataProvider = "movie-detail-trailer-close",
                 dataProviderClass = TestDataProvider.class, groups = "movie-detail")
         public void TC_MV_011_CheckMovieTrailerDisplayedCorrectly(String movieName) {
                 // String movieName = "John Cena WWE";
@@ -377,7 +377,7 @@ public class MovieDetailTest extends BaseTest {
                                 + ". Trailer title: " + trailerTitle);
         }
 
-        @Test(priority = 12, dataProvider = "movie-detail-trailer-playing", 
+        @Test(priority = 12, dataProvider = "movie-detail-trailer-close",
                 dataProviderClass = TestDataProvider.class, groups = "movie-detail")
         public void TC_MV_012_CheckMovieTrailerPlayNormally(String movieName) {
 
@@ -449,7 +449,7 @@ public class MovieDetailTest extends BaseTest {
                                 "Trailer vẫn hiển thị sau khi click nút X");
         }
 
-        @Test(priority = 15, dataProvider = "movie-trailer-close", 
+        @Test(priority = 15, dataProvider = "movie-detail-trailer-close",
                 dataProviderClass = TestDataProvider.class, groups = "movie-detail")
         public void TC_MV_015_CloseTrailerByClickOutsidePopup(String movieName) {
 

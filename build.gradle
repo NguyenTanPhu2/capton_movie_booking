@@ -30,9 +30,9 @@ dependencies {
 
 test {
     useTestNG() {
-        useDefaultListeners = true //dung de tao report testNG
-        outputDirectory = file("$projectDir/test-output") //dung de chua report testNG
+        useDefaultListeners = true
+        outputDirectory = file("$projectDir/test-output")
 
-//        suites("testng.xml")
+        suites("src/test/resources/testng-parallel.xml")
     }
 }
