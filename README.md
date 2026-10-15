@@ -468,4 +468,4 @@ Functional Testing
 
 ## 📄 License
 
-No license file or license declaration was identified in the project files inspected for this README. The project's license is therefore **not specified**.
+This project is created for **learning, testing and portfolio purposes**.
