@@ -12,6 +12,5 @@ public class ChromeDriverManager extends DriverManager {
         options.setExperimentalOption("useAutomationExtension", false);
 
         this.driver = new ChromeDriver(options);
-
     }
 }
