@@ -448,7 +448,7 @@ public class TestDataProvider {
                         "gái già lắm chiêu",
                         "21-12-2021",
                         "X",
-                        "112"
+                        "114"
                 }
         };
     }
@@ -483,7 +483,7 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        113
+                        106
                 }
         };
     }
@@ -562,8 +562,8 @@ public class TestDataProvider {
                         "Clara@2026",
                         "gái già lắm chiêu",
                         "21-12-2021",
-                        131,
-                        99
+                        109,
+                        102
                 }
         };
     }
@@ -574,7 +574,7 @@ public class TestDataProvider {
                 {
                         "Nhà Bà Nữ",
                         "03-11-2022",
-                        18
+                        100
                 }
         };
     }
