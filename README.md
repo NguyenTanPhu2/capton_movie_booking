@@ -303,6 +303,11 @@ The project uses **ExtentReports 5.1.2** with an `ExtentSparkReporter`.
 
 The reporting code records test results and adds a screenshot to a failed test when `BaseTest.afterMethod()` handles a failure.
 
+### ExtentReport Sample
+
+The generated report has a dashboard showing the execution summary and timeline.
+![img.png](img.png)
+![img_1.png](img_1.png)
 ### Report output
 
 The report path is configured in `ExtentReportManager`:
